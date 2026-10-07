@@ -1,0 +1,92 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "$s_G$",
+   "xlabel": "log$_{10}\\tau$ bin",
+   "ylabel": "relative error vs FDM",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "distilled SKN",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN, tabulated (192 pts)",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "full SKN",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 1,
+   "title": "$s_M$",
+   "xlabel": "log$_{10}\\tau$ bin",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "distilled SKN",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN, tabulated (192 pts)",
+     "x": "ax1_line1_x",
+     "y": "ax1_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "full SKN",
+     "x": "ax1_line2_x",
+     "y": "ax1_line2_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 2,
+   "title": "$a$",
+   "xlabel": "log$_{10}\\tau$ bin",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "distilled SKN",
+     "x": "ax2_line0_x",
+     "y": "ax2_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN, tabulated (192 pts)",
+     "x": "ax2_line1_x",
+     "y": "ax2_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "full SKN",
+     "x": "ax2_line2_x",
+     "y": "ax2_line2_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

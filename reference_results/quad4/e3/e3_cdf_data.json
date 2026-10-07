@@ -1,0 +1,489 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "D1 (IO, 3 W)",
+   "xlabel": "time (years)",
+   "ylabel": "rails nucleated",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "die-level sign-off (standalone thermal)",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "rule sign-off (uniform 105 $^\\circ$C, const. $\\sigma_T$)",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "uniform die temperature",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "$\\sigma_T$ frozen at 2-D temperature",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "no wire self-heating",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "no thermomigration",
+     "x": "ax0_line5_x",
+     "y": "ax0_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "full 3-D physics (FDM truth)",
+     "x": "ax0_line6_x",
+     "y": "ax0_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "StackEM (SKN + JCX)",
+     "x": "ax0_line7_x",
+     "y": "ax0_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax0_line8_x",
+     "y": "ax0_line8_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    },
+    {
+     "text": "3",
+     "xy": [
+      4.0,
+      0.0
+     ]
+    },
+    {
+     "text": "90",
+     "xy": [
+      4.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 1,
+   "title": "D2 (logic, 12 W)",
+   "xlabel": "time (years)",
+   "ylabel": "",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "die-level sign-off (standalone thermal)",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "rule sign-off (uniform 105 $^\\circ$C, const. $\\sigma_T$)",
+     "x": "ax1_line1_x",
+     "y": "ax1_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "uniform die temperature",
+     "x": "ax1_line2_x",
+     "y": "ax1_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "$\\sigma_T$ frozen at 2-D temperature",
+     "x": "ax1_line3_x",
+     "y": "ax1_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "no wire self-heating",
+     "x": "ax1_line4_x",
+     "y": "ax1_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "no thermomigration",
+     "x": "ax1_line5_x",
+     "y": "ax1_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "full 3-D physics (FDM truth)",
+     "x": "ax1_line6_x",
+     "y": "ax1_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "StackEM (SKN + JCX)",
+     "x": "ax1_line7_x",
+     "y": "ax1_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax1_line8_x",
+     "y": "ax1_line8_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    },
+    {
+     "text": "4",
+     "xy": [
+      4.0,
+      0.0
+     ]
+    },
+    {
+     "text": "40",
+     "xy": [
+      4.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 2,
+   "title": "D3 (SRAM, 6 W)",
+   "xlabel": "time (years)",
+   "ylabel": "",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "die-level sign-off (standalone thermal)",
+     "x": "ax2_line0_x",
+     "y": "ax2_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "rule sign-off (uniform 105 $^\\circ$C, const. $\\sigma_T$)",
+     "x": "ax2_line1_x",
+     "y": "ax2_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "uniform die temperature",
+     "x": "ax2_line2_x",
+     "y": "ax2_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "$\\sigma_T$ frozen at 2-D temperature",
+     "x": "ax2_line3_x",
+     "y": "ax2_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "no wire self-heating",
+     "x": "ax2_line4_x",
+     "y": "ax2_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "no thermomigration",
+     "x": "ax2_line5_x",
+     "y": "ax2_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "full 3-D physics (FDM truth)",
+     "x": "ax2_line6_x",
+     "y": "ax2_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "StackEM (SKN + JCX)",
+     "x": "ax2_line7_x",
+     "y": "ax2_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax2_line8_x",
+     "y": "ax2_line8_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    },
+    {
+     "text": "40",
+     "xy": [
+      4.0,
+      0.0
+     ]
+    },
+    {
+     "text": "120",
+     "xy": [
+      4.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 3,
+   "title": "D4 (logic, 25 W)",
+   "xlabel": "time (years)",
+   "ylabel": "",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "die-level sign-off (standalone thermal)",
+     "x": "ax3_line0_x",
+     "y": "ax3_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "rule sign-off (uniform 105 $^\\circ$C, const. $\\sigma_T$)",
+     "x": "ax3_line1_x",
+     "y": "ax3_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "uniform die temperature",
+     "x": "ax3_line2_x",
+     "y": "ax3_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "$\\sigma_T$ frozen at 2-D temperature",
+     "x": "ax3_line3_x",
+     "y": "ax3_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "no wire self-heating",
+     "x": "ax3_line4_x",
+     "y": "ax3_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "no thermomigration",
+     "x": "ax3_line5_x",
+     "y": "ax3_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "full 3-D physics (FDM truth)",
+     "x": "ax3_line6_x",
+     "y": "ax3_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "StackEM (SKN + JCX)",
+     "x": "ax3_line7_x",
+     "y": "ax3_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax3_line8_x",
+     "y": "ax3_line8_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    },
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    },
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    },
+    {
+     "text": " 10-yr horizon",
+     "xy": [
+      10.0,
+      125.66
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "name": "alone_D1_years",
+   "key": "extra_alone_D1_years"
+  },
+  {
+   "name": "uniform_signoff_D1_years",
+   "key": "extra_uniform_signoff_D1_years"
+  },
+  {
+   "name": "uniform_D1_years",
+   "key": "extra_uniform_D1_years"
+  },
+  {
+   "name": "sigmaT_const_D1_years",
+   "key": "extra_sigmaT_const_D1_years"
+  },
+  {
+   "name": "no_joule_D1_years",
+   "key": "extra_no_joule_D1_years"
+  },
+  {
+   "name": "no_tm_D1_years",
+   "key": "extra_no_tm_D1_years"
+  },
+  {
+   "name": "full_D1_years",
+   "key": "extra_full_D1_years"
+  },
+  {
+   "name": "stackem_D1_years",
+   "key": "extra_stackem_D1_years"
+  },
+  {
+   "name": "alone_D2_years",
+   "key": "extra_alone_D2_years"
+  },
+  {
+   "name": "uniform_signoff_D2_years",
+   "key": "extra_uniform_signoff_D2_years"
+  },
+  {
+   "name": "uniform_D2_years",
+   "key": "extra_uniform_D2_years"
+  },
+  {
+   "name": "sigmaT_const_D2_years",
+   "key": "extra_sigmaT_const_D2_years"
+  },
+  {
+   "name": "no_joule_D2_years",
+   "key": "extra_no_joule_D2_years"
+  },
+  {
+   "name": "no_tm_D2_years",
+   "key": "extra_no_tm_D2_years"
+  },
+  {
+   "name": "full_D2_years",
+   "key": "extra_full_D2_years"
+  },
+  {
+   "name": "stackem_D2_years",
+   "key": "extra_stackem_D2_years"
+  },
+  {
+   "name": "alone_D3_years",
+   "key": "extra_alone_D3_years"
+  },
+  {
+   "name": "uniform_signoff_D3_years",
+   "key": "extra_uniform_signoff_D3_years"
+  },
+  {
+   "name": "uniform_D3_years",
+   "key": "extra_uniform_D3_years"
+  },
+  {
+   "name": "sigmaT_const_D3_years",
+   "key": "extra_sigmaT_const_D3_years"
+  },
+  {
+   "name": "no_joule_D3_years",
+   "key": "extra_no_joule_D3_years"
+  },
+  {
+   "name": "no_tm_D3_years",
+   "key": "extra_no_tm_D3_years"
+  },
+  {
+   "name": "full_D3_years",
+   "key": "extra_full_D3_years"
+  },
+  {
+   "name": "stackem_D3_years",
+   "key": "extra_stackem_D3_years"
+  },
+  {
+   "name": "alone_D4_years",
+   "key": "extra_alone_D4_years"
+  },
+  {
+   "name": "uniform_signoff_D4_years",
+   "key": "extra_uniform_signoff_D4_years"
+  },
+  {
+   "name": "uniform_D4_years",
+   "key": "extra_uniform_D4_years"
+  },
+  {
+   "name": "sigmaT_const_D4_years",
+   "key": "extra_sigmaT_const_D4_years"
+  },
+  {
+   "name": "no_joule_D4_years",
+   "key": "extra_no_joule_D4_years"
+  },
+  {
+   "name": "no_tm_D4_years",
+   "key": "extra_no_tm_D4_years"
+  },
+  {
+   "name": "full_D4_years",
+   "key": "extra_full_D4_years"
+  },
+  {
+   "name": "stackem_D4_years",
+   "key": "extra_stackem_D4_years"
+  }
+ ]
+}

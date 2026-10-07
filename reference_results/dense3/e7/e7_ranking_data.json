@@ -1,0 +1,301 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "Top-10 hit rate",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "bars",
+     "label": "_container0",
+     "x": "ax0_bars0_x",
+     "height": "ax0_bars0_height",
+     "width": "ax0_bars0_width"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0.20",
+     "xy": [
+      0.23,
+      0.0
+     ]
+    },
+    {
+     "text": "0.60",
+     "xy": [
+      0.63,
+      1.0
+     ]
+    },
+    {
+     "text": "0.40",
+     "xy": [
+      0.43000000000000005,
+      2.0
+     ]
+    },
+    {
+     "text": "0.80",
+     "xy": [
+      0.8300000000000001,
+      3.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      4.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      5.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      6.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 1,
+   "title": "Top-50 hit rate",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "bars",
+     "label": "_container0",
+     "x": "ax1_bars0_x",
+     "height": "ax1_bars0_height",
+     "width": "ax1_bars0_width"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0.48",
+     "xy": [
+      0.51,
+      0.0
+     ]
+    },
+    {
+     "text": "0.88",
+     "xy": [
+      0.91,
+      1.0
+     ]
+    },
+    {
+     "text": "0.88",
+     "xy": [
+      0.91,
+      2.0
+     ]
+    },
+    {
+     "text": "0.88",
+     "xy": [
+      0.91,
+      3.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      4.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      5.0
+     ]
+    },
+    {
+     "text": "0.96",
+     "xy": [
+      0.99,
+      6.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 2,
+   "title": "Kendall $\\tau$ (Top-50)",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax2_line0_x",
+     "y": "ax2_line0_y"
+    },
+    {
+     "kind": "bars",
+     "label": "_container0",
+     "x": "ax2_bars0_x",
+     "height": "ax2_bars0_height",
+     "width": "ax2_bars0_width"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0.65",
+     "xy": [
+      0.6776190476190476,
+      0.0
+     ]
+    },
+    {
+     "text": "0.57",
+     "xy": [
+      0.6038775510204082,
+      1.0
+     ]
+    },
+    {
+     "text": "0.59",
+     "xy": [
+      0.6212617887770305,
+      2.0
+     ]
+    },
+    {
+     "text": "0.93",
+     "xy": [
+      0.959795918367347,
+      3.0
+     ]
+    },
+    {
+     "text": "0.99",
+     "xy": [
+      1.0185714285714287,
+      4.0
+     ]
+    },
+    {
+     "text": "0.99",
+     "xy": [
+      1.0185714285714287,
+      5.0
+     ]
+    },
+    {
+     "text": "0.98",
+     "xy": [
+      1.0136734693877552,
+      6.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 3,
+   "title": "mortal set (10 yr)\nJaccard",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax3_line0_x",
+     "y": "ax3_line0_y"
+    },
+    {
+     "kind": "bars",
+     "label": "_container0",
+     "x": "ax3_bars0_x",
+     "height": "ax3_bars0_height",
+     "width": "ax3_bars0_width"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0.00",
+     "xy": [
+      0.03,
+      0.0
+     ]
+    },
+    {
+     "text": "0.08",
+     "xy": [
+      0.108125,
+      1.0
+     ]
+    },
+    {
+     "text": "0.17",
+     "xy": [
+      0.19666666666666666,
+      2.0
+     ]
+    },
+    {
+     "text": "0.28",
+     "xy": [
+      0.3077777777777778,
+      3.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      4.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      5.0
+     ]
+    },
+    {
+     "text": "1.00",
+     "xy": [
+      1.03,
+      6.0
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": []
+}

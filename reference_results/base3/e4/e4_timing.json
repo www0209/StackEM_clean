@@ -1,0 +1,80 @@
+{
+ "sizes": [
+  82,
+  246,
+  1000,
+  5000,
+  20000
+ ],
+ "timings": {
+  "FDM truth (CPU, 32 cores)": [
+   0.29730772972106934,
+   0.6645216941833496,
+   1.4811530113220215,
+   7.126626014709473,
+   28.43936324119568
+  ],
+  "FDM truth (CPU, 1 core)": [
+   2.030209541320801,
+   6.082072019577026,
+   24.727981328964233,
+   123.8946361541748,
+   490.40733647346497
+  ],
+  "distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU)": [
+   6.443145036697388,
+   18.896726608276367,
+   77.76689672470093,
+   null,
+   null
+  ],
+  "distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)": [
+   0.16441059112548828,
+   0.33946943283081055,
+   1.211620807647705,
+   5.828706979751587,
+   23.445188522338867
+  ],
+  "distilled SKN + JCX, direct look-up (torch, CUDA)": [
+   0.23182439804077148,
+   0.5862879753112793,
+   2.3367793560028076,
+   11.330866575241089,
+   45.110899448394775
+  ],
+  "full SKN + JCX, direct look-up (torch, CUDA)": [
+   0.554332971572876,
+   1.4636914730072021,
+   6.258964538574219,
+   30.711400032043457,
+   118.64464116096497
+  ],
+  "full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)": [
+   0.3233981132507324,
+   0.8083751201629639,
+   3.4132747650146484,
+   15.967593431472778,
+   63.19533634185791
+  ]
+ },
+ "device": "cuda",
+ "workers": 32,
+ "provider": "skn",
+ "closure_mode": "tabulated",
+ "n_tab": 192,
+ "M": 32,
+ "kernel_evals_by_engine": {
+  "distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU)": 61194240,
+  "distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)": 1213424640,
+  "distilled SKN + JCX, direct look-up (torch, CUDA)": null,
+  "full SKN + JCX, direct look-up (torch, CUDA)": null,
+  "full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)": 1213424640
+ },
+ "_meta": {
+  "time": "2026-09-27 17:10:20",
+  "python": "3.11.16",
+  "machine": "x86_64",
+  "cmd": "~/stackem_work/StackEM_clean/stackem/experiments/e4_scaling.py --config configs/base3.json --root ~/stackem_work/outputs --hotspot ~/stackem_work/hotspot_bin/HotSpot --teacher ~/stackem_work/outputs/base3/skn/skn_best.npz --ablate-modes --single-core-max 20000",
+  "config_name": "base3"
+ }
+}

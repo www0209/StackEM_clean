@@ -1,0 +1,215 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "earliest $t_{nuc}$: variant / resolved stack",
+   "ylabel": "",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child4",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child6",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax0_line5_x",
+     "y": "ax0_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax0_line6_x",
+     "y": "ax0_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax0_line7_x",
+     "y": "ax0_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax0_line8_x",
+     "y": "ax0_line8_y"
+    },
+    {
+     "kind": "line",
+     "label": "D4",
+     "x": "ax0_line9_x",
+     "y": "ax0_line9_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child15",
+     "x": "ax0_line10_x",
+     "y": "ax0_line10_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "6.1$\\times$",
+     "xy": [
+      6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "0.10$\\times$",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "0.47$\\times$",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "$\\leftarrow$ pessimistic (false alarms)",
+     "xy": [
+      0.93,
+      1.01
+     ]
+    },
+    {
+     "text": "optimistic (misses failures) $\\rightarrow$",
+     "xy": [
+      1.07,
+      1.01
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "name": "die-level sign-off / stack_D1",
+   "value": 6.148149607499453
+  },
+  {
+   "name": "die-level sign-off / stack_D2",
+   "value": 3.65112640972433
+  },
+  {
+   "name": "die-level sign-off / stack_D3",
+   "value": 5.158856780584077
+  },
+  {
+   "name": "die-level sign-off / stack_D4",
+   "value": 1.403568713701743
+  },
+  {
+   "name": "rule sign-off (105$^\\circ$C) / stack_D1",
+   "value": 0.09845558938653855
+  },
+  {
+   "name": "rule sign-off (105$^\\circ$C) / stack_D2",
+   "value": 0.16056841769787192
+  },
+  {
+   "name": "rule sign-off (105$^\\circ$C) / stack_D3",
+   "value": 0.10891168194614745
+  },
+  {
+   "name": "rule sign-off (105$^\\circ$C) / stack_D4",
+   "value": 0.7063288956252161
+  },
+  {
+   "name": "uniform T / 3-D field_D1",
+   "value": 0.8796233084278727
+  },
+  {
+   "name": "uniform T / 3-D field_D2",
+   "value": 1.2675551125156048
+  },
+  {
+   "name": "uniform T / 3-D field_D3",
+   "value": 0.9088642461191758
+  },
+  {
+   "name": "uniform T / 3-D field_D4",
+   "value": 1.4133407784968717
+  },
+  {
+   "name": "frozen $\\sigma_T$ / $\\sigma_T(T)$_D1",
+   "value": 0.7553067066816042
+  },
+  {
+   "name": "frozen $\\sigma_T$ / $\\sigma_T(T)$_D2",
+   "value": 0.7468094150498455
+  },
+  {
+   "name": "frozen $\\sigma_T$ / $\\sigma_T(T)$_D3",
+   "value": 0.7712163233181739
+  },
+  {
+   "name": "frozen $\\sigma_T$ / $\\sigma_T(T)$_D4",
+   "value": 0.47315527985476913
+  },
+  {
+   "name": "no self-heating / with_D1",
+   "value": 1.000586574061973
+  },
+  {
+   "name": "no self-heating / with_D2",
+   "value": 1.003115423724786
+  },
+  {
+   "name": "no self-heating / with_D3",
+   "value": 1.0008090511775813
+  },
+  {
+   "name": "no self-heating / with_D4",
+   "value": 0.9997728969431223
+  },
+  {
+   "name": "no TM / with_D1",
+   "value": 0.9997296619790722
+  },
+  {
+   "name": "no TM / with_D2",
+   "value": 1.000094003646886
+  },
+  {
+   "name": "no TM / with_D3",
+   "value": 0.999404841913876
+  },
+  {
+   "name": "no TM / with_D4",
+   "value": 1.0202022265630395
+  }
+ ]
+}

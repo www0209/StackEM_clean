@@ -1,0 +1,15 @@
+{
+ "name": "base3_teacher",
+ "base_case": "base3",
+ "_comment": "teacher-engine comparison on the SAME stack and the SAME sign-off sizing as base3 (base_case = base3: sizing, kernel data and weights are read from <root>/base3). Only the engine differs from configs/base3.json: the 6x256 teacher SKN, direct kernel look-up, M = 64 output times. Results go to <root>/base3_teacher. The PDE-residual ablation uses this file with --out-name ablation_pde.",
+ "times": {
+  "n": 64
+ },
+ "closure": {
+  "mode": "direct"
+ },
+ "skn": {
+  "weights": "skn/skn_best.npz",
+  "teacher": "skn/skn_best.npz"
+ }
+}

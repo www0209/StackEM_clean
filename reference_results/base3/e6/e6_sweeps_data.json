@@ -1,0 +1,595 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "package\n$R_{conv}$ (K/W)",
+   "xlabel": "",
+   "ylabel": "earliest $t_{nuc}$ in stack (yr)",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 1,
+   "title": "bond layer\n$k$ (W/mK)",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax1_line1_x",
+     "y": "ax1_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax1_line2_x",
+     "y": "ax1_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax1_line3_x",
+     "y": "ax1_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 2,
+   "title": "feed pitch\nof D1 ($\\mu$m)",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax2_line0_x",
+     "y": "ax2_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax2_line1_x",
+     "y": "ax2_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax2_line2_x",
+     "y": "ax2_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax2_line3_x",
+     "y": "ax2_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 3,
+   "title": "top-die\npower (W)",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax3_line0_x",
+     "y": "ax3_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax3_line1_x",
+     "y": "ax3_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax3_line2_x",
+     "y": "ax3_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax3_line3_x",
+     "y": "ax3_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 4,
+   "title": "layer\norder",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax4_line0_x",
+     "y": "ax4_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax4_line1_x",
+     "y": "ax4_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax4_line2_x",
+     "y": "ax4_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax4_line3_x",
+     "y": "ax4_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 5,
+   "title": "$E_a$\n(eV)",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax5_line0_x",
+     "y": "ax5_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax5_line1_x",
+     "y": "ax5_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax5_line2_x",
+     "y": "ax5_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax5_line3_x",
+     "y": "ax5_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 6,
+   "title": "$\\sigma_{crit}$\n(MPa)",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax6_line0_x",
+     "y": "ax6_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax6_line1_x",
+     "y": "ax6_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax6_line2_x",
+     "y": "ax6_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax6_line3_x",
+     "y": "ax6_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 7,
+   "title": "die-level\nsign-off margin",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax7_line0_x",
+     "y": "ax7_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax7_line1_x",
+     "y": "ax7_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax7_line2_x",
+     "y": "ax7_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax7_line3_x",
+     "y": "ax7_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 8,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "required margin\n$t_{alone}/t_{stack}$",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax8_line0_x",
+     "y": "ax8_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax8_line1_x",
+     "y": "ax8_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax8_line2_x",
+     "y": "ax8_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax8_line3_x",
+     "y": "ax8_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 9,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax9_line0_x",
+     "y": "ax9_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax9_line1_x",
+     "y": "ax9_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax9_line2_x",
+     "y": "ax9_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax9_line3_x",
+     "y": "ax9_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 10,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax10_line0_x",
+     "y": "ax10_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax10_line1_x",
+     "y": "ax10_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax10_line2_x",
+     "y": "ax10_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax10_line3_x",
+     "y": "ax10_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 11,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax11_line0_x",
+     "y": "ax11_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax11_line1_x",
+     "y": "ax11_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax11_line2_x",
+     "y": "ax11_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax11_line3_x",
+     "y": "ax11_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child4",
+     "x": "ax11_line4_x",
+     "y": "ax11_line4_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 12,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax12_line0_x",
+     "y": "ax12_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax12_line1_x",
+     "y": "ax12_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax12_line2_x",
+     "y": "ax12_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax12_line3_x",
+     "y": "ax12_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 13,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax13_line0_x",
+     "y": "ax13_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax13_line1_x",
+     "y": "ax13_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax13_line2_x",
+     "y": "ax13_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax13_line3_x",
+     "y": "ax13_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child4",
+     "x": "ax13_line4_x",
+     "y": "ax13_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax13_line5_x",
+     "y": "ax13_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child6",
+     "x": "ax13_line6_x",
+     "y": "ax13_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax13_line7_x",
+     "y": "ax13_line7_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 14,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax14_line0_x",
+     "y": "ax14_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax14_line1_x",
+     "y": "ax14_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax14_line2_x",
+     "y": "ax14_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax14_line3_x",
+     "y": "ax14_line3_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 15,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax15_line0_x",
+     "y": "ax15_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax15_line1_x",
+     "y": "ax15_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax15_line2_x",
+     "y": "ax15_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax15_line3_x",
+     "y": "ax15_line3_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

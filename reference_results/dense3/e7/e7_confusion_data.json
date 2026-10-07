@@ -1,0 +1,163 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "rails mortal within 10 yr",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "bars",
+     "label": "detected",
+     "x": "ax0_bars0_x",
+     "height": "ax0_bars0_height",
+     "width": "ax0_bars0_width"
+    },
+    {
+     "kind": "bars",
+     "label": "missed (optimistic)",
+     "x": "ax0_bars1_x",
+     "height": "ax0_bars1_height",
+     "width": "ax0_bars1_width"
+    },
+    {
+     "kind": "bars",
+     "label": "false alarm",
+     "x": "ax0_bars2_x",
+     "height": "ax0_bars2_height",
+     "width": "ax0_bars2_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container3",
+     "x": "ax0_bars3_x",
+     "height": "ax0_bars3_height",
+     "width": "ax0_bars3_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container4",
+     "x": "ax0_bars4_x",
+     "height": "ax0_bars4_height",
+     "width": "ax0_bars4_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container5",
+     "x": "ax0_bars5_x",
+     "height": "ax0_bars5_height",
+     "width": "ax0_bars5_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container6",
+     "x": "ax0_bars6_x",
+     "height": "ax0_bars6_height",
+     "width": "ax0_bars6_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container7",
+     "x": "ax0_bars7_x",
+     "height": "ax0_bars7_height",
+     "width": "ax0_bars7_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container8",
+     "x": "ax0_bars8_x",
+     "height": "ax0_bars8_height",
+     "width": "ax0_bars8_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container9",
+     "x": "ax0_bars9_x",
+     "height": "ax0_bars9_height",
+     "width": "ax0_bars9_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container10",
+     "x": "ax0_bars10_x",
+     "height": "ax0_bars10_height",
+     "width": "ax0_bars10_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container11",
+     "x": "ax0_bars11_x",
+     "height": "ax0_bars11_height",
+     "width": "ax0_bars11_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container12",
+     "x": "ax0_bars12_x",
+     "height": "ax0_bars12_height",
+     "width": "ax0_bars12_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container13",
+     "x": "ax0_bars13_x",
+     "height": "ax0_bars13_height",
+     "width": "ax0_bars13_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container14",
+     "x": "ax0_bars14_x",
+     "height": "ax0_bars14_height",
+     "width": "ax0_bars14_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container15",
+     "x": "ax0_bars15_x",
+     "height": "ax0_bars15_height",
+     "width": "ax0_bars15_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container16",
+     "x": "ax0_bars16_x",
+     "height": "ax0_bars16_height",
+     "width": "ax0_bars16_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container17",
+     "x": "ax0_bars17_x",
+     "height": "ax0_bars17_height",
+     "width": "ax0_bars17_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container18",
+     "x": "ax0_bars18_x",
+     "height": "ax0_bars18_height",
+     "width": "ax0_bars18_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container19",
+     "x": "ax0_bars19_x",
+     "height": "ax0_bars19_height",
+     "width": "ax0_bars19_width"
+    },
+    {
+     "kind": "bars",
+     "label": "_container20",
+     "x": "ax0_bars20_x",
+     "height": "ax0_bars20_height",
+     "width": "ax0_bars20_width"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

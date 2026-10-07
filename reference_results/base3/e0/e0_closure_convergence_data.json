@@ -1,0 +1,28 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "time steps M",
+   "ylabel": "rel-L2 error of node stresses",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "flux jump at interval start",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "flux jump at interval mid",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

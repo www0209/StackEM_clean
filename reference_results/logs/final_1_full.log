@@ -1,0 +1,369 @@
+
+=================== 2026-09-27 12:37:24  unit tests ===================
+..........  [parse] 247 lines read (0.0s)
+  [dc] conductance matrix 129 x 129, 480 nnz (0.0s)
+  [dc] 5 voltage sources: 5 to ground (eliminated), 0 floating; 64 current sources (0.0s)
+  [dc] reduced system 123 unknowns, 453 nnz (0.0s)
+  [dc] LU factorised, 1348 nnz in the factors (0.0s)
+  [dc] solved (0.0s)
+...........
+----------------------------------------------------------------------
+Ran 21 tests in 1.261s
+
+OK
+
+=================== 2026-09-27 12:37:26  E0 solver validation ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+[saved] ~/stackem_work/outputs_teacher/base3/e0/e0_validation.json
+E0 PASSED
+
+=================== 2026-09-27 12:38:04  kernel dataset ===================
+[skip] kernels
+
+=================== 2026-09-27 12:38:04  SKN training ===================
+[skip] train
+
+=================== 2026-09-27 12:38:04  E1 kernel accuracy ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+val SKN {'s_G': {'rel_l2_median': 0.0021819939481678044, 'rel_l2_p90': 0.0032603227227745325, 'rel_l2_max': 0.008092411962894536, 'end_max_rel_median': 0.003000092980605755}, 's_M': {'rel_l2_median': 0.006881798062607294, 'rel_l2_p90': 0.04616642077749425, 'rel_l2_max': 0.18737877924918714, 'end_max_rel_median': 0.015897983497911515}, 'a': {'rel_l2_median': 0.0003468099689862172, 'rel_l2_p90': 0.0005287501214215563, 'rel_l2_max': 0.0010091409414646993, 'end_max_rel_median': 0.007073467158827373}}
+ood SKN {'s_G': {'rel_l2_median': 0.0026817888504687124, 'rel_l2_p90': 0.0037633038582293834, 'rel_l2_max': 0.005706407170016383, 'end_max_rel_median': 0.003870604179330931}, 's_M': {'rel_l2_median': 0.00885615177850603, 'rel_l2_p90': 0.04492492950424672, 'rel_l2_max': 0.16699727038463213, 'end_max_rel_median': 0.02792764896860482}, 'a': {'rel_l2_median': 0.0004561307431134175, 'rel_l2_p90': 0.0006334345117337568, 'rel_l2_max': 0.0008041600425069687, 'end_max_rel_median': 0.009657187337495685}}
+[saved] ~/stackem_work/outputs_teacher/base3/e1/e1_summary.json
+
+=================== 2026-09-27 12:40:09  sign-off sizing ===================
+HotSpot (stack + 3 standalone runs) 2s
+  sizing D1 (standalone T 320.0-321.9 K, target 20 yr)
+    W =   4.47 um -> earliest      inf yr
+    W =   1.50 um -> earliest    25.87 yr
+    W =   0.86 um -> earliest     7.08 yr
+    W =   1.14 um -> earliest    13.64 yr
+    W =   1.30 um -> earliest    18.80 yr
+    W =   1.40 um -> earliest    22.05 yr
+    W =   1.35 um -> earliest    20.36 yr
+    W =   1.33 um -> earliest    19.56 yr
+  -> D1: W = 1.35 um, earliest 20.4 yr, j_max 6.29e+05 A/cm^2
+  sizing D2 (standalone T 322.0-322.3 K, target 20 yr)
+    W =   4.47 um -> earliest      inf yr
+    W =   1.50 um -> earliest    49.05 yr
+    W =   0.86 um -> earliest    14.86 yr
+    W =   1.14 um -> earliest    28.19 yr
+    W =   0.99 um -> earliest    20.46 yr
+    W =   0.93 um -> earliest    17.44 yr
+    W =   0.96 um -> earliest    18.89 yr
+    W =   0.97 um -> earliest    19.66 yr
+  -> D2: W = 0.99 um, earliest 20.5 yr, j_max 6.24e+05 A/cm^2
+  sizing D3 (standalone T 336.0-358.7 K, target 20 yr)
+    W =   4.47 um -> earliest     0.43 yr
+    W =  13.37 um -> earliest     6.20 yr
+    W =  23.13 um -> earliest      inf yr
+    W =  17.59 um -> earliest      inf yr
+    W =  15.34 um -> earliest    22.08 yr
+    W =  14.32 um -> earliest    11.06 yr
+    W =  14.82 um -> earliest    14.93 yr
+    W =  15.08 um -> earliest    17.94 yr
+  -> D3: W = 15.34 um, earliest 22.1 yr, j_max 1.22e+05 A/cm^2
+sizing 39s
+  uniform 105 C rule would size D1 at W = 6.63 um  (3-D-aware standalone: 1.35 um)
+  uniform 105 C rule would size D2 at W = 4.79 um  (3-D-aware standalone: 0.99 um)
+  uniform 105 C rule would size D3 at W = 15.34 um  (3-D-aware standalone: 15.34 um)
+[saved] ~/stackem_work/outputs_teacher/base3/signoff/signoff_sizing.json
+
+=================== 2026-09-27 12:41:09  E2 rail accuracy ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+full {'D1': (0.0022803248770081742, 0.000250710399639009, 1.0), 'D2': (0.0019213127879879667, 0.0004274778322990807, 1.0), 'D3': (0.02274291132856356, 0.0002349944944114408, 1.0)} closure 251.4s truth 4.3s
+alone {'D1': (0.008424556081883142, 8.512142859452553e-05, 1.0), 'D2': (0.003559592896350155, 0.00044022785028626285, 1.0), 'D3': (0.01782533895424679, 0.00035397165091909284, 1.0)} closure 270.1s truth 4.5s
+uniform {'D1': (0.0019256834331101372, 0.00019120685279202924, 1.0), 'D2': (0.0021764336187910342, 0.00045821409830111315, 1.0), 'D3': (0.012805141226015872, 0.00011626044350218058, 1.0)} closure 251.1s truth 4.2s
+[saved] ~/stackem_work/outputs_teacher/base3/e2/e2_summary.json
+
+=================== 2026-09-27 12:54:19  E3 physics decomposition ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+alone           4.6s  earliest 20.357 yr on D1; mortal10yr 0 /100yr 82
+uniform_signoff   3.7s  earliest 0.474 yr on D1; mortal10yr 120 /100yr 132
+uniform         4.3s  earliest 4.008 yr on D1; mortal10yr 26 /100yr 128
+sigmaT_const    4.6s  earliest 1.495 yr on D2; mortal10yr 34 /100yr 130
+no_joule        4.1s  earliest 2.413 yr on D2; mortal10yr 26 /100yr 128
+no_tm           4.1s  earliest 2.393 yr on D2; mortal10yr 26 /100yr 128
+full            4.2s  earliest 2.389 yr on D2; mortal10yr 26 /100yr 128
+StackEM overlay 251.4s  earliest 2.425 yr
+hotspot [0, 0] {'D1': {'earliest_yr': 4.207, 'earliest_rail': 'H38', 'mortal10': 10, 'mortal100': 38, 'crossing_enrichment_10yr': 1.64, 'crossing_enrichment_100yr': 0.432, 'tnuc_ratio_cross_over_noncross': 0.319, 'spearman_T_vs_logt': 0.012, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.244}, 'D2': {'earliest_yr': 1.11, 'earliest_rail': 'H2', 'mortal10': 34, 'mortal100': 82, 'crossing_enrichment_10yr': 1.929, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.254, 'spearman_T_vs_logt': -0.636, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.244}}
+hotspot [1, 1] {'D1': {'earliest_yr': 4.166, 'earliest_rail': 'V38', 'mortal10': 6, 'mortal100': 38, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.647, 'tnuc_ratio_cross_over_noncross': 1.289, 'spearman_T_vs_logt': 0.397, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.244}, 'D2': {'earliest_yr': 2.389, 'earliest_rail': 'V14', 'mortal10': 20, 'mortal100': 82, 'crossing_enrichment_10yr': 1.23, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.931, 'spearman_T_vs_logt': -0.316, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.244}}
+hotspot [2, 2] {'D1': {'earliest_yr': 4.01, 'earliest_rail': 'V38', 'mortal10': 6, 'mortal100': 38, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.647, 'tnuc_ratio_cross_over_noncross': 1.224, 'spearman_T_vs_logt': -0.177, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.244}, 'D2': {'earliest_yr': 2.461, 'earliest_rail': 'H26', 'mortal10': 20, 'mortal100': 82, 'crossing_enrichment_10yr': 0.82, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 1.013, 'spearman_T_vs_logt': -0.021, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.244}}
+hotspot [3, 3] {'D1': {'earliest_yr': 0.953, 'earliest_rail': 'H38', 'mortal10': 18, 'mortal100': 38, 'crossing_enrichment_10yr': 3.727, 'crossing_enrichment_100yr': 2.158, 'tnuc_ratio_cross_over_noncross': 0.111, 'spearman_T_vs_logt': -0.835, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.268}, 'D2': {'earliest_yr': 1.376, 'earliest_rail': 'H38', 'mortal10': 30, 'mortal100': 82, 'crossing_enrichment_10yr': 1.988, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.292, 'spearman_T_vs_logt': -0.469, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.268}}
+hotspot [0, 3] {'D1': {'earliest_yr': 4.16, 'earliest_rail': 'V38', 'mortal10': 7, 'mortal100': 38, 'crossing_enrichment_10yr': 2.231, 'crossing_enrichment_100yr': 1.336, 'tnuc_ratio_cross_over_noncross': 0.432, 'spearman_T_vs_logt': -0.211, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.256}, 'D2': {'earliest_yr': 1.317, 'earliest_rail': 'H38', 'mortal10': 33, 'mortal100': 82, 'crossing_enrichment_10yr': 2.012, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.282, 'spearman_T_vs_logt': -0.502, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.256}}
+[saved] ~/stackem_work/outputs_teacher/base3/e3/e3_summary.json
+
+=================== 2026-09-27 12:59:52  E7 ranking value ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+alone {'top10': 0.4, 'top10_tol1pct': 0.4, 'top50': 0.76, 'kendall': 0.697, 'same_critical_die': False, 'same_earliest_rail': False, 'mortal10_jaccard': 0.0, 'mortal10_missed': 26, 'mortal10_false': 0}
+uniform_signoff {'top10': 0.8, 'top10_tol1pct': 0.8, 'top50': 0.92, 'kendall': 0.726, 'same_critical_die': False, 'same_earliest_rail': False, 'mortal10_jaccard': 0.217, 'mortal10_missed': 0, 'mortal10_false': 94}
+uniform {'top10': 0.8, 'top10_tol1pct': 0.8, 'top50': 0.92, 'kendall': 0.766, 'same_critical_die': False, 'same_earliest_rail': False, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+sigmaT_const {'top10': 0.8, 'top10_tol1pct': 0.8, 'top50': 0.88, 'kendall': 0.98, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 0.765, 'mortal10_missed': 0, 'mortal10_false': 8}
+no_joule {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.995, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+no_tm {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.993, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+stackem {'top10': 0.8, 'top10_tol1pct': 0.8, 'top50': 1.0, 'kendall': 0.986, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+[saved] ~/stackem_work/outputs_teacher/base3/e7/e7_ranking.json
+truth Top-10 boundary: rails #10 and #11 differ by 1.48 % in t_nuc
+
+=================== 2026-09-27 12:59:54  E4 scaling ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+n=    82: FDM(32 cores) 0.3s  FDM(1 core) 1.9s  SKN + JCX, direct look-up (numpy, CPU): 119.6s  SKN + JCX, direct look-up (torch, CUDA): 1.9s
+n=   246: FDM(32 cores) 0.6s  FDM(1 core) 5.7s  SKN + JCX, direct look-up (numpy, CPU): 364.8s  SKN + JCX, direct look-up (torch, CUDA): 5.7s
+n=  1000: FDM(32 cores) 1.4s  FDM(1 core) 23.4s  SKN + JCX, direct look-up (numpy, CPU): 1461.2s  SKN + JCX, direct look-up (torch, CUDA): 23.7s
+n=  5000: FDM(32 cores) 6.8s  FDM(1 core) nans  SKN + JCX, direct look-up (numpy, CPU): nans  SKN + JCX, direct look-up (torch, CUDA): 112.0s
+n= 20000: FDM(32 cores) 27.3s  FDM(1 core) nans  SKN + JCX, direct look-up (numpy, CPU): nans  SKN + JCX, direct look-up (torch, CUDA): 448.4s
+[saved] ~/stackem_work/outputs_teacher/base3/e4/e4_timing.json
+
+=================== 2026-09-27 13:43:23  E5 sensitivity + budget ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+stack-aware repair: widening to restore the 10-yr horizon
+  D1: 6 / 82 rails violate 10 yr; targeted +2.9% metal, blanket +65.4% (x1.65); truth after repair: targeted 10.1 yr, blanket 10.1 yr
+  D2: 20 / 82 rails violate 10 yr; targeted +12.6% metal, blanket +99.5% (x1.99); truth after repair: targeted 10.0 yr, blanket 10.1 yr
+  D3: 0 / 82 rails violate 10 yr; targeted +0.0% metal, blanket +0.0% (x1.00); truth after repair: targeted inf yr, blanket inf yr
+[saved] ~/stackem_work/outputs_teacher/base3/e5/e5_repair.json
+linear maps built in 35s (48 blocks)
+gradients for 15 rails in 4s
+FD check {'die': 'D1', 'rail': 79, 'block': 'D1/D1_3_3', 'autograd': -5.0468381637369255, 'finite_diff': -5.047217331209486, 'delta_W': np.float64(0.004210526315789474)}
+FD check {'die': 'D1', 'rail': 79, 'block': 'D2/D2_0_0', 'autograd': -0.037757633337136116, 'finite_diff': -0.03765388157218348, 'delta_W': np.float64(0.0025)}
+FD check {'die': 'D2', 'rail': 55, 'block': 'D2/D2_1_1', 'autograd': -9.019041147745426, 'finite_diff': -9.018765330724912, 'delta_W': np.float64(0.0025)}
+FD check {'die': 'D2', 'rail': 55, 'block': 'D3/D3_3_3', 'autograd': -0.03528520465237711, 'finite_diff': -0.03536433296032624, 'delta_W': np.float64(0.01)}
+FD check {'die': 'D3', 'rail': 15, 'block': 'D3/D3_1_1', 'autograd': -2.76904604624683, 'finite_diff': -2.7289878538362067, 'delta_W': np.float64(0.05)}
+FD check {'die': 'D3', 'rail': 15, 'block': 'D2/D2_0_2', 'autograd': -0.001230025302557489, 'finite_diff': -0.0021625898694788426, 'delta_W': np.float64(0.0025)}
+  iter   0  earliest t_nuc 2.425 yr  soft 0.306
+  iter   1  earliest t_nuc 3.425 yr  soft 0.430
+  iter   2  earliest t_nuc 4.054 yr  soft 0.474
+  iter   3  earliest t_nuc 4.574 yr  soft 0.501
+  iter   4  earliest t_nuc 4.809 yr  soft 0.518
+  iter   5  earliest t_nuc 4.979 yr  soft 0.522
+  iter   6  earliest t_nuc 5.017 yr  soft 0.526
+  iter   7  earliest t_nuc 5.028 yr  soft 0.525
+  iter   8  earliest t_nuc 4.976 yr  soft 0.528
+  iter   9  earliest t_nuc 5.061 yr  soft 0.535
+  iter  10  earliest t_nuc 4.994 yr  soft 0.526
+  iter  11  earliest t_nuc 4.882 yr  soft 0.529
+  iter  12  earliest t_nuc 5.092 yr  soft 0.533
+  iter  13  earliest t_nuc 5.014 yr  soft 0.537
+  iter  14  earliest t_nuc 5.026 yr  soft 0.530
+  iter  15  earliest t_nuc 4.806 yr  soft 0.528
+  iter  16  earliest t_nuc 4.957 yr  soft 0.535
+  iter  17  earliest t_nuc 5.067 yr  soft 0.535
+  iter  18  earliest t_nuc 4.998 yr  soft 0.534
+  iter  19  earliest t_nuc 5.067 yr  soft 0.535
+  iter  20  earliest t_nuc 5.050 yr  soft 0.537
+  iter  21  earliest t_nuc 4.979 yr  soft 0.531
+  iter  22  earliest t_nuc 4.988 yr  soft 0.534
+  iter  23  earliest t_nuc 4.929 yr  soft 0.532
+  iter  24  earliest t_nuc 5.063 yr  soft 0.533
+earliest t_nuc: base 2.389 yr -> optimised 5.192 yr
+[saved] ~/stackem_work/outputs_teacher/base3/e5/e5_summary.json
+
+=================== 2026-09-27 14:03:22  E6 sweeps ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+r_convec_0.1 {'full_D1_earliest_yr': 8.897, 'full_D1_Tmax': 348.92, 'full_D2_earliest_yr': 4.676, 'full_D2_Tmax': 349.12, 'full_D3_earliest_yr': 26.075, 'full_D3_Tmax': 349.44, 'alone_D1_earliest_yr': 21.711, 'alone_D1_Tmax': 321.08, 'alone_D2_earliest_yr': 23.278, 'alone_D2_Tmax': 320.72, 'alone_D3_earliest_yr': 25.731, 'alone_D3_Tmax': 350.67, 'required_margin_D1': 2.44, 'required_margin_D2': 4.978, 'required_margin_D3': 0.987, 'value': 0.1, 'seconds': 10.913}
+r_convec_0.5 {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 0.5, 'seconds': 10.572}
+r_convec_1.0 {'full_D1_earliest_yr': 1.72, 'full_D1_Tmax': 372.37, 'full_D2_earliest_yr': 1.108, 'full_D2_Tmax': 372.57, 'full_D3_earliest_yr': 22.428, 'full_D3_Tmax': 372.88, 'alone_D1_earliest_yr': 18.792, 'alone_D1_Tmax': 322.88, 'alone_D2_earliest_yr': 17.46, 'alone_D2_Tmax': 324.32, 'alone_D3_earliest_yr': 21.764, 'alone_D3_Tmax': 368.71, 'required_margin_D1': 10.924, 'required_margin_D2': 15.763, 'required_margin_D3': 0.97, 'value': 1.0, 'seconds': 10.824}
+bond_k_5.0 {'full_D1_earliest_yr': 3.902, 'full_D1_Tmax': 359.0, 'full_D2_earliest_yr': 2.401, 'full_D2_Tmax': 359.49, 'full_D3_earliest_yr': 21.188, 'full_D3_Tmax': 360.21, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.217, 'required_margin_D2': 8.521, 'required_margin_D3': 1.042, 'value': 5.0, 'seconds': 10.647}
+bond_k_40.0 {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 40.0, 'seconds': 10.745}
+bond_k_150.0 {'full_D1_earliest_yr': 4.195, 'full_D1_Tmax': 359.04, 'full_D2_earliest_yr': 2.443, 'full_D2_Tmax': 359.2, 'full_D3_earliest_yr': 21.596, 'full_D3_Tmax': 359.48, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.853, 'required_margin_D2': 8.374, 'required_margin_D3': 1.022, 'value': 150.0, 'seconds': 11.741}
+feed_pitch_bottom_um_200 {'W_um_D1': 1.197, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 3.815, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.449, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.36, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 41.984}
+feed_pitch_bottom_um_400 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 52.934}
+feed_pitch_bottom_um_800 {'W_um_D1': 3.642, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 5.012, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.638, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.118, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 52.968}
+top_power_W_10.0 {'full_D1_earliest_yr': 8.001, 'full_D1_Tmax': 341.94, 'full_D2_earliest_yr': 7.548, 'full_D2_Tmax': 342.0, 'full_D3_earliest_yr': inf, 'full_D3_Tmax': 342.05, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': inf, 'alone_D3_Tmax': 338.43, 'required_margin_D1': 2.544, 'required_margin_D2': 2.71, 'required_margin_D3': nan, 'value': 10.0, 'seconds': 10.018}
+top_power_W_20.0 {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 20.0, 'seconds': 10.559}
+top_power_W_30.0 {'full_D1_earliest_yr': 2.242, 'full_D1_Tmax': 376.79, 'full_D2_earliest_yr': 0.86, 'full_D2_Tmax': 377.12, 'full_D3_earliest_yr': 0.81, 'full_D3_Tmax': 377.7, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 0.753, 'alone_D3_Tmax': 378.98, 'required_margin_D1': 9.081, 'required_margin_D2': 23.777, 'required_margin_D3': 0.93, 'value': 30.0, 'seconds': 10.912}
+layer_order_logic_top {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 10.566}
+layer_order_logic_bottom {'full_D3_earliest_yr': 21.72, 'full_D3_Tmax': 364.6, 'full_D2_earliest_yr': 2.087, 'full_D2_Tmax': 361.77, 'full_D1_earliest_yr': 4.371, 'full_D1_Tmax': 359.08, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'required_margin_D3': 1.016, 'required_margin_D2': 9.804, 'required_margin_D1': 4.657, 'seconds': 10.869}
+Ea_eV_0.84 {'W_um_D1': 1.868, 'W_um_D2': 1.373, 'W_um_D3': 16.146, 'full_D1_earliest_yr': 3.846, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 3.187, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 23.822, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.473, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.516, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 23.791, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.324, 'required_margin_D2': 6.437, 'required_margin_D3': 0.999, 'value': 0.84, 'seconds': 46.948}
+Ea_eV_0.86 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 0.86, 'seconds': 54.165}
+Ea_eV_1.0 {'W_um_D1': 0.5, 'W_um_D2': 0.5, 'W_um_D3': 3.231, 'full_D1_earliest_yr': 62.039, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 50.903, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 19.287, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': inf, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': inf, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 20.383, 'alone_D3_Tmax': 358.7, 'required_margin_D1': inf, 'required_margin_D2': inf, 'required_margin_D3': 1.057, 'value': 1.0, 'seconds': 37.962}
+Ea_eV_1.1 {'W_um_D1': 0.5, 'W_um_D2': 0.5, 'W_um_D3': 0.68, 'full_D1_earliest_yr': inf, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': inf, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 20.941, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': inf, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': inf, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 20.344, 'alone_D3_Tmax': 358.7, 'required_margin_D1': nan, 'required_margin_D2': nan, 'required_margin_D3': 0.972, 'value': 1.1, 'seconds': 37.589}
+sigma_crit_MPa_400 {'W_um_D1': 2.334, 'W_um_D2': 1.715, 'W_um_D3': 24.769, 'full_D1_earliest_yr': 4.509, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 3.014, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 24.905, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.286, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.4, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 23.052, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.499, 'required_margin_D2': 6.769, 'required_margin_D3': 0.926, 'seconds': 57.384}
+sigma_crit_MPa_500 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 53.321}
+sigma_crit_MPa_600 {'W_um_D1': 1.009, 'W_um_D2': 0.741, 'W_um_D3': 11.079, 'full_D1_earliest_yr': 4.527, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.511, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 19.39, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.112, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.251, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 20.892, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.442, 'required_margin_D2': 8.064, 'required_margin_D3': 1.077, 'seconds': 50.279}
+signoff_margin_1.5 {'W_um_D1': 1.197, 'W_um_D2': 0.88, 'W_um_D3': 15.077, 'full_D1_earliest_yr': 3.295, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 1.812, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 17.327, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 15.387, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 15.465, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 17.944, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.67, 'required_margin_D2': 8.537, 'required_margin_D3': 1.036, 'value': 1.5, 'seconds': 53.867}
+signoff_margin_2.0 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.506, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.357, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.458, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.076, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.887, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 2.0, 'seconds': 53.627}
+signoff_margin_3.0 {'W_um_D1': 1.601, 'W_um_D2': 1.177, 'W_um_D3': 15.872, 'full_D1_earliest_yr': 5.752, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 3.932, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 35.048, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 30.405, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 30.564, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 35.513, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.286, 'required_margin_D2': 7.774, 'required_margin_D3': 1.013, 'value': 3.0, 'seconds': 49.595}
+[saved] ~/stackem_work/outputs_teacher/base3/e6/e6_sweeps.json
+
+=================== 2026-09-27 14:16:17  E8 ev6 real floorplan ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+  sizing cache1: W = 0.50 um, standalone earliest inf yr (saturated)
+  sizing cache2: W = 0.50 um, standalone earliest inf yr (saturated)
+  sizing cores: W = 35.48 um, standalone earliest 21.0 yr
+cache1 P=3.7 W {'ir_drop_max_mV': 2.214, 'ir_drop_mean_mV': 1.165, 'j_max_A_per_cm2': 47122.634, 'j_p50_A_per_cm2': 5400.157, 'j_p90_A_per_cm2': 33586.864, 'total_sink_A': 0.697} ['j_max=4.71e+04 A/cm^2 outside [100000,3e+06] - adjust power, current_fraction or W/H']
+cache2 P=3.7 W {'ir_drop_max_mV': 2.214, 'ir_drop_mean_mV': 1.165, 'j_max_A_per_cm2': 47122.634, 'j_p50_A_per_cm2': 5400.157, 'j_p90_A_per_cm2': 33586.864, 'total_sink_A': 0.697} ['j_max=4.71e+04 A/cm^2 outside [100000,3e+06] - adjust power, current_fraction or W/H']
+cores P=138.8 W {'ir_drop_max_mV': 4.66, 'ir_drop_mean_mV': 0.614, 'j_max_A_per_cm2': 106483.433, 'j_p50_A_per_cm2': 2887.592, 'j_p90_A_per_cm2': 11561.775, 'total_sink_A': 26.018} []
+full           3.9s {'cache1': (inf, 0, 250), 'cache2': (inf, 0, 250), 'cores': (18.908, 0, 212)}
+others_off     4.0s {'cache1': (inf, 0, 250), 'cache2': (inf, 0, 250), 'cores': (21.048, 0, 212)}
+uniform        3.9s {'cache1': (inf, 0, 250), 'cache2': (inf, 0, 250), 'cores': (23.31, 0, 212)}
+StackEM overlay {'seconds': 172.9700038433075, 'n_mortal': 13, 'tnuc_rel_median': 0.0064242574952437, 'tnuc_rel_p90': 0.01723188539780633, 'tnuc_rel_max': 0.01771877197244905, 'top10_hit': 1.0, 'kendall_top50': 1.0}
+[saved] ~/stackem_work/outputs_teacher/base3/e8/e8_summary.json
+
+=================== 2026-09-27 14:23:43  second stack (quad4) sizing + E2 + E3 ===================
+HotSpot (stack + 4 standalone runs) 3s
+  sizing D1 (standalone T 319.8-319.9 K, target 20 yr)
+  -> D1: W = 0.50 um, earliest 59.6 yr, j_max 4.12e+05 A/cm^2 (saturated)
+  sizing D2 (standalone T 324.4-329.8 K, target 20 yr)
+    W =   4.47 um -> earliest    35.86 yr
+    W =   1.50 um -> earliest     3.30 yr
+    W =   2.59 um -> earliest    10.64 yr
+    W =   3.40 um -> earliest    19.09 yr
+    W =   3.90 um -> earliest    25.91 yr
+    W =   3.64 um -> earliest    22.20 yr
+    W =   3.52 um -> earliest    20.58 yr
+    W =   3.46 um -> earliest    19.82 yr
+  -> D2: W = 3.52 um, earliest 20.6 yr, j_max 3.31e+05 A/cm^2
+  sizing D3 (standalone T 321.4-321.7 K, target 20 yr)
+    W =   4.47 um -> earliest      inf yr
+    W =   1.50 um -> earliest    76.91 yr
+    W =   0.86 um -> earliest    21.85 yr
+    W =   0.66 um -> earliest    12.57 yr
+    W =   0.75 um -> earliest    16.57 yr
+    W =   0.81 um -> earliest    19.02 yr
+    W =   0.84 um -> earliest    20.39 yr
+    W =   0.82 um -> earliest    19.69 yr
+  -> D3: W = 0.84 um, earliest 20.4 yr, j_max 3.36e+05 A/cm^2
+  sizing D4 (standalone T 331.0-345.4 K, target 20 yr)
+    W =   4.47 um -> earliest     2.68 yr
+    W =  13.37 um -> earliest      inf yr
+    W =   7.73 um -> earliest     9.35 yr
+    W =  10.17 um -> earliest    51.49 yr
+    W =   8.87 um -> earliest    16.23 yr
+    W =   9.50 um -> earliest    27.26 yr
+    W =   9.18 um -> earliest    21.11 yr
+    W =   9.02 um -> earliest    18.19 yr
+  -> D4: W = 9.18 um, earliest 21.1 yr, j_max 1.27e+05 A/cm^2
+sizing 86s
+  uniform 105 C rule would size D1 at W = 1.60 um  (3-D-aware standalone: 0.50 um)
+  uniform 105 C rule would size D2 at W = 6.86 um  (3-D-aware standalone: 3.52 um)
+  uniform 105 C rule would size D3 at W = 2.68 um  (3-D-aware standalone: 0.84 um)
+  uniform 105 C rule would size D4 at W = 9.50 um  (3-D-aware standalone: 9.18 um)
+[saved] ~/stackem_work/outputs_teacher/quad4/signoff/signoff_sizing.json
+[sign-off sizing] strap widths: D1=0.50 um, D2=3.52 um, D3=0.84 um, D4=9.18 um
+full {'D1': (0.002937075016229618, 0.0002786478424319593, 1.0), 'D2': (0.001110884537844067, 7.700695888143583e-05, 1.0), 'D3': (0.0013551608806521864, 0.00016371814122264556, 1.0), 'D4': (0.013473903593191734, 0.00016991832547874803, 1.0)} closure 845.0s truth 13.4s
+alone {'D1': (0.010177259079354779, 0.00021409025552179744, 0.9), 'D2': (0.0014217771083396213, 5.646340731850289e-05, 1.0), 'D3': (0.005509779395189644, 0.00018189995111552134, 1.0), 'D4': (0.015994372403019038, 0.0002580937839295847, 1.0)} closure 845.8s truth 13.1s
+uniform {'D1': (0.0023609550673831764, 0.000313773295054345, 1.0), 'D2': (0.0008688434714955991, 7.85662788537806e-05, 1.0), 'D3': (0.001261952234155254, 0.0001514957007520785, 1.0), 'D4': (0.01130785718035314, 0.0001017396177276996, 1.0)} closure 841.6s truth 13.4s
+[saved] ~/stackem_work/outputs_teacher/quad4/e2/e2_summary.json
+[sign-off sizing] strap widths: D1=0.50 um, D2=3.52 um, D3=0.84 um, D4=9.18 um
+alone          13.6s  earliest 20.386 yr on D3; mortal10yr 0 /100yr 86
+uniform_signoff  13.3s  earliest 0.430 yr on D3; mortal10yr 250 /100yr 358
+uniform        13.3s  earliest 3.591 yr on D3; mortal10yr 70 /100yr 288
+sigmaT_const   13.6s  earliest 3.047 yr on D3; mortal10yr 84 /100yr 300
+no_joule       13.2s  earliest 3.955 yr on D3; mortal10yr 47 /100yr 289
+no_tm          13.0s  earliest 3.949 yr on D3; mortal10yr 47 /100yr 289
+full           13.4s  earliest 3.952 yr on D3; mortal10yr 47 /100yr 289
+StackEM overlay 845.2s  earliest 3.948 yr
+hotspot [0, 0] {'D1': {'earliest_yr': 3.852, 'earliest_rail': 'V2', 'mortal10': 10, 'mortal100': 112, 'crossing_enrichment_10yr': 2.44, 'crossing_enrichment_100yr': 0.98, 'tnuc_ratio_cross_over_noncross': 0.438, 'spearman_T_vs_logt': -0.27, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.629, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 1.029, 'spearman_T_vs_logt': 0.095, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 2.286, 'earliest_rail': 'H1', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 1.03, 'spearman_T_vs_logt': -0.146, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}}
+hotspot [1, 1] {'D1': {'earliest_yr': 9.379, 'earliest_rail': 'H2', 'mortal10': 7, 'mortal100': 112, 'crossing_enrichment_10yr': 3.486, 'crossing_enrichment_100yr': 1.089, 'tnuc_ratio_cross_over_noncross': 0.972, 'spearman_T_vs_logt': -0.136, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.607, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 3.05, 'crossing_enrichment_100yr': 1.525, 'tnuc_ratio_cross_over_noncross': 1.01, 'spearman_T_vs_logt': -0.088, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 4.021, 'earliest_rail': 'V58', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 1.22, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 0.986, 'spearman_T_vs_logt': -0.318, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}}
+hotspot [2, 2] {'D1': {'earliest_yr': 9.649, 'earliest_rail': 'V2', 'mortal10': 2, 'mortal100': 112, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 1.089, 'tnuc_ratio_cross_over_noncross': 0.991, 'spearman_T_vs_logt': -0.094, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.559, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 0.978, 'spearman_T_vs_logt': -0.272, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 4.016, 'earliest_rail': 'V58', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 0.987, 'spearman_T_vs_logt': -0.387, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}}
+hotspot [3, 3] {'D1': {'earliest_yr': 9.713, 'earliest_rail': 'V2', 'mortal10': 2, 'mortal100': 112, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 1.089, 'tnuc_ratio_cross_over_noncross': 0.98, 'spearman_T_vs_logt': -0.102, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.561, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 0.974, 'spearman_T_vs_logt': -0.259, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 4.018, 'earliest_rail': 'V58', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 0.993, 'spearman_T_vs_logt': -0.353, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}}
+hotspot [0, 3] {'D1': {'earliest_yr': 4.991, 'earliest_rail': 'H34', 'mortal10': 10, 'mortal100': 113, 'crossing_enrichment_10yr': 3.05, 'crossing_enrichment_100yr': 1.026, 'tnuc_ratio_cross_over_noncross': 0.579, 'spearman_T_vs_logt': -0.154, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.641, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 1.007, 'spearman_T_vs_logt': -0.048, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 2.584, 'earliest_rail': 'H34', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 1.004, 'spearman_T_vs_logt': -0.21, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}}
+[saved] ~/stackem_work/outputs_teacher/quad4/e3/e3_summary.json
+[sign-off sizing] strap widths: D1=0.50 um, D2=3.52 um, D3=0.84 um, D4=9.18 um
+alone {'top10': 0.2, 'top10_tol1pct': 0.2, 'top50': 0.88, 'kendall': 0.542, 'same_critical_die': True, 'same_earliest_rail': False, 'mortal10_jaccard': 0.0, 'mortal10_missed': 47, 'mortal10_false': 0}
+uniform_signoff {'top10': 0.2, 'top10_tol1pct': 0.2, 'top50': 0.92, 'kendall': 0.218, 'same_critical_die': True, 'same_earliest_rail': False, 'mortal10_jaccard': 0.188, 'mortal10_missed': 0, 'mortal10_false': 203}
+uniform {'top10': 0.2, 'top10_tol1pct': 0.2, 'top50': 0.92, 'kendall': 0.228, 'same_critical_die': True, 'same_earliest_rail': False, 'mortal10_jaccard': 0.671, 'mortal10_missed': 0, 'mortal10_false': 23}
+sigmaT_const {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 0.9, 'kendall': 0.948, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 0.56, 'mortal10_missed': 0, 'mortal10_false': 37}
+no_joule {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 1.0, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+no_tm {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.998, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+stackem {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.967, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+[saved] ~/stackem_work/outputs_teacher/quad4/e7/e7_ranking.json
+truth Top-10 boundary: rails #10 and #11 differ by 0.13 % in t_nuc
+
+=================== 2026-09-27 15:26:33  COMSOL cross-check cases (optional, needs COMSOL) ===================
+case 00: 1 segment(s), sigma max 1864.5 MPa at t = 3.16e+09 s
+case 01: 1 segment(s), sigma max 1880.8 MPa at t = 3.16e+09 s
+case 02: 1 segment(s), sigma max 1852.3 MPa at t = 3.16e+09 s
+case 03: 1 segment(s), sigma max 3909.6 MPa at t = 3.16e+09 s
+case 04: 1 segment(s), sigma max 2613.6 MPa at t = 3.16e+09 s
+case 05: 1 segment(s), sigma max 1544.2 MPa at t = 3.16e+09 s
+case 06: 3 segment(s), sigma max 2455.4 MPa at t = 3.16e+09 s
+case 07: 3 segment(s), sigma max 1962.7 MPa at t = 3.16e+09 s
+case 08: 3 segment(s), sigma max 6319.4 MPa at t = 3.16e+09 s
+case 09: 3 segment(s), sigma max 3195.5 MPa at t = 3.16e+09 s
+case 10: 5 segment(s), sigma max 3066.0 MPa at t = 3.16e+09 s
+case 11: 5 segment(s), sigma max 2145.2 MPa at t = 3.16e+09 s
+wrote ~/stackem_work/outputs_teacher/base3/comsol_xcheck
+
+=================== 2026-09-27 15:26:33  parameter table + framework figure + figure index ===================
+| parameter | symbol | value | swept range |
+|---|---|---|---|
+| **Stack case** | | | |
+| dies (bottom to top) |  | D1 2 W / D2 4 W / D3 20 W | 10 -- 30 (top die) |
+| die size / thickness |  | 4 mm / 50 $\mu$m |  |
+| power blocks per die |  | 4$\times$4 |  |
+| hot blocks (power factor) |  | D1 block (3, 3) $\times$4; D3 block (1, 1) $\times$5 | position sweep (E3) |
+| vertical feed pitch / kind |  | 400 $\mu$m tsv / 400 $\mu$m tsv / 200 $\mu$m pad | 200 -- 800 (bottom die) |
+| hybrid-bond layer | $t_b$, $k_b$ | 5 $\mu$m, 40 W/mK | 5 -- 150 |
+| TIM thickness |  | 20 $\mu$m |  |
+| ambient / package resistance | $T_a$, $R_{conv}$ | 45 $^\circ$C, 0.5 K/W | 0.1 -- 1.0 |
+| layer order |  | logic die on top (heat-sink side) | logic top / bottom |
+| **Power grid (per die)** | | | |
+| strap pitch / thickness | $p$, $H$ | 100 $\mu$m / 1 $\mu$m |  |
+| strap width (die-level sign-off sizing) | $W$ | D1 1.35, D2 0.99, D3 15.34 $\mu$m | re-sized in E6 |
+| supply / current fraction | $V_{dd}$ | 0.8 V / 0.4 |  |
+| Cu resistivity | $\rho$ | 3 $\mu\Omega$cm |  |
+| **Electromigration / stress (Korhonen)** | | | |
+| activation energy | $E_a$ | 0.86 eV | 0.84 -- 1.1 |
+| diffusivity prefactor | $D_0$ | 7.5$\times$10$^{-8}$ m$^2$/s |  |
+| effective charge | $Z^*$ | 10 |  |
+| effective bulk modulus | $B$ | 100 GPa |  |
+| atomic volume | $\Omega$ | 1.18$\times$10$^{-29}$ m$^3$ |  |
+| heat of transport (TM) | $Q^*$ | 0.09 eV | 0 (no-TM variant) |
+| critical stress | $\sigma_{crit}$ | 500 MPa | 400 -- 600 |
+| residual stress | $\sigma_T(T)$ | $B\,\Delta\alpha\,(T_0 - T)$, $T_0$ = 250 $^\circ$C, $\Delta\alpha$ = 13.9 ppm/K | frozen (variant) |
+| **Wire self-heating (fin model)** | | | |
+| Cu / ILD conductivity | $k_{cu}$, $k_{ILD}$ | 400 / 1.4 W/mK |  |
+| rail / ILD thickness | $t_{cu}$, $t_{ILD}$ | 1 / 4 $\mu$m |  |
+| thermal length (two-sided / single) | $\Gamma$ | 6.9 / 33.8 $\mu$m |  |
+| **Sign-off benchmark and solver** | | | |
+| lifetime target / margin | $t_h$, $m$ | 10 yr $\times$ 2 | 1.5 -- 3 |
+| rule sign-off temperature | $T_{rule}$ | 105 $^\circ$C (uniform) |  |
+| strap width search range |  | 0.5 -- 40 $\mu$m |  |
+| output time grid | $M$ | 64 log-spaced points, 10$^{4}$ -- 10$^{9.5}$ s |  |
+| reference solver cells / segment |  | 60 |  |
+| HotSpot grid |  | 64$\times$64 per layer |  |
+
+wrote ~/stackem_work/outputs_teacher/base3/tables
+wrote ~/stackem_work/outputs_teacher/base3/figs/framework
+| parameter | symbol | value | swept range |
+|---|---|---|---|
+| **Stack case** | | | |
+| dies (bottom to top) |  | D1 3 W / D2 12 W / D3 6 W / D4 25 W | 10 -- 30 (top die) |
+| die size / thickness |  | 6 mm / 50 $\mu$m |  |
+| power blocks per die |  | 6$\times$6 |  |
+| hot blocks (power factor) |  | D2 block (4, 1) $\times$4; D4 block (1, 4) $\times$5 | position sweep (E3) |
+| vertical feed pitch / kind |  | 400 $\mu$m tsv / 300 $\mu$m tsv / 300 $\mu$m tsv / 200 $\mu$m pad | 200 -- 800 (bottom die) |
+| hybrid-bond layer | $t_b$, $k_b$ | 5 $\mu$m, 40 W/mK | 5 -- 150 |
+| TIM thickness |  | 20 $\mu$m |  |
+| ambient / package resistance | $T_a$, $R_{conv}$ | 45 $^\circ$C, 0.3 K/W | 0.1 -- 1.0 |
+| layer order |  | logic die on top (heat-sink side) | logic top / bottom |
+| **Power grid (per die)** | | | |
+| strap pitch / thickness | $p$, $H$ | 100 $\mu$m / 1 $\mu$m |  |
+| strap width (die-level sign-off sizing) | $W$ | D1 0.50, D2 3.52, D3 0.84, D4 9.18 $\mu$m | re-sized in E6 |
+| supply / current fraction | $V_{dd}$ | 0.8 V / 0.4 |  |
+| Cu resistivity | $\rho$ | 3 $\mu\Omega$cm |  |
+| **Electromigration / stress (Korhonen)** | | | |
+| activation energy | $E_a$ | 0.86 eV | 0.84 -- 1.1 |
+| diffusivity prefactor | $D_0$ | 7.5$\times$10$^{-8}$ m$^2$/s |  |
+| effective charge | $Z^*$ | 10 |  |
+| effective bulk modulus | $B$ | 100 GPa |  |
+| atomic volume | $\Omega$ | 1.18$\times$10$^{-29}$ m$^3$ |  |
+| heat of transport (TM) | $Q^*$ | 0.09 eV | 0 (no-TM variant) |
+| critical stress | $\sigma_{crit}$ | 500 MPa | 400 -- 600 |
+| residual stress | $\sigma_T(T)$ | $B\,\Delta\alpha\,(T_0 - T)$, $T_0$ = 250 $^\circ$C, $\Delta\alpha$ = 13.9 ppm/K | frozen (variant) |
+| **Wire self-heating (fin model)** | | | |
+| Cu / ILD conductivity | $k_{cu}$, $k_{ILD}$ | 400 / 1.4 W/mK |  |
+| rail / ILD thickness | $t_{cu}$, $t_{ILD}$ | 1 / 4 $\mu$m |  |
+| thermal length (two-sided / single) | $\Gamma$ | 6.9 / 33.8 $\mu$m |  |
+| **Sign-off benchmark and solver** | | | |
+| lifetime target / margin | $t_h$, $m$ | 10 yr $\times$ 2 | 1.5 -- 3 |
+| rule sign-off temperature | $T_{rule}$ | 105 $^\circ$C (uniform) |  |
+| strap width search range |  | 0.5 -- 40 $\mu$m |  |
+| output time grid | $M$ | 64 log-spaced points, 10$^{4}$ -- 10$^{9.5}$ s |  |
+| reference solver cells / segment |  | 60 |  |
+| HotSpot grid |  | 64$\times$64 per layer |  |
+
+wrote ~/stackem_work/outputs_teacher/quad4/tables
+wrote ~/stackem_work/outputs_teacher/base3/paper_figs 319 entries
+wrote ~/stackem_work/outputs_teacher/quad4/paper_figs 135 entries
+
+full flow finished: ~/stackem_work/outputs_teacher (all steps succeeded)

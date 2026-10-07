@@ -1,0 +1,12 @@
+{"doc": "docs/02_安装.md", "claim": "smoke kernel profiles", "value": 2000, "file": "scripts/run_smoke.sh", "regex": "(\\d+) kernel profiles"}
+{"doc": "docs/02_安装.md", "claim": "smoke teacher epochs", "value": 8, "file": "scripts/run_smoke.sh", "regex": "teacher (\\d+) epochs"}
+{"doc": "docs/02_安装.md", "claim": "smoke student epochs", "value": 3, "file": "scripts/run_smoke.sh", "regex": "student (\\d+) epochs"}
+{"doc": "docs/02_安装.md", "claim": "smoke reference cells", "value": 40, "file": "configs/smoke.json", "regex": "\"n_cells\": (\\d+)"}
+{"doc": "docs/02_安装.md", "claim": "smoke HotSpot grid", "value": 32, "file": "configs/smoke.json", "regex": "\"grid\": (\\d+)"}
+{"doc": "docs/02_安装.md", "claim": "full HotSpot grid", "value": 64, "file": "configs/base3.json", "path": ["stack", "grid"]}
+{"doc": "docs/02_安装.md", "claim": "full reference cells", "value": 60, "file": "configs/base3.json", "path": ["truth", "n_cells"]}
+{"doc": "docs/02_安装.md", "claim": "smoke duration lower (min)", "value": 45, "file": "scripts/run_smoke.sh", "regex": "measured (\\d+) to \\d+ minutes"}
+{"doc": "docs/02_安装.md", "claim": "smoke duration upper (min)", "value": 70, "file": "scripts/run_smoke.sh", "regex": "measured \\d+ to (\\d+) minutes"}
+{"doc": "docs/02_安装.md", "claim": "setup duration (min)", "value": 10, "file": "scripts/setup_env.sh", "regex": "About (\\d+) minutes"}
+{"doc": "docs/02_安装.md", "claim": "released HotSpot sha256 quoted in setup_env.sh", "value": 1, "py": "int('4b4954cd8eff2201955be7c16de5e99b1294d9427153bf6371e075924f9438fc' in T('scripts/setup_env.sh'))"}
+{"doc": "docs/02_安装.md", "claim": "steps of a smoke run", "value": 43, "py": "len(re.findall(r'^run +[a-z]',T('scripts/run_all.sh'),re.M))+len(re.findall(r'^  run +ibmpg',T('scripts/run_all.sh'),re.M))"}

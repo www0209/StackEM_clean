@@ -1,0 +1,69 @@
+{
+ "name": "quad4",
+ "_comment": "quad4, the second stack (generalisation test): four 6 mm dies, two logic dies with offset hot spots, package R_conv = 0.3 K/W. Only the keys that differ from configs/base3.json are listed. The stack has its own sign-off sizing (quad4/signoff) and NO network of its own: scripts pass --weights <root>/base3/skn_distill/skn_student.npz.",
+ "stack": {
+  "dies": [
+   {
+    "name": "D1",
+    "size": 0.006,
+    "thickness": 5e-05,
+    "nblk": 6,
+    "P": 3.0,
+    "hot": null,
+    "feed_pitch": 0.0004,
+    "feed_kind": "tsv",
+    "role": "bottom IO die"
+   },
+   {
+    "name": "D2",
+    "size": 0.006,
+    "thickness": 5e-05,
+    "nblk": 6,
+    "P": 12.0,
+    "hot": [
+     [
+      [
+       4,
+       1
+      ],
+      4.0
+     ]
+    ],
+    "feed_pitch": 0.0003,
+    "feed_kind": "tsv",
+    "role": "logic die A"
+   },
+   {
+    "name": "D3",
+    "size": 0.006,
+    "thickness": 5e-05,
+    "nblk": 6,
+    "P": 6.0,
+    "hot": null,
+    "feed_pitch": 0.0003,
+    "feed_kind": "tsv",
+    "role": "SRAM die"
+   },
+   {
+    "name": "D4",
+    "size": 0.006,
+    "thickness": 5e-05,
+    "nblk": 6,
+    "P": 25.0,
+    "hot": [
+     [
+      [
+       1,
+       4
+      ],
+      5.0
+     ]
+    ],
+    "feed_pitch": 0.0002,
+    "feed_kind": "pad",
+    "role": "top logic die B"
+   }
+  ],
+  "r_convec": 0.3
+ }
+}

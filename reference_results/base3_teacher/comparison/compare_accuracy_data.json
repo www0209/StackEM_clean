@@ -1,0 +1,42 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "$t_{nuc}$ error vs FDM truth (%)",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "p90",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "bars",
+     "label": "plain (median)",
+     "x": "ax0_bars0_x",
+     "height": "ax0_bars0_height",
+     "width": "ax0_bars0_width"
+    },
+    {
+     "kind": "bars",
+     "label": "distilled + tabulated (median)",
+     "x": "ax0_bars1_x",
+     "height": "ax0_bars1_height",
+     "width": "ax0_bars1_width"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

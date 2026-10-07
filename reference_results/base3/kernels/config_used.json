@@ -1,0 +1,105 @@
+{
+  "name": "base3",
+  "paths": {
+    "hotspot_dir": "~/stackem_work/hotspot_bin/HotSpot",
+    "root_out": "~/stackem_work/outputs_teacher"
+  },
+  "stack": {
+    "dies": [
+      {
+        "name": "D1",
+        "size": 0.004,
+        "thickness": 5e-05,
+        "nblk": 4,
+        "P": 2.0,
+        "hot": [
+          [
+            [
+              3,
+              3
+            ],
+            4.0
+          ]
+        ],
+        "feed_pitch": 0.0004,
+        "feed_kind": "tsv",
+        "role": "bottom / package side, low-power IO-memory die"
+      },
+      {
+        "name": "D2",
+        "size": 0.004,
+        "thickness": 5e-05,
+        "nblk": 4,
+        "P": 4.0,
+        "hot": null,
+        "feed_pitch": 0.0004,
+        "feed_kind": "tsv",
+        "role": "middle die, SRAM-like"
+      },
+      {
+        "name": "D3",
+        "size": 0.004,
+        "thickness": 5e-05,
+        "nblk": 4,
+        "P": 20.0,
+        "hot": [
+          [
+            [
+              1,
+              1
+            ],
+            5.0
+          ]
+        ],
+        "feed_pitch": 0.0002,
+        "feed_kind": "pad",
+        "role": "top / heat-sink side, logic die with hotspot"
+      }
+    ],
+    "bond_thick": 5e-06,
+    "bond_k": 40.0,
+    "tim_thick": 2e-05,
+    "ambient": 318.15,
+    "r_convec": 0.5,
+    "grid": 64,
+    "detailed_3d": false
+  },
+  "pg": {
+    "pitch": 0.0001,
+    "W": 2e-06,
+    "H": 1e-06,
+    "rho": 3e-08,
+    "Vdd": 0.8,
+    "current_fraction": 0.4,
+    "R_feed": 0.0
+  },
+  "em": {},
+  "thermal": {
+    "two_sided": true
+  },
+  "times": {
+    "log10_start": 4.0,
+    "log10_end": 9.5,
+    "n": 64
+  },
+  "horizons_years": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "closure": {
+    "jump_at": "mid",
+    "with_tm": true
+  },
+  "signoff": {
+    "horizon_years": 10.0,
+    "margin": 2.0,
+    "T_uniform": 378.15,
+    "W_min": 5e-07,
+    "W_max": 4e-05
+  },
+  "truth": {
+    "n_cells": 60
+  },
+  "_comment": "StackEM base case: 3-die hybrid-bonded stack (D1 IO/memory bottom, D2 SRAM, D3 logic top with hotspot). Every value here is the paper's Table 'stack case'."
+}

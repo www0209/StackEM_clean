@@ -1,0 +1,28 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "vs direct look-up, M = 32 output times",
+   "xlabel": "table points per segment and end",
+   "ylabel": "error of the tabulated look-up",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "node stresses, rel-L2",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "node stresses, max rel",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

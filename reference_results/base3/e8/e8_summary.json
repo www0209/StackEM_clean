@@ -1,0 +1,199 @@
+{
+ "provider": "skn",
+ "sizing": {
+  "cache1": {
+   "W": 5e-07,
+   "W_um": 0.5,
+   "t_earliest_years": "inf",
+   "saturated": true
+  },
+  "cache2": {
+   "W": 5e-07,
+   "W_um": 0.5,
+   "t_earliest_years": "inf",
+   "saturated": true
+  },
+  "cores": {
+   "W": 3.548316693997891e-05,
+   "W_um": 35.48316693997891,
+   "t_earliest_years": 21.044302003395856,
+   "saturated": false
+  }
+ },
+ "pg": {
+  "cache1": {
+   "ir_drop_max_mV": 2.213902662624445,
+   "ir_drop_mean_mV": 1.1652822434543273,
+   "j_max_A_per_cm2": 47122.634424079384,
+   "j_p50_A_per_cm2": 5400.156698156153,
+   "j_p90_A_per_cm2": 33586.864062115455,
+   "total_sink_A": 0.6965833333333333,
+   "n_feeds": 961,
+   "warnings": [
+    "j_max=4.71e+04 A/cm^2 outside [100000,3e+06] - adjust power, current_fraction or W/H"
+   ]
+  },
+  "cache2": {
+   "ir_drop_max_mV": 2.213902662624445,
+   "ir_drop_mean_mV": 1.1652822434543273,
+   "j_max_A_per_cm2": 47122.634424079384,
+   "j_p50_A_per_cm2": 5400.156698156153,
+   "j_p90_A_per_cm2": 33586.864062115455,
+   "total_sink_A": 0.6965833333333333,
+   "n_feeds": 961,
+   "warnings": [
+    "j_max=4.71e+04 A/cm^2 outside [100000,3e+06] - adjust power, current_fraction or W/H"
+   ]
+  },
+  "cores": {
+   "ir_drop_max_mV": 4.659770319449974,
+   "ir_drop_mean_mV": 0.6140154101079693,
+   "j_max_A_per_cm2": 106483.43282212426,
+   "j_p50_A_per_cm2": 2887.591843492299,
+   "j_p90_A_per_cm2": 11561.77534931099,
+   "total_sink_A": 26.018458333333328,
+   "n_feeds": 961,
+   "warnings": []
+  }
+ },
+ "current_fraction": 0.15,
+ "die_size_m": [
+  0.012400000000000001,
+  0.01276
+ ],
+ "thermal": {
+  "cache1": {
+   "full_min": 354.77,
+   "full_max": 386.1,
+   "full_mean": 373.3180908203125,
+   "others_off_mean": 319.85537109375,
+   "others_off_max": 320.09
+  },
+  "cache2": {
+   "full_min": 353.68,
+   "full_max": 387.27,
+   "full_mean": 373.18223876953124,
+   "others_off_mean": 319.6947290039062,
+   "others_off_max": 319.93
+  },
+  "cores": {
+   "full_min": 351.53,
+   "full_max": 390.36,
+   "full_mean": 372.9533959960937,
+   "others_off_mean": 370.16230712890626,
+   "others_off_max": 387.09
+  }
+ },
+ "full": {
+  "seconds": 4.008801221847534,
+  "dies": {
+   "cache1": {
+    "n_rails": 250,
+    "n_immortal": 250,
+    "earliest_years": "inf",
+    "mortal_10yr": 0,
+    "mortal_100yr": 0,
+    "j_max_A_per_cm2": 47122.634424079384,
+    "T_max": 386.0614555721737
+   },
+   "cache2": {
+    "n_rails": 250,
+    "n_immortal": 250,
+    "earliest_years": "inf",
+    "mortal_10yr": 0,
+    "mortal_100yr": 0,
+    "j_max_A_per_cm2": 47122.634424079384,
+    "T_max": 387.20556573530706
+   },
+   "cores": {
+    "n_rails": 250,
+    "n_immortal": 212,
+    "earliest_years": 18.907745077327576,
+    "mortal_10yr": 0,
+    "mortal_100yr": 12,
+    "j_max_A_per_cm2": 106483.43282212428,
+    "T_max": 390.20531828294065
+   }
+  }
+ },
+ "others_off": {
+  "seconds": 4.077208995819092,
+  "dies": {
+   "cache1": {
+    "n_rails": 250,
+    "n_immortal": 250,
+    "earliest_years": "inf",
+    "mortal_10yr": 0,
+    "mortal_100yr": 0,
+    "j_max_A_per_cm2": 47122.634424079384,
+    "T_max": 320.09000000000003
+   },
+   "cache2": {
+    "n_rails": 250,
+    "n_immortal": 250,
+    "earliest_years": "inf",
+    "mortal_10yr": 0,
+    "mortal_100yr": 0,
+    "j_max_A_per_cm2": 47122.634424079384,
+    "T_max": 319.93000000000006
+   },
+   "cores": {
+    "n_rails": 250,
+    "n_immortal": 212,
+    "earliest_years": 21.04762693404515,
+    "mortal_10yr": 0,
+    "mortal_100yr": 11,
+    "j_max_A_per_cm2": 106483.43282212428,
+    "T_max": 386.93885731621
+   }
+  }
+ },
+ "uniform": {
+  "seconds": 3.989518404006958,
+  "dies": {
+   "cache1": {
+    "n_rails": 250,
+    "n_immortal": 250,
+    "earliest_years": "inf",
+    "mortal_10yr": 0,
+    "mortal_100yr": 0,
+    "j_max_A_per_cm2": 47122.634424079384,
+    "T_max": 373.5015902049863
+   },
+   "cache2": {
+    "n_rails": 250,
+    "n_immortal": 250,
+    "earliest_years": "inf",
+    "mortal_10yr": 0,
+    "mortal_100yr": 0,
+    "j_max_A_per_cm2": 47122.634424079384,
+    "T_max": 373.37601021410904
+   },
+   "cores": {
+    "n_rails": 250,
+    "n_immortal": 212,
+    "earliest_years": 23.311902921735765,
+    "mortal_10yr": 0,
+    "mortal_100yr": 8,
+    "j_max_A_per_cm2": 106483.43282212428,
+    "T_max": 373.16733484537247
+   }
+  }
+ },
+ "stackem_overlay": {
+  "seconds": 10.433552742004395,
+  "n_mortal": 12,
+  "tnuc_rel_median": 0.01431630554882788,
+  "tnuc_rel_p90": 0.024229689229590883,
+  "tnuc_rel_max": 0.026226803398609416,
+  "top10_hit": 1.0,
+  "kendall_top50": 0.9663386444051799
+ },
+ "_meta": {
+  "time": "2026-09-27 17:31:24",
+  "python": "3.11.16",
+  "machine": "x86_64",
+  "cmd": "~/stackem_work/StackEM_clean/stackem/experiments/e8_ev6.py --config configs/base3.json --root ~/stackem_work/outputs --hotspot ~/stackem_work/hotspot_bin/HotSpot",
+  "config_name": "base3"
+ }
+}

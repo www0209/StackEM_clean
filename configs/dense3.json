@@ -1,0 +1,7 @@
+{
+ "name": "dense3",
+ "_comment": "dense3: the base3 stack with a 50-um strap pitch (162 analysed rails x 80 segments per die, 486 rails in the stack). Only the key that differs from configs/base3.json is listed. Own sign-off sizing (dense3/signoff); the network is the base3 student (scripts pass --weights).",
+ "pg": {
+  "pitch": 5e-05
+ }
+}

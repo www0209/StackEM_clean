@@ -1,0 +1,11 @@
+{
+ "D0": 7.5e-08,
+ "Ea_eV": 0.86,
+ "B": 100000000000.0,
+ "Omega": 1.181e-29,
+ "rho": 3e-08,
+ "Z_eff": 10.0,
+ "Q_eV": 0.09,
+ "sigma_crit": 500000000.0,
+ "note": "T(xi) = T_L + (T_R - T_L) xi + T_m (1 - cosh((xi - 0.5) lam) / cosh(0.5 lam)), lam = L / Gamma; kappa = D0 exp(-Ea/kT) B Omega / kT; G = e Z* rho j / Omega; M = Q* T'(x) / (Omega T); flux kappa (sigma_x + G + M) = 0 at the rail ends"
+}

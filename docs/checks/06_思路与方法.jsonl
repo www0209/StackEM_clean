@@ -1,0 +1,245 @@
+{"doc": "docs/06_思路与方法.md", "claim": "D1 standalone mean T", "value": 320.2, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["thermal", "D1", "alone_mean"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 in-stack mean T", "value": 344.9, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["thermal", "D1", "mean"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 standalone mean T", "value": 322.2, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["thermal", "D2", "alone_mean"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 in-stack mean T", "value": 344.8, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["thermal", "D2", "mean"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 standalone mean T", "value": 338.5, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["thermal", "D3", "alone_mean"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 in-stack mean T", "value": 344.6, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["thermal", "D3", "mean"]}
+{"doc": "docs/06_思路与方法.md", "claim": "stack max T (D3)", "value": 359.87, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["thermal", "D3", "max"]}
+{"doc": "docs/06_思路与方法.md", "claim": "full earliest t_nuc", "value": 2.39, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "full", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "full mortal 10yr", "value": 26, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "full", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "rule mortal 10yr", "value": 120, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "uniform_signoff", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "rule false alarms", "value": 94, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "uniform_signoff", "mortal10_false"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone mortal 10yr (none foreseen)", "value": 0, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "alone", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "kappa(353K) e-18", "value": 9.58, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "kappa_353K_m2_per_s"], "scale": 1e+18}
+{"doc": "docs/06_思路与方法.md", "claim": "Blech product", "value": 1294.8, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "blech_jL_crit_353K_A_per_cm"]}
+{"doc": "docs/06_思路与方法.md", "claim": "sigma_T 353K", "value": 236.5, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "sigma_T_353K_MPa"]}
+{"doc": "docs/06_思路与方法.md", "claim": "Gamma um", "value": 6.92, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "Gamma_um"]}
+{"doc": "docs/06_思路与方法.md", "claim": "T_m at 1e10", "value": 0.359, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "T_m_at_1e10_K"]}
+{"doc": "docs/06_思路与方法.md", "claim": "G at 1e10 e13", "value": 4.07, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "G_at_1e10_Pa_per_m"], "scale": 1e-13}
+{"doc": "docs/06_思路与方法.md", "claim": "dsigmaT/dT", "value": -1.39, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "dsigmaT_dT_MPa_per_K"]}
+{"doc": "docs/06_思路与方法.md", "claim": "sG series err e-5", "value": 1.98, "file": "reference_results/base3/e0/e0_validation.json", "path": ["kernel_vs_series", "sG_max_abs_err"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "a series err e-5", "value": 1.63, "file": "reference_results/base3/e0/e0_validation.json", "path": ["kernel_vs_series", "a_max_abs_err"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "semi-infinite rel %", "value": 1.36, "file": "reference_results/base3/e0/e0_validation.json", "path": ["kernel_vs_series", "sG_end_semi_inf_rel"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "mass drift e-13", "value": 7.88, "file": "reference_results/base3/e0/e0_validation.json", "path": ["mass_drift_rel"], "scale": 10000000000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "chain vs general e-14", "value": 7.92, "file": "reference_results/base3/e0/e0_validation.json", "path": ["chain_vs_general_rel"], "scale": 100000000000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "max principle gap MPa", "value": 0.0, "file": "reference_results/base3/e0/e0_validation.json", "path": ["max_principle_gap_MPa"]}
+{"doc": "docs/06_思路与方法.md", "claim": "COMSOL rails timed", "value": 246, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["n_rails_timed"]}
+{"doc": "docs/06_思路与方法.md", "claim": "COMSOL common mortal rails", "value": 128, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_vs_reference", "n"]}
+{"doc": "docs/06_思路与方法.md", "claim": "COMSOL vs reference median %", "value": 0.08, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_vs_reference", "median"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "COMSOL vs reference max %", "value": 0.53, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_vs_reference", "max"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "kernel profiles", "value": 120000, "file": "reference_results/base3/kernels/dataset_info.json", "path": ["n_profiles"]}
+{"doc": "docs/06_思路与方法.md", "claim": "training rows total", "value": 15360000, "file": "reference_results/logs/kernels_and_teacher_training.log", "regex": "X \\((\\d+), 6\\)"}
+{"doc": "docs/06_思路与方法.md", "claim": "kernel generation seconds", "value": 222, "file": "reference_results/logs/kernels_and_teacher_training.log", "regex": "Y \\(\\d+, 3\\), (\\d+) s"}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher params", "value": 343811, "file": "reference_results/base3/skn/train_summary.json", "path": ["n_params"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student params", "value": 54915, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "n_params"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher torch-numpy diff e-5", "value": 1.94, "file": "reference_results/base3/skn/train_summary.json", "path": ["torch_numpy_max_diff"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "student torch-numpy diff e-5", "value": 1.07, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["torch_numpy_max_diff"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "train rows", "value": 14592000, "file": "reference_results/base3/skn/train_summary.json", "path": ["train_rows"]}
+{"doc": "docs/06_思路与方法.md", "claim": "val rows", "value": 768000, "file": "reference_results/base3/skn/train_summary.json", "path": ["val_rows"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher w_pde", "value": 0, "file": "reference_results/base3/skn/train_summary.json", "path": ["args", "w_pde"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher batch", "value": 8192, "file": "reference_results/base3/skn/train_summary.json", "path": ["args", "batch"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher epochs", "value": 300, "file": "reference_results/base3/skn/train_summary.json", "path": ["args", "epochs"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher warmup", "value": 5, "file": "reference_results/base3/skn/train_summary.json", "path": ["args", "warmup"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher patience", "value": 40, "file": "reference_results/base3/skn/train_summary.json", "path": ["args", "patience"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher best epoch", "value": 295, "file": "reference_results/base3/skn/train_summary.json", "path": ["best_epoch"]}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher best val e-3", "value": 1.82, "file": "reference_results/base3/skn/train_summary.json", "path": ["best_val_worst_rel_l2"], "scale": 1000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher training seconds", "value": 1345, "file": "reference_results/logs/kernels_and_teacher_training.log", "regex": "epoch  299 .*\\] (\\d+)s"}
+{"doc": "docs/06_思路与方法.md", "claim": "distill fdm rows", "value": 14592000, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["rows", "fdm"]}
+{"doc": "docs/06_思路与方法.md", "claim": "distill synthetic rows", "value": 8000000, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["rows", "synthetic"]}
+{"doc": "docs/06_思路与方法.md", "claim": "end fraction", "value": 0.7, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "end_fraction"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student epochs", "value": 150, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "epochs"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student batch", "value": 16384, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "batch"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student patience", "value": 30, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "patience"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student fourier", "value": 16, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "fourier"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student val rel-L2 target 0 %", "value": 0.35, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_rel_l2", 0], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher val rel-L2 target 0 %", "value": 0.109, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_rel_l2", 0], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "student val rel-L2 target 1 %", "value": 0.54, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_rel_l2", 1], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher val rel-L2 target 1 %", "value": 0.182, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_rel_l2", 1], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "student val rel-L2 target 2 %", "value": 0.17, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_rel_l2", 2], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher val rel-L2 target 2 %", "value": 0.064, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_rel_l2", 2], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "student end rel-L2 target 0 %", "value": 0.15, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_end_rel_l2", 0], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher end rel-L2 target 0 %", "value": 0.06, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_end_rel_l2", 0], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "student end rel-L2 target 1 %", "value": 0.3, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_end_rel_l2", 1], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher end rel-L2 target 1 %", "value": 0.131, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_end_rel_l2", 1], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "student end rel-L2 target 2 %", "value": 0.1, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_end_rel_l2", 2], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "teacher end rel-L2 target 2 %", "value": 0.046, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_end_rel_l2", 2], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "compression", "value": 6.26, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["compression"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student best epoch", "value": 149, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "best_epoch"]}
+{"doc": "docs/06_思路与方法.md", "claim": "student training seconds", "value": 331.6, "py": "float(T('reference_results/base3/skn_distill/train_log.csv').strip().splitlines()[-1].split(',')[-1])"}
+{"doc": "docs/06_思路与方法.md", "claim": "student first-epoch train mse", "value": 0.25, "py": "float(T('reference_results/base3/skn_distill/train_log.csv').strip().splitlines()[1].split(',')[2])"}
+{"doc": "docs/06_思路与方法.md", "claim": "student last-epoch train mse e-5", "value": 1.3, "py": "float(T('reference_results/base3/skn_distill/train_log.csv').strip().splitlines()[-1].split(',')[2])*1e5"}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 student tab median s_G %", "value": 0.831, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "s_G", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 teacher median s_G %", "value": 0.218, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "full SKN", "s_G", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 student tab median s_M %", "value": 2.59, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "s_M", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 teacher median s_M %", "value": 0.688, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "full SKN", "s_M", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 student tab median a %", "value": 0.107, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "a", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 teacher median a %", "value": 0.035, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "full SKN", "a", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 s_M p90 %", "value": 17.0, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_p90"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "E1 s_M max %", "value": 82.3, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_max"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "closure M row 0", "value": 16, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 0, "M"]}
+{"doc": "docs/06_思路与方法.md", "claim": "closure start rel-L2 M=16", "value": 1.8, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 0, "rel_L2"], "scale": 100.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid rel-L2 M=16", "value": 9.88, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 0, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid t_nuc err % M=16", "value": 0.076, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 0, "t_nuc_rel_err"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "closure M row 1", "value": 32, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 1, "M"]}
+{"doc": "docs/06_思路与方法.md", "claim": "closure start rel-L2 M=32", "value": 6.54, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 1, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid rel-L2 M=32", "value": 2.67, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 1, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid t_nuc err % M=32", "value": 0.082, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 1, "t_nuc_rel_err"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "closure M row 2", "value": 64, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 2, "M"]}
+{"doc": "docs/06_思路与方法.md", "claim": "closure start rel-L2 M=64", "value": 2.21, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 2, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid rel-L2 M=64", "value": 7.82, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 2, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid t_nuc err % M=64", "value": 0.082, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 2, "t_nuc_rel_err"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "closure M row 3", "value": 128, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 3, "M"]}
+{"doc": "docs/06_思路与方法.md", "claim": "closure start rel-L2 M=128", "value": 7.56, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 3, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid rel-L2 M=128", "value": 2.81, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 3, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mid t_nuc err % M=128", "value": 0.082, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 3, "t_nuc_rel_err"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "tab n_tab row 0", "value": 48, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 0, "n_tab"]}
+{"doc": "docs/06_思路与方法.md", "claim": "tab rel-L2 K=48", "value": 8.92, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 0, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tab t_nuc K=48", "value": 1.76, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 0, "t_nuc_rel_err"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tab n_tab row 1", "value": 96, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 1, "n_tab"]}
+{"doc": "docs/06_思路与方法.md", "claim": "tab rel-L2 K=96", "value": 2.3, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 1, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tab t_nuc K=96", "value": 4.94, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 1, "t_nuc_rel_err"], "scale": 1000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tab n_tab row 2", "value": 192, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 2, "n_tab"]}
+{"doc": "docs/06_思路与方法.md", "claim": "tab rel-L2 K=192", "value": 8.58, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 2, "rel_L2"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tab t_nuc K=192", "value": 7.2, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 2, "t_nuc_rel_err"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tab n_tab row 3", "value": 384, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 3, "n_tab"]}
+{"doc": "docs/06_思路与方法.md", "claim": "tab rel-L2 K=384", "value": 3.86, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 3, "rel_L2"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tab t_nuc K=384", "value": 4.8, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 3, "t_nuc_rel_err"], "scale": 100000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "tabulation test M", "value": 32, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "M"]}
+{"doc": "docs/06_思路与方法.md", "claim": "direct kernel points", "value": 13056, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 2, "kernel_points"]}
+{"doc": "docs/06_思路与方法.md", "claim": "tab kernel evals 192", "value": 6912, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 2, "kernel_evals"]}
+{"doc": "docs/06_思路与方法.md", "claim": "HotSpot linearity D1 K", "value": 0.066, "file": "reference_results/base3/e0/e0_validation.json", "path": ["hotspot_linearity_max_K", "D1"]}
+{"doc": "docs/06_思路与方法.md", "claim": "HotSpot linearity D2 K", "value": 0.073, "file": "reference_results/base3/e0/e0_validation.json", "path": ["hotspot_linearity_max_K", "D2"]}
+{"doc": "docs/06_思路与方法.md", "claim": "HotSpot linearity D3 K", "value": 0.071, "file": "reference_results/base3/e0/e0_validation.json", "path": ["hotspot_linearity_max_K", "D3"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 sink current A", "value": 1.0, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D1", "total_sink_A"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 feeds", "value": 100, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D1", "n_feeds"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 feeds", "value": 400, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D3", "n_feeds"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 j_max MA/cm2", "value": 0.63, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D1", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 IR drop mV", "value": 29.7, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D1", "ir_drop_max_mV"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 j_max MA/cm2", "value": 0.62, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D2", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 IR drop mV", "value": 29.3, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D2", "ir_drop_max_mV"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 j_max MA/cm2", "value": 0.12, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D3", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 IR drop mV", "value": 4.9, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D3", "ir_drop_max_mV"]}
+{"doc": "docs/06_思路与方法.md", "claim": "immortal full D1", "value": 14, "file": "reference_results/base3/e3/e3_summary.json", "path": ["immortal_counts", "full", "D1"]}
+{"doc": "docs/06_思路与方法.md", "claim": "immortal full D2", "value": 0, "file": "reference_results/base3/e3/e3_summary.json", "path": ["immortal_counts", "full", "D2"]}
+{"doc": "docs/06_思路与方法.md", "claim": "immortal full D3", "value": 62, "file": "reference_results/base3/e3/e3_summary.json", "path": ["immortal_counts", "full", "D3"]}
+{"doc": "docs/06_思路与方法.md", "claim": "vertical screen rows", "value": 5, "py": "len(J('reference_results/base3/e3/e3_summary.json')['vertical_screen'])"}
+{"doc": "docs/06_思路与方法.md", "claim": "vertical screen max ratio", "value": 0.017, "py": "max(r['ratio'] for r in J('reference_results/base3/e3/e3_summary.json')['vertical_screen'])"}
+{"doc": "docs/06_思路与方法.md", "claim": "vertical screen all immortal", "value": 1, "py": "int(all(r['immortal'] for r in J('reference_results/base3/e3/e3_summary.json')['vertical_screen']))"}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 sized W", "value": 1.35, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D1", "W_um"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 sized earliest", "value": 20.36, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D1", "t_earliest_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 rule W", "value": 6.63, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["uniform_rule_sizing", "D1", "W_um"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 iterations", "value": 10, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D1", "iterations"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 sized W", "value": 0.99, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D2", "W_um"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 sized earliest", "value": 20.46, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D2", "t_earliest_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 rule W", "value": 4.79, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["uniform_rule_sizing", "D2", "W_um"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D2 iterations", "value": 10, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D2", "iterations"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 sized W", "value": 15.34, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D3", "W_um"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 sized earliest", "value": 22.08, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D3", "t_earliest_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 rule W", "value": 15.34, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["uniform_rule_sizing", "D3", "W_um"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D3 iterations", "value": 10, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D3", "iterations"]}
+{"doc": "docs/06_思路与方法.md", "claim": "signoff horizon", "value": 10, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["horizon_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "signoff margin", "value": 2, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["margin"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone earliest", "value": 20.36, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "alone", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone mortal10", "value": 0, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "alone", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone missed", "value": 26, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "alone", "mortal10_missed"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone false", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "alone", "mortal10_false"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform_signoff earliest", "value": 0.47, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "uniform_signoff", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform_signoff mortal10", "value": 120, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "uniform_signoff", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform_signoff missed", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "uniform_signoff", "mortal10_missed"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform_signoff false", "value": 94, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "uniform_signoff", "mortal10_false"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform earliest", "value": 4.01, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "uniform", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform mortal10", "value": 26, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "uniform", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform missed", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "uniform", "mortal10_missed"]}
+{"doc": "docs/06_思路与方法.md", "claim": "uniform false", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "uniform", "mortal10_false"]}
+{"doc": "docs/06_思路与方法.md", "claim": "sigmaT_const earliest", "value": 1.49, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "sigmaT_const", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "sigmaT_const mortal10", "value": 34, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "sigmaT_const", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "sigmaT_const missed", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "sigmaT_const", "mortal10_missed"]}
+{"doc": "docs/06_思路与方法.md", "claim": "sigmaT_const false", "value": 8, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "sigmaT_const", "mortal10_false"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_joule earliest", "value": 2.41, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "no_joule", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_joule mortal10", "value": 26, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "no_joule", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_joule missed", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_joule", "mortal10_missed"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_joule false", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_joule", "mortal10_false"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_tm earliest", "value": 2.39, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "no_tm", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_tm mortal10", "value": 26, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "no_tm", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_tm missed", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_tm", "mortal10_missed"]}
+{"doc": "docs/06_思路与方法.md", "claim": "no_tm false", "value": 0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_tm", "mortal10_false"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone optimism D1", "value": 4.89, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "alone", "optimism_factor", "D1"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone optimism D2", "value": 8.56, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "alone", "optimism_factor", "D2"]}
+{"doc": "docs/06_思路与方法.md", "claim": "alone optimism D3", "value": 1.03, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "alone", "optimism_factor", "D3"]}
+{"doc": "docs/06_思路与方法.md", "claim": "top10 boundary gap %", "value": 1.47, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["top10_boundary_gap_rel"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D1 mortal both", "value": 38, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D1", "n_mortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D1 t_nuc median %", "value": 0.26, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D1", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D1 mortality agreement %", "value": 100, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D1", "mortality_agreement"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D2 mortal both", "value": 82, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D2", "n_mortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D2 t_nuc median %", "value": 0.14, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D2", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D2 mortality agreement %", "value": 100, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D2", "mortality_agreement"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D3 mortal both", "value": 8, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D3", "n_mortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D3 t_nuc median %", "value": 1.72, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D3", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "E2 D3 mortality agreement %", "value": 100, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D3", "mortality_agreement"], "scale": 100}
+{"doc": "docs/06_思路与方法.md", "claim": "closure earliest", "value": 2.405, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "stack_pred", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "truth earliest", "value": 2.389, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "stack_truth", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "closure mortal10", "value": 26, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "stack_pred", "n_mortal_10yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 V38 nucleation yr", "value": 4.17, "py": "J('reference_results/base3/e3/e3_summary.json')['stack']['full']['dies']['D1']['earliest_t_nuc_s']/(365.25*86400)"}
+{"doc": "docs/06_思路与方法.md", "claim": "D1 earliest rail is V38", "value": 38, "py": "int(J('reference_results/base3/e3/e3_summary.json')['stack']['full']['dies']['D1']['earliest_rail'][1:])"}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D1 violating", "value": 6, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D1", "n_violating"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D1 blanket factor", "value": 1.65, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D1", "f_blanket"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D1 area ratio", "value": 22.3, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D1", "area_ratio_blanket_over_targeted"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D1 verified", "value": 10.08, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D1", "verify_truth_earliest_targeted_yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D2 violating", "value": 20, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D2", "n_violating"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D2 blanket factor", "value": 1.99, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D2", "f_blanket"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D2 area ratio", "value": 7.9, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D2", "area_ratio_blanket_over_targeted"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D2 verified", "value": 10.03, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D2", "verify_truth_earliest_targeted_yr"]}
+{"doc": "docs/06_思路与方法.md", "claim": "repair D3 violating", "value": 0, "file": "reference_results/base3/e5/e5_repair.json", "path": ["dies", "D3", "n_violating"]}
+{"doc": "docs/06_思路与方法.md", "claim": "blocks", "value": 48, "py": "len(J('reference_results/base3/e5/e5_summary.json')['block_labels'])"}
+{"doc": "docs/06_思路与方法.md", "claim": "target rails per die", "value": 5, "py": "len(J('reference_results/base3/e5/e5_summary.json')['targets']['D1'])"}
+{"doc": "docs/06_思路与方法.md", "claim": "linear maps seconds", "value": 35, "file": "reference_results/logs/final_3_full.log", "regex": "linear maps built in (\\d+)s"}
+{"doc": "docs/06_思路与方法.md", "claim": "gradients rails", "value": 15, "file": "reference_results/logs/final_3_full.log", "regex": "gradients for (\\d+) rails in \\d+s"}
+{"doc": "docs/06_思路与方法.md", "claim": "gradients seconds", "value": 3, "file": "reference_results/logs/final_3_full.log", "regex": "gradients for \\d+ rails in (\\d+)s"}
+{"doc": "docs/06_思路与方法.md", "claim": "FD items", "value": 6, "py": "len(J('reference_results/base3/e5/e5_summary.json')['finite_difference_check'])"}
+{"doc": "docs/06_思路与方法.md", "claim": "FD items above 0.01/W", "value": 5, "py": "sum(1 for r in J('reference_results/base3/e5/e5_summary.json')['finite_difference_check'] if abs(r['autograd'])>0.01)"}
+{"doc": "docs/06_思路与方法.md", "claim": "FD max rel dev %", "value": 3.21, "py": "100*max(abs(r['autograd']-r['finite_diff'])/abs(r['finite_diff']) for r in J('reference_results/base3/e5/e5_summary.json')['finite_difference_check'] if abs(r['autograd'])>0.01)"}
+{"doc": "docs/06_思路与方法.md", "claim": "budget iterations", "value": 25, "py": "len(J('reference_results/base3/e5/e5_summary.json')['trajectory'])"}
+{"doc": "docs/06_思路与方法.md", "claim": "budget base", "value": 2.389, "file": "reference_results/base3/e5/e5_summary.json", "path": ["verification", "base", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "budget optimized", "value": 5.204, "file": "reference_results/base3/e5/e5_summary.json", "path": ["verification", "optimized", "earliest_t_nuc_years"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg1 unit (1 = um, 0.001 = nm)", "value": 1, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg1 rails", "value": 1942, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["n_rails"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg1 immortal", "value": 0, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["n_immortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg1 W median", "value": 11.48, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg1 median err %", "value": 0.35, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg1 closure s", "value": 2.6, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["seconds_closure"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg1 backend is cuda", "value": 1, "py": "int(J('reference_results/ibmpg/ibmpg1/ibmpg_summary.json')['closure_backend']=='torch/cuda')"}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg2 unit (1 = um, 0.001 = nm)", "value": 1, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg2 rails", "value": 1177, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["n_rails"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg2 immortal", "value": 2, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["n_immortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg2 W median", "value": 1.63, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg2 median err %", "value": 0.55, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg2 closure s", "value": 5.5, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["seconds_closure"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg2 backend is cuda", "value": 1, "py": "int(J('reference_results/ibmpg/ibmpg2/ibmpg_summary.json')['closure_backend']=='torch/cuda')"}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg3 unit (1 = um, 0.001 = nm)", "value": 0.001, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg3 rails", "value": 11135, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["n_rails"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg3 immortal", "value": 456, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["n_immortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg3 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg3 median err %", "value": 0.3, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg3 closure s", "value": 43.2, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["seconds_closure"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg3 backend is cuda", "value": 1, "py": "int(J('reference_results/ibmpg/ibmpg3/ibmpg_summary.json')['closure_backend']=='torch/cuda')"}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg4 unit (1 = um, 0.001 = nm)", "value": 1, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg4 rails", "value": 13348, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["n_rails"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg4 immortal", "value": 8245, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["n_immortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg4 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg4 median err %", "value": 1.38, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg4 closure s", "value": 33.3, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["seconds_closure"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg4 backend is cuda", "value": 1, "py": "int(J('reference_results/ibmpg/ibmpg4/ibmpg_summary.json')['closure_backend']=='torch/cuda')"}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg5 unit (1 = um, 0.001 = nm)", "value": 1, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg5 rails", "value": 4123, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["n_rails"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg5 immortal", "value": 0, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["n_immortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg5 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg5 median err %", "value": 0.72, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg5 closure s", "value": 34.7, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["seconds_closure"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg5 backend is cuda", "value": 1, "py": "int(J('reference_results/ibmpg/ibmpg5/ibmpg_summary.json')['closure_backend']=='torch/cuda')"}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg6 unit (1 = um, 0.001 = nm)", "value": 0.001, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg6 rails", "value": 20732, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["n_rails"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg6 immortal", "value": 2755, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["n_immortal"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg6 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg6 median err %", "value": 1.04, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg6 closure s", "value": 51.8, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["seconds_closure"]}
+{"doc": "docs/06_思路与方法.md", "claim": "ibmpg6 backend is cuda", "value": 1, "py": "int(J('reference_results/ibmpg/ibmpg6/ibmpg_summary.json')['closure_backend']=='torch/cuda')"}

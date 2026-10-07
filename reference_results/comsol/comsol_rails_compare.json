@@ -1,0 +1,28 @@
+{
+ "comsol_vs_reference": {
+  "n": 128,
+  "median": 0.0008390376630098347,
+  "p90": 0.0027531438894453724,
+  "max": 0.005250637133944018
+ },
+ "stackem_vs_comsol": {
+  "n": 128,
+  "median": 0.0018468985725342956,
+  "p90": 0.008484786005140986,
+  "max": 0.018865102956996494
+ },
+ "stackem_vs_reference": {
+  "n": 128,
+  "median": 0.0015299079246459887,
+  "p90": 0.00903160252603149,
+  "max": 0.023444167281223987
+ },
+ "mortality_agreement_comsol_reference": 1.0,
+ "comsol_seconds_per_rail": {
+  "mean": 1.3543333333333336,
+  "median": 1.3525,
+  "per_segment": 0.03385833333333334
+ },
+ "n_rails_timed": 246,
+ "parallel_bound": 32
+}

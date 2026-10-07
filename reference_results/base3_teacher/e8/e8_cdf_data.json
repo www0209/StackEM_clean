@@ -1,0 +1,208 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "cache1",
+   "xlabel": "time (years)",
+   "ylabel": "rails nucleated",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "full 3-D physics (FDM truth)",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "others_off",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "uniform die temperature",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "StackEM (SKN + JCX)",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 1,
+   "title": "cache2",
+   "xlabel": "time (years)",
+   "ylabel": "",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "full 3-D physics (FDM truth)",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "others_off",
+     "x": "ax1_line1_x",
+     "y": "ax1_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "uniform die temperature",
+     "x": "ax1_line2_x",
+     "y": "ax1_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "StackEM (SKN + JCX)",
+     "x": "ax1_line3_x",
+     "y": "ax1_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax1_line4_x",
+     "y": "ax1_line4_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 2,
+   "title": "cores",
+   "xlabel": "time (years)",
+   "ylabel": "",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "full 3-D physics (FDM truth)",
+     "x": "ax2_line0_x",
+     "y": "ax2_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "others_off",
+     "x": "ax2_line1_x",
+     "y": "ax2_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "uniform die temperature",
+     "x": "ax2_line2_x",
+     "y": "ax2_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "StackEM (SKN + JCX)",
+     "x": "ax2_line3_x",
+     "y": "ax2_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax2_line4_x",
+     "y": "ax2_line4_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "0",
+     "xy": [
+      4.0,
+      4.0
+     ]
+    },
+    {
+     "text": " 10-yr horizon",
+     "xy": [
+      10.0,
+      257.5
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "name": "full_cache1_years",
+   "key": "extra_full_cache1_years"
+  },
+  {
+   "name": "others_off_cache1_years",
+   "key": "extra_others_off_cache1_years"
+  },
+  {
+   "name": "uniform_cache1_years",
+   "key": "extra_uniform_cache1_years"
+  },
+  {
+   "name": "stackem_cache1_years",
+   "key": "extra_stackem_cache1_years"
+  },
+  {
+   "name": "full_cache2_years",
+   "key": "extra_full_cache2_years"
+  },
+  {
+   "name": "others_off_cache2_years",
+   "key": "extra_others_off_cache2_years"
+  },
+  {
+   "name": "uniform_cache2_years",
+   "key": "extra_uniform_cache2_years"
+  },
+  {
+   "name": "stackem_cache2_years",
+   "key": "extra_stackem_cache2_years"
+  },
+  {
+   "name": "full_cores_years",
+   "key": "extra_full_cores_years"
+  },
+  {
+   "name": "others_off_cores_years",
+   "key": "extra_others_off_cores_years"
+  },
+  {
+   "name": "uniform_cores_years",
+   "key": "extra_uniform_cores_years"
+  },
+  {
+   "name": "stackem_cores_years",
+   "key": "extra_stackem_cores_years"
+  }
+ ]
+}

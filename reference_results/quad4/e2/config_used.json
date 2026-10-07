@@ -1,0 +1,122 @@
+{
+  "name": "quad4",
+  "paths": {
+    "hotspot_dir": "~/stackem_work/hotspot_bin/HotSpot",
+    "root_out": "~/stackem_work/outputs"
+  },
+  "stack": {
+    "dies": [
+      {
+        "name": "D1",
+        "size": 0.006,
+        "thickness": 5e-05,
+        "nblk": 6,
+        "P": 3.0,
+        "hot": null,
+        "feed_pitch": 0.0004,
+        "feed_kind": "tsv",
+        "role": "bottom IO die"
+      },
+      {
+        "name": "D2",
+        "size": 0.006,
+        "thickness": 5e-05,
+        "nblk": 6,
+        "P": 12.0,
+        "hot": [
+          [
+            [
+              4,
+              1
+            ],
+            4.0
+          ]
+        ],
+        "feed_pitch": 0.0003,
+        "feed_kind": "tsv",
+        "role": "logic die A"
+      },
+      {
+        "name": "D3",
+        "size": 0.006,
+        "thickness": 5e-05,
+        "nblk": 6,
+        "P": 6.0,
+        "hot": null,
+        "feed_pitch": 0.0003,
+        "feed_kind": "tsv",
+        "role": "SRAM die"
+      },
+      {
+        "name": "D4",
+        "size": 0.006,
+        "thickness": 5e-05,
+        "nblk": 6,
+        "P": 25.0,
+        "hot": [
+          [
+            [
+              1,
+              4
+            ],
+            5.0
+          ]
+        ],
+        "feed_pitch": 0.0002,
+        "feed_kind": "pad",
+        "role": "top logic die B"
+      }
+    ],
+    "bond_thick": 5e-06,
+    "bond_k": 40.0,
+    "tim_thick": 2e-05,
+    "ambient": 318.15,
+    "r_convec": 0.3,
+    "grid": 64,
+    "detailed_3d": false
+  },
+  "pg": {
+    "pitch": 0.0001,
+    "W": 2e-06,
+    "H": 1e-06,
+    "rho": 3e-08,
+    "Vdd": 0.8,
+    "current_fraction": 0.4,
+    "R_feed": 0.0
+  },
+  "em": {},
+  "thermal": {
+    "two_sided": true
+  },
+  "times": {
+    "log10_start": 4.0,
+    "log10_end": 9.5,
+    "n": 32
+  },
+  "horizons_years": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "closure": {
+    "jump_at": "mid",
+    "with_tm": true,
+    "mode": "tabulated",
+    "n_tab": 192
+  },
+  "skn": {
+    "weights": "skn_distill/skn_student.npz",
+    "teacher": "skn/skn_best.npz"
+  },
+  "signoff": {
+    "horizon_years": 10.0,
+    "margin": 2.0,
+    "T_uniform": 378.15,
+    "W_min": 5e-07,
+    "W_max": 4e-05
+  },
+  "truth": {
+    "n_cells": 60
+  },
+  "_comment": "second stack case (generalisation): four 6 mm dies, two logic dies with offset hotspots  [student engine] distilled path: student SKN (skn_distill), tabulated kernel look-up (192 pts/segment), M = 32 output times; everything else identical to the plain package."
+}

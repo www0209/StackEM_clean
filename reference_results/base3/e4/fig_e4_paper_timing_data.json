@@ -1,0 +1,34 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "number of rails",
+   "ylabel": "wall-clock (s)",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "StackEM (1 GPU): 23 s at 20,000 rails",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "finite-volume reference (32 cores): 28 s at 20,000 rails",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "finite-volume reference (1 core): 490 s at 20,000 rails",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

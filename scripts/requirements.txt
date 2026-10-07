@@ -1,0 +1,8 @@
+# Python packages of the environment that produced the released results (Python 3.11.16).
+# PyTorch is installed separately by scripts/setup_env.sh because its wheel depends on the GPU:
+#   torch==2.14.0  (the released results used the CUDA 13.0 build, reported as 2.14.0+cu130)
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+pandas==3.0.6

@@ -1,0 +1,79 @@
+{
+ "n_profiles": 120000,
+ "ranges": {
+  "T_bar": [
+   300.0,
+   450.0
+  ],
+  "dT": [
+   -12.0,
+   12.0
+  ],
+  "T_m": [
+   0.0,
+   40.0
+  ],
+  "p_zero_Tm": 0.3,
+  "log10_lam": [
+   -0.5,
+   2.1
+  ],
+  "log10_tau": [
+   -6.0,
+   1.0
+  ],
+  "n_cells": 200,
+  "n_tau_grid": 96,
+  "points_per_profile": 128,
+  "n_end_points": 32
+ },
+ "ood_ranges": {
+  "T_bar": [
+   450.0,
+   480.0
+  ],
+  "dT": [
+   -20.0,
+   20.0
+  ],
+  "T_m": [
+   40.0,
+   60.0
+  ],
+  "p_zero_Tm": 0.3,
+  "log10_lam": [
+   -0.5,
+   2.1
+  ],
+  "log10_tau": [
+   -6.0,
+   1.0
+  ],
+  "n_cells": 200,
+  "n_tau_grid": 96,
+  "points_per_profile": 128,
+  "n_end_points": 32
+ },
+ "em": {
+  "Z_eff": 10.0,
+  "Ea_eV": 0.86,
+  "D0": 7.5e-08,
+  "B": 100000000000.0,
+  "Omega": 1.181e-29,
+  "rho": 3e-08,
+  "Q_eV": 0.09,
+  "sigma_crit": 500000000.0,
+  "T_zero_stress": 523.15,
+  "dalpha": 1.3899999999999999e-05,
+  "sigma_T_model": "linear",
+  "sigma_T_const": 236000000.0,
+  "name": "tan_group_line"
+ },
+ "_meta": {
+  "time": "2026-09-25 23:44:57",
+  "python": "3.11.16",
+  "machine": "x86_64",
+  "cmd": "~/stackem_work/StackEM_clean/stackem/experiments/gen_kernels.py --config configs/base3_teacher.json --root ~/stackem_work/outputs_teacher --hotspot ~/stackem_work/hotspot_bin/HotSpot --n-profiles 120000",
+  "config_name": "base3"
+ }
+}

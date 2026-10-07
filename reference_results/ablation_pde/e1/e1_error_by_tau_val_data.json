@@ -1,0 +1,34 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "log$_{10}\\tau$ bin",
+   "ylabel": "relative error",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "s_G",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "s_M",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "a",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

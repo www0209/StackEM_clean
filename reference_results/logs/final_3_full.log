@@ -1,0 +1,317 @@
+
+=================== 2026-09-27 16:42:26  unit tests ===================
+..........  [parse] 247 lines read (0.0s)
+  [dc] conductance matrix 129 x 129, 480 nnz (0.0s)
+  [dc] 5 voltage sources: 5 to ground (eliminated), 0 floating; 64 current sources (0.0s)
+  [dc] reduced system 123 unknowns, 453 nnz (0.0s)
+  [dc] LU factorised, 1348 nnz in the factors (0.0s)
+  [dc] solved (0.0s)
+...........
+----------------------------------------------------------------------
+Ran 21 tests in 1.334s
+
+OK
+
+=================== 2026-09-27 16:42:29  copy materials from the plain run (~/stackem_work/outputs_teacher) ===================
+  copied base3/kernels
+  copied base3/skn
+  copied base3/signoff
+  copied quad4/signoff
+
+=================== 2026-09-27 16:42:32  distil the student SKN ===================
+[skip] distill
+
+=================== 2026-09-27 16:42:32  E0 solver + tabulation ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+[saved] ~/stackem_work/outputs/base3/e0/e0_validation.json
+E0 PASSED
+
+=================== 2026-09-27 16:43:11  E1 kernel accuracy (student / tabulated / teacher) ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+val distilled SKN {'s_G': {'rel_l2_median': 0.008319563711453879, 'rel_l2_p90': 0.011995700675358097, 'rel_l2_max': 0.023693271730344308, 'end_max_rel_median': 0.01117180046095103}, 's_M': {'rel_l2_median': 0.025910002986491005, 'rel_l2_p90': 0.16969750957557375, 'rel_l2_max': 0.8232420248999904, 'end_max_rel_median': 0.04251420622925188}, 'a': {'rel_l2_median': 0.0010828281616938767, 'rel_l2_p90': 0.0016569697212041165, 'rel_l2_max': 0.0030425073573531196, 'end_max_rel_median': 0.01789523481596182}}
+val distilled SKN, tabulated (192 pts) {'s_G': {'rel_l2_median': 0.008310114870519969, 'rel_l2_p90': 0.011986593169808902, 'rel_l2_max': 0.023662305486023775, 'end_max_rel_median': 0.011143389684935435}, 's_M': {'rel_l2_median': 0.02589749102586967, 'rel_l2_p90': 0.16961109560698862, 'rel_l2_max': 0.8227214460710067, 'end_max_rel_median': 0.04251420622925188}, 'a': {'rel_l2_median': 0.0010749972955892294, 'rel_l2_p90': 0.0016536411472958383, 'rel_l2_max': 0.003044082549821204, 'end_max_rel_median': 0.018097219867538043}}
+val full SKN {'s_G': {'rel_l2_median': 0.0021819939481678044, 'rel_l2_p90': 0.0032603227227745325, 'rel_l2_max': 0.008092411962894536, 'end_max_rel_median': 0.003000092980605755}, 's_M': {'rel_l2_median': 0.006881798062607294, 'rel_l2_p90': 0.04616642077749425, 'rel_l2_max': 0.18737877924918714, 'end_max_rel_median': 0.015897983497911515}, 'a': {'rel_l2_median': 0.0003468099689862172, 'rel_l2_p90': 0.0005287501214215563, 'rel_l2_max': 0.0010091409414646993, 'end_max_rel_median': 0.007073467158827373}}
+ood distilled SKN {'s_G': {'rel_l2_median': 0.008821860317314145, 'rel_l2_p90': 0.011333271013415136, 'rel_l2_max': 0.017019275585478173, 'end_max_rel_median': 0.01583653922288023}, 's_M': {'rel_l2_median': 0.02658931978519355, 'rel_l2_p90': 0.14572163466658203, 'rel_l2_max': 0.6906759452631491, 'end_max_rel_median': 0.04867030042903325}, 'a': {'rel_l2_median': 0.0012998304126195575, 'rel_l2_p90': 0.0017288735083843038, 'rel_l2_max': 0.0025798040345054404, 'end_max_rel_median': 0.017902671831649373}}
+ood distilled SKN, tabulated (192 pts) {'s_G': {'rel_l2_median': 0.008831378028224467, 'rel_l2_p90': 0.01133586330641222, 'rel_l2_max': 0.017026121634786798, 'end_max_rel_median': 0.01583653922288023}, 's_M': {'rel_l2_median': 0.02656274602127511, 'rel_l2_p90': 0.14562302577054184, 'rel_l2_max': 0.6903525675025254, 'end_max_rel_median': 0.04867030042903325}, 'a': {'rel_l2_median': 0.001287338095364242, 'rel_l2_p90': 0.001738604194730796, 'rel_l2_max': 0.00257963547298112, 'end_max_rel_median': 0.018413852891248635}}
+ood full SKN {'s_G': {'rel_l2_median': 0.0026817888504687124, 'rel_l2_p90': 0.0037633038582293834, 'rel_l2_max': 0.005706407170016383, 'end_max_rel_median': 0.003870604179330931}, 's_M': {'rel_l2_median': 0.00885615177850603, 'rel_l2_p90': 0.04492492950424672, 'rel_l2_max': 0.16699727038463213, 'end_max_rel_median': 0.02792764896860482}, 'a': {'rel_l2_median': 0.0004561307431134175, 'rel_l2_p90': 0.0006334345117337568, 'rel_l2_max': 0.0008041600425069687, 'end_max_rel_median': 0.009657187337495685}}
+[saved] ~/stackem_work/outputs/base3/e1/e1_summary.json
+
+=================== 2026-09-27 16:48:55  E2 rail accuracy ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+full {'D1': (0.0025918110350483282, 0.0009898701109284525, 1.0), 'D2': (0.0014171769433960967, 0.002204839935034558, 1.0), 'D3': (0.017154456698170298, 0.0004274223244433638, 1.0)} closure 13.5s truth 4.5s
+alone {'D1': (0.00400712174118341, 0.00013589169359709812, 1.0), 'D2': (0.006766843880208336, 0.0006261480968848723, 1.0), 'D3': (0.023959330936773195, 0.00040983379235228477, 1.0)} closure 14.7s truth 4.8s
+uniform {'D1': (0.004278949163036417, 0.0009986665308852466, 1.0), 'D2': (0.0012306200083168752, 0.0023222761955673105, 1.0), 'D3': (0.013462737317505436, 0.00037425451122604454, 1.0)} closure 13.5s truth 4.5s
+[saved] ~/stackem_work/outputs/base3/e2/e2_summary.json
+
+=================== 2026-09-27 16:49:56  E3 physics decomposition ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+alone           4.8s  earliest 20.355 yr on D1; mortal10yr 0 /100yr 82
+uniform_signoff   4.0s  earliest 0.474 yr on D1; mortal10yr 120 /100yr 132
+uniform         4.5s  earliest 4.008 yr on D1; mortal10yr 26 /100yr 128
+sigmaT_const    4.9s  earliest 1.495 yr on D2; mortal10yr 34 /100yr 130
+no_joule        4.4s  earliest 2.413 yr on D2; mortal10yr 26 /100yr 128
+no_tm           4.4s  earliest 2.393 yr on D2; mortal10yr 26 /100yr 128
+full            4.5s  earliest 2.389 yr on D2; mortal10yr 26 /100yr 128
+StackEM overlay 13.4s  earliest 2.405 yr
+hotspot [0, 0] {'D1': {'earliest_yr': 4.207, 'earliest_rail': 'H38', 'mortal10': 10, 'mortal100': 38, 'crossing_enrichment_10yr': 1.64, 'crossing_enrichment_100yr': 0.432, 'tnuc_ratio_cross_over_noncross': 0.319, 'spearman_T_vs_logt': 0.012, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.244}, 'D2': {'earliest_yr': 1.11, 'earliest_rail': 'V2', 'mortal10': 34, 'mortal100': 82, 'crossing_enrichment_10yr': 1.929, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.254, 'spearman_T_vs_logt': -0.636, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.244}}
+hotspot [1, 1] {'D1': {'earliest_yr': 4.166, 'earliest_rail': 'V38', 'mortal10': 6, 'mortal100': 38, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.647, 'tnuc_ratio_cross_over_noncross': 1.289, 'spearman_T_vs_logt': 0.397, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.244}, 'D2': {'earliest_yr': 2.389, 'earliest_rail': 'V14', 'mortal10': 20, 'mortal100': 82, 'crossing_enrichment_10yr': 1.23, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.931, 'spearman_T_vs_logt': -0.316, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.244}}
+hotspot [2, 2] {'D1': {'earliest_yr': 4.011, 'earliest_rail': 'V38', 'mortal10': 6, 'mortal100': 38, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.647, 'tnuc_ratio_cross_over_noncross': 1.224, 'spearman_T_vs_logt': -0.177, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.244}, 'D2': {'earliest_yr': 2.462, 'earliest_rail': 'H26', 'mortal10': 20, 'mortal100': 82, 'crossing_enrichment_10yr': 0.82, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 1.013, 'spearman_T_vs_logt': -0.021, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.244}}
+hotspot [3, 3] {'D1': {'earliest_yr': 0.953, 'earliest_rail': 'H38', 'mortal10': 18, 'mortal100': 38, 'crossing_enrichment_10yr': 3.727, 'crossing_enrichment_100yr': 2.158, 'tnuc_ratio_cross_over_noncross': 0.111, 'spearman_T_vs_logt': -0.835, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.268}, 'D2': {'earliest_yr': 1.376, 'earliest_rail': 'H38', 'mortal10': 30, 'mortal100': 82, 'crossing_enrichment_10yr': 1.988, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.292, 'spearman_T_vs_logt': -0.469, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.268}}
+hotspot [0, 3] {'D1': {'earliest_yr': 4.16, 'earliest_rail': 'V38', 'mortal10': 7, 'mortal100': 38, 'crossing_enrichment_10yr': 2.231, 'crossing_enrichment_100yr': 1.336, 'tnuc_ratio_cross_over_noncross': 0.432, 'spearman_T_vs_logt': -0.211, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.256}, 'D2': {'earliest_yr': 1.317, 'earliest_rail': 'H38', 'mortal10': 33, 'mortal100': 82, 'crossing_enrichment_10yr': 2.012, 'crossing_enrichment_100yr': 1.0, 'tnuc_ratio_cross_over_noncross': 0.282, 'spearman_T_vs_logt': -0.502, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.256}}
+[saved] ~/stackem_work/outputs/base3/e3/e3_summary.json
+
+=================== 2026-09-27 16:51:33  E7 ranking value ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+alone {'top10': 0.4, 'top10_tol1pct': 0.4, 'top50': 0.76, 'kendall': 0.7, 'same_critical_die': False, 'same_earliest_rail': False, 'mortal10_jaccard': 0.0, 'mortal10_missed': 26, 'mortal10_false': 0}
+uniform_signoff {'top10': 0.8, 'top10_tol1pct': 0.8, 'top50': 0.92, 'kendall': 0.73, 'same_critical_die': False, 'same_earliest_rail': False, 'mortal10_jaccard': 0.217, 'mortal10_missed': 0, 'mortal10_false': 94}
+uniform {'top10': 0.8, 'top10_tol1pct': 0.8, 'top50': 0.92, 'kendall': 0.77, 'same_critical_die': False, 'same_earliest_rail': False, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+sigmaT_const {'top10': 0.8, 'top10_tol1pct': 0.8, 'top50': 0.88, 'kendall': 0.976, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 0.765, 'mortal10_missed': 0, 'mortal10_false': 8}
+no_joule {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.99, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+no_tm {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.991, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+stackem {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.991, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+[saved] ~/stackem_work/outputs/base3/e7/e7_ranking.json
+truth Top-10 boundary: rails #10 and #11 differ by 1.47 % in t_nuc
+
+=================== 2026-09-27 16:51:35  E4 scaling (student tabulated vs teacher direct) ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+n=    82: FDM(32 cores) 0.3s  FDM(1 core) 2.0s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU): 6.4s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 0.2s  distilled SKN + JCX, direct look-up (torch, CUDA): 0.2s  full SKN + JCX, direct look-up (torch, CUDA): 0.6s  full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 0.3s
+n=   246: FDM(32 cores) 0.7s  FDM(1 core) 6.1s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU): 18.9s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 0.3s  distilled SKN + JCX, direct look-up (torch, CUDA): 0.6s  full SKN + JCX, direct look-up (torch, CUDA): 1.5s  full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 0.8s
+n=  1000: FDM(32 cores) 1.5s  FDM(1 core) 24.7s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU): 77.8s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 1.2s  distilled SKN + JCX, direct look-up (torch, CUDA): 2.3s  full SKN + JCX, direct look-up (torch, CUDA): 6.3s  full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 3.4s
+n=  5000: FDM(32 cores) 7.1s  FDM(1 core) 123.9s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU): nans  distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 5.8s  distilled SKN + JCX, direct look-up (torch, CUDA): 11.3s  full SKN + JCX, direct look-up (torch, CUDA): 30.7s  full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 16.0s
+n= 20000: FDM(32 cores) 28.4s  FDM(1 core) 490.4s  distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU): nans  distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 23.4s  distilled SKN + JCX, direct look-up (torch, CUDA): 45.1s  full SKN + JCX, direct look-up (torch, CUDA): 118.6s  full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA): 63.2s
+[saved] ~/stackem_work/outputs/base3/e4/e4_timing.json
+
+=================== 2026-09-27 17:10:20  E5 sensitivity + budget ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+stack-aware repair: widening to restore the 10-yr horizon
+  D1: 6 / 82 rails violate 10 yr; targeted +2.9% metal, blanket +65.4% (x1.65); truth after repair: targeted 10.1 yr, blanket 10.1 yr
+  D2: 20 / 82 rails violate 10 yr; targeted +12.6% metal, blanket +99.5% (x1.99); truth after repair: targeted 10.0 yr, blanket 10.1 yr
+  D3: 0 / 82 rails violate 10 yr; targeted +0.0% metal, blanket +0.0% (x1.00); truth after repair: targeted inf yr, blanket inf yr
+[saved] ~/stackem_work/outputs/base3/e5/e5_repair.json
+linear maps built in 35s (48 blocks)
+gradients for 15 rails in 3s
+FD check {'die': 'D1', 'rail': 79, 'block': 'D1/D1_3_3', 'autograd': -5.008907281937622, 'finite_diff': -5.005852437304063, 'delta_W': np.float64(0.004210526315789474)}
+FD check {'die': 'D1', 'rail': 79, 'block': 'D2/D2_0_0', 'autograd': -0.037855011987854695, 'finite_diff': -0.03751011629449871, 'delta_W': np.float64(0.0025)}
+FD check {'die': 'D2', 'rail': 55, 'block': 'D2/D2_1_1', 'autograd': -8.13426349975918, 'finite_diff': -8.134007771852461, 'delta_W': np.float64(0.0025)}
+FD check {'die': 'D2', 'rail': 55, 'block': 'D3/D3_3_3', 'autograd': -0.03305811623752969, 'finite_diff': -0.03289411149307847, 'delta_W': np.float64(0.01)}
+FD check {'die': 'D3', 'rail': 15, 'block': 'D3/D3_1_1', 'autograd': -2.8897014210451992, 'finite_diff': -2.7998004503028544, 'delta_W': np.float64(0.05)}
+FD check {'die': 'D3', 'rail': 15, 'block': 'D2/D2_0_2', 'autograd': -0.001199782226028387, 'finite_diff': 0.0006525134863560671, 'delta_W': np.float64(0.0025)}
+  iter   0  earliest t_nuc 2.404 yr  soft 0.305
+  iter   1  earliest t_nuc 3.455 yr  soft 0.435
+  iter   2  earliest t_nuc 4.123 yr  soft 0.481
+  iter   3  earliest t_nuc 4.778 yr  soft 0.508
+  iter   4  earliest t_nuc 5.000 yr  soft 0.524
+  iter   5  earliest t_nuc 5.077 yr  soft 0.537
+  iter   6  earliest t_nuc 5.198 yr  soft 0.537
+  iter   7  earliest t_nuc 5.219 yr  soft 0.543
+  iter   8  earliest t_nuc 4.965 yr  soft 0.534
+  iter   9  earliest t_nuc 5.214 yr  soft 0.539
+  iter  10  earliest t_nuc 5.030 yr  soft 0.530
+  iter  11  earliest t_nuc 5.250 yr  soft 0.545
+  iter  12  earliest t_nuc 5.044 yr  soft 0.541
+  iter  13  earliest t_nuc 5.149 yr  soft 0.542
+  iter  14  earliest t_nuc 5.152 yr  soft 0.539
+  iter  15  earliest t_nuc 5.143 yr  soft 0.536
+  iter  16  earliest t_nuc 5.181 yr  soft 0.546
+  iter  17  earliest t_nuc 5.140 yr  soft 0.547
+  iter  18  earliest t_nuc 5.236 yr  soft 0.543
+  iter  19  earliest t_nuc 5.105 yr  soft 0.543
+  iter  20  earliest t_nuc 5.070 yr  soft 0.542
+  iter  21  earliest t_nuc 5.145 yr  soft 0.535
+  iter  22  earliest t_nuc 5.003 yr  soft 0.538
+  iter  23  earliest t_nuc 5.160 yr  soft 0.548
+  iter  24  earliest t_nuc 5.092 yr  soft 0.540
+earliest t_nuc: base 2.389 yr -> optimised 5.204 yr
+[saved] ~/stackem_work/outputs/base3/e5/e5_summary.json
+
+=================== 2026-09-27 17:13:24  E6 sweeps (truth only; identical by construction, kept for completeness) ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+r_convec_0.1 {'full_D1_earliest_yr': 8.897, 'full_D1_Tmax': 348.92, 'full_D2_earliest_yr': 4.676, 'full_D2_Tmax': 349.12, 'full_D3_earliest_yr': 26.074, 'full_D3_Tmax': 349.44, 'alone_D1_earliest_yr': 21.713, 'alone_D1_Tmax': 321.08, 'alone_D2_earliest_yr': 23.279, 'alone_D2_Tmax': 320.72, 'alone_D3_earliest_yr': 25.726, 'alone_D3_Tmax': 350.67, 'required_margin_D1': 2.44, 'required_margin_D2': 4.979, 'required_margin_D3': 0.987, 'value': 0.1, 'seconds': 11.064}
+r_convec_0.5 {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 0.5, 'seconds': 10.948}
+r_convec_1.0 {'full_D1_earliest_yr': 1.72, 'full_D1_Tmax': 372.37, 'full_D2_earliest_yr': 1.108, 'full_D2_Tmax': 372.57, 'full_D3_earliest_yr': 22.431, 'full_D3_Tmax': 372.88, 'alone_D1_earliest_yr': 18.792, 'alone_D1_Tmax': 322.88, 'alone_D2_earliest_yr': 17.46, 'alone_D2_Tmax': 324.32, 'alone_D3_earliest_yr': 21.767, 'alone_D3_Tmax': 368.71, 'required_margin_D1': 10.924, 'required_margin_D2': 15.762, 'required_margin_D3': 0.97, 'value': 1.0, 'seconds': 10.98}
+bond_k_5.0 {'full_D1_earliest_yr': 3.902, 'full_D1_Tmax': 359.0, 'full_D2_earliest_yr': 2.401, 'full_D2_Tmax': 359.49, 'full_D3_earliest_yr': 21.184, 'full_D3_Tmax': 360.21, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.216, 'required_margin_D2': 8.522, 'required_margin_D3': 1.042, 'value': 5.0, 'seconds': 10.749}
+bond_k_40.0 {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 40.0, 'seconds': 10.978}
+bond_k_150.0 {'full_D1_earliest_yr': 4.195, 'full_D1_Tmax': 359.04, 'full_D2_earliest_yr': 2.443, 'full_D2_Tmax': 359.2, 'full_D3_earliest_yr': 21.599, 'full_D3_Tmax': 359.48, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.852, 'required_margin_D2': 8.373, 'required_margin_D3': 1.022, 'value': 150.0, 'seconds': 11.931}
+feed_pitch_bottom_um_200 {'W_um_D1': 1.197, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 3.815, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.448, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.36, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 43.099}
+feed_pitch_bottom_um_400 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 55.399}
+feed_pitch_bottom_um_800 {'W_um_D1': 3.642, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 5.011, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.639, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.119, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 54.934}
+top_power_W_10.0 {'full_D1_earliest_yr': 8.001, 'full_D1_Tmax': 341.94, 'full_D2_earliest_yr': 7.547, 'full_D2_Tmax': 342.0, 'full_D3_earliest_yr': inf, 'full_D3_Tmax': 342.05, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': inf, 'alone_D3_Tmax': 338.43, 'required_margin_D1': 2.544, 'required_margin_D2': 2.711, 'required_margin_D3': nan, 'value': 10.0, 'seconds': 10.088}
+top_power_W_20.0 {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 20.0, 'seconds': 11.037}
+top_power_W_30.0 {'full_D1_earliest_yr': 2.242, 'full_D1_Tmax': 376.79, 'full_D2_earliest_yr': 0.86, 'full_D2_Tmax': 377.12, 'full_D3_earliest_yr': 0.81, 'full_D3_Tmax': 377.7, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 0.753, 'alone_D3_Tmax': 378.98, 'required_margin_D1': 9.08, 'required_margin_D2': 23.776, 'required_margin_D3': 0.93, 'value': 30.0, 'seconds': 11.074}
+layer_order_logic_top {'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 11.103}
+layer_order_logic_bottom {'full_D3_earliest_yr': 21.725, 'full_D3_Tmax': 364.6, 'full_D2_earliest_yr': 2.087, 'full_D2_Tmax': 361.77, 'full_D1_earliest_yr': 4.371, 'full_D1_Tmax': 359.08, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'required_margin_D3': 1.016, 'required_margin_D2': 9.803, 'required_margin_D1': 4.656, 'seconds': 11.008}
+Ea_eV_0.84 {'W_um_D1': 1.868, 'W_um_D2': 1.373, 'W_um_D3': 16.146, 'full_D1_earliest_yr': 3.846, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 3.187, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 23.817, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.473, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.516, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 23.786, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.323, 'required_margin_D2': 6.437, 'required_margin_D3': 0.999, 'value': 0.84, 'seconds': 48.268}
+Ea_eV_0.86 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 0.86, 'seconds': 54.847}
+Ea_eV_1.0 {'W_um_D1': 0.5, 'W_um_D2': 0.5, 'W_um_D3': 3.231, 'full_D1_earliest_yr': 62.042, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 50.905, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 19.286, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': inf, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': inf, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 20.382, 'alone_D3_Tmax': 358.7, 'required_margin_D1': inf, 'required_margin_D2': inf, 'required_margin_D3': 1.057, 'value': 1.0, 'seconds': 38.874}
+Ea_eV_1.1 {'W_um_D1': 0.5, 'W_um_D2': 0.5, 'W_um_D3': 0.68, 'full_D1_earliest_yr': inf, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': inf, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 20.942, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': inf, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': inf, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 20.343, 'alone_D3_Tmax': 358.7, 'required_margin_D1': nan, 'required_margin_D2': nan, 'required_margin_D3': 0.971, 'value': 1.1, 'seconds': 38.881}
+sigma_crit_MPa_400 {'W_um_D1': 2.334, 'W_um_D2': 1.715, 'W_um_D3': 24.769, 'full_D1_earliest_yr': 4.509, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 3.014, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 24.903, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.285, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.399, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 23.05, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.499, 'required_margin_D2': 6.767, 'required_margin_D3': 0.926, 'seconds': 57.639}
+sigma_crit_MPa_500 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'seconds': 55.138}
+sigma_crit_MPa_600 {'W_um_D1': 1.009, 'W_um_D2': 0.741, 'W_um_D3': 11.079, 'full_D1_earliest_yr': 4.528, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.511, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 19.386, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.114, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.25, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 20.897, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.442, 'required_margin_D2': 8.065, 'required_margin_D3': 1.078, 'seconds': 52.239}
+signoff_margin_1.5 {'W_um_D1': 1.197, 'W_um_D2': 0.88, 'W_um_D3': 15.077, 'full_D1_earliest_yr': 3.295, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 1.812, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 17.327, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 15.387, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 15.465, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 17.944, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.67, 'required_margin_D2': 8.537, 'required_margin_D3': 1.036, 'value': 1.5, 'seconds': 55.075}
+signoff_margin_2.0 {'W_um_D1': 1.349, 'W_um_D2': 0.992, 'W_um_D3': 15.338, 'full_D1_earliest_yr': 4.166, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 2.389, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 21.508, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 20.355, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 20.457, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 22.072, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 4.886, 'required_margin_D2': 8.562, 'required_margin_D3': 1.026, 'value': 2.0, 'seconds': 54.953}
+signoff_margin_3.0 {'W_um_D1': 1.601, 'W_um_D2': 1.177, 'W_um_D3': 15.872, 'full_D1_earliest_yr': 5.752, 'full_D1_Tmax': 359.36, 'full_D2_earliest_yr': 3.931, 'full_D2_Tmax': 359.56, 'full_D3_earliest_yr': 35.055, 'full_D3_Tmax': 359.87, 'alone_D1_earliest_yr': 30.403, 'alone_D1_Tmax': 321.88, 'alone_D2_earliest_yr': 30.563, 'alone_D2_Tmax': 322.32, 'alone_D3_earliest_yr': 35.511, 'alone_D3_Tmax': 358.7, 'required_margin_D1': 5.286, 'required_margin_D2': 7.775, 'required_margin_D3': 1.013, 'value': 3.0, 'seconds': 50.774}
+[saved] ~/stackem_work/outputs/base3/e6/e6_sweeps.json
+
+=================== 2026-09-27 17:26:39  E8 ev6 real floorplan ===================
+[sign-off sizing] strap widths: D1=1.35 um, D2=0.99 um, D3=15.34 um
+  sizing cache1: W = 0.50 um, standalone earliest inf yr (saturated)
+  sizing cache2: W = 0.50 um, standalone earliest inf yr (saturated)
+  sizing cores: W = 35.48 um, standalone earliest 21.0 yr
+cache1 P=3.7 W {'ir_drop_max_mV': 2.214, 'ir_drop_mean_mV': 1.165, 'j_max_A_per_cm2': 47122.634, 'j_p50_A_per_cm2': 5400.157, 'j_p90_A_per_cm2': 33586.864, 'total_sink_A': 0.697} ['j_max=4.71e+04 A/cm^2 outside [100000,3e+06] - adjust power, current_fraction or W/H']
+cache2 P=3.7 W {'ir_drop_max_mV': 2.214, 'ir_drop_mean_mV': 1.165, 'j_max_A_per_cm2': 47122.634, 'j_p50_A_per_cm2': 5400.157, 'j_p90_A_per_cm2': 33586.864, 'total_sink_A': 0.697} ['j_max=4.71e+04 A/cm^2 outside [100000,3e+06] - adjust power, current_fraction or W/H']
+cores P=138.8 W {'ir_drop_max_mV': 4.66, 'ir_drop_mean_mV': 0.614, 'j_max_A_per_cm2': 106483.433, 'j_p50_A_per_cm2': 2887.592, 'j_p90_A_per_cm2': 11561.775, 'total_sink_A': 26.018} []
+full           4.0s {'cache1': (inf, 0, 250), 'cache2': (inf, 0, 250), 'cores': (18.908, 0, 212)}
+others_off     4.1s {'cache1': (inf, 0, 250), 'cache2': (inf, 0, 250), 'cores': (21.048, 0, 212)}
+uniform        4.0s {'cache1': (inf, 0, 250), 'cache2': (inf, 0, 250), 'cores': (23.312, 0, 212)}
+StackEM overlay {'seconds': 10.433552742004395, 'n_mortal': 12, 'tnuc_rel_median': 0.01431630554882788, 'tnuc_rel_p90': 0.024229689229590883, 'tnuc_rel_max': 0.026226803398609416, 'top10_hit': 1.0, 'kendall_top50': 0.9663386444051799}
+[saved] ~/stackem_work/outputs/base3/e8/e8_summary.json
+
+=================== 2026-09-27 17:31:25  second stack (quad4) E2 + E3 + E7 ===================
+[sign-off sizing] strap widths: D1=0.50 um, D2=3.52 um, D3=0.84 um, D4=9.18 um
+full {'D1': (0.002424779610040088, 0.0015741066921452574, 0.9), 'D2': (0.005072977065219468, 0.0003610430932365993, 1.0), 'D3': (0.00344680087842311, 0.0007723005738529902, 1.0), 'D4': (0.023936702424917092, 0.0003626977991093792, 1.0)} closure 45.4s truth 13.6s
+alone {'D1': (0.0050302962583946495, 0.00029779761446920624, 1.0), 'D2': (0.007673053873382582, 0.00012800056395950311, 1.0), 'D3': (0.003542068661349288, 0.00025055124468508557, 1.0), 'D4': (0.013071002508764185, 0.0002827243369511054, 1.0)} closure 45.4s truth 13.9s
+uniform {'D1': (0.004883992079080728, 0.0015823687854966226, 1.0), 'D2': (0.011119523911065405, 0.0003823849764834292, 1.0), 'D3': (0.0029273465881412084, 0.0008065293256219463, 1.0), 'D4': (0.02493941795021331, 0.00031778574782071985, 1.0)} closure 44.9s truth 13.8s
+[saved] ~/stackem_work/outputs/quad4/e2/e2_summary.json
+[sign-off sizing] strap widths: D1=0.50 um, D2=3.52 um, D3=0.84 um, D4=9.18 um
+alone          14.2s  earliest 20.384 yr on D3; mortal10yr 0 /100yr 86
+uniform_signoff  14.1s  earliest 0.430 yr on D3; mortal10yr 250 /100yr 358
+uniform        13.8s  earliest 3.591 yr on D3; mortal10yr 70 /100yr 288
+sigmaT_const   13.8s  earliest 3.047 yr on D3; mortal10yr 84 /100yr 300
+no_joule       13.6s  earliest 3.955 yr on D3; mortal10yr 47 /100yr 289
+no_tm          13.3s  earliest 3.949 yr on D3; mortal10yr 47 /100yr 289
+full           14.0s  earliest 3.951 yr on D3; mortal10yr 47 /100yr 289
+StackEM overlay 45.4s  earliest 3.948 yr
+hotspot [0, 0] {'D1': {'earliest_yr': 3.852, 'earliest_rail': 'V2', 'mortal10': 10, 'mortal100': 112, 'crossing_enrichment_10yr': 2.44, 'crossing_enrichment_100yr': 0.98, 'tnuc_ratio_cross_over_noncross': 0.438, 'spearman_T_vs_logt': -0.27, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.629, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 1.029, 'spearman_T_vs_logt': 0.095, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 2.286, 'earliest_rail': 'H1', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 1.03, 'spearman_T_vs_logt': -0.146, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}}
+hotspot [1, 1] {'D1': {'earliest_yr': 9.379, 'earliest_rail': 'H2', 'mortal10': 7, 'mortal100': 112, 'crossing_enrichment_10yr': 3.486, 'crossing_enrichment_100yr': 1.089, 'tnuc_ratio_cross_over_noncross': 0.972, 'spearman_T_vs_logt': -0.136, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.607, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 3.05, 'crossing_enrichment_100yr': 1.525, 'tnuc_ratio_cross_over_noncross': 1.01, 'spearman_T_vs_logt': -0.088, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 4.021, 'earliest_rail': 'V58', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 1.22, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 0.986, 'spearman_T_vs_logt': -0.318, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}}
+hotspot [2, 2] {'D1': {'earliest_yr': 9.649, 'earliest_rail': 'V2', 'mortal10': 2, 'mortal100': 112, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 1.089, 'tnuc_ratio_cross_over_noncross': 0.992, 'spearman_T_vs_logt': -0.094, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.559, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 0.978, 'spearman_T_vs_logt': -0.272, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 4.016, 'earliest_rail': 'V58', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 0.987, 'spearman_T_vs_logt': -0.387, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}}
+hotspot [3, 3] {'D1': {'earliest_yr': 9.713, 'earliest_rail': 'V2', 'mortal10': 2, 'mortal100': 112, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 1.089, 'tnuc_ratio_cross_over_noncross': 0.981, 'spearman_T_vs_logt': -0.102, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.561, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 0.975, 'spearman_T_vs_logt': -0.259, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 4.018, 'earliest_rail': 'V58', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 0.993, 'spearman_T_vs_logt': -0.353, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}}
+hotspot [0, 3] {'D1': {'earliest_yr': 4.991, 'earliest_rail': 'H34', 'mortal10': 10, 'mortal100': 113, 'crossing_enrichment_10yr': 3.05, 'crossing_enrichment_100yr': 1.026, 'tnuc_ratio_cross_over_noncross': 0.579, 'spearman_T_vs_logt': -0.154, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}, 'D2': {'earliest_yr': 5.64, 'earliest_rail': 'H16', 'mortal10': 4, 'mortal100': 48, 'crossing_enrichment_10yr': 0.0, 'crossing_enrichment_100yr': 0.763, 'tnuc_ratio_cross_over_noncross': 1.007, 'spearman_T_vs_logt': -0.048, 'earliest_rail_crosses_hot_block': False, 'share_crossing': 0.164}, 'D3': {'earliest_yr': 2.584, 'earliest_rail': 'H34', 'mortal10': 40, 'mortal100': 120, 'crossing_enrichment_10yr': 0.915, 'crossing_enrichment_100yr': 1.017, 'tnuc_ratio_cross_over_noncross': 1.004, 'spearman_T_vs_logt': -0.21, 'earliest_rail_crosses_hot_block': True, 'share_crossing': 0.164}}
+[saved] ~/stackem_work/outputs/quad4/e3/e3_summary.json
+[sign-off sizing] strap widths: D1=0.50 um, D2=3.52 um, D3=0.84 um, D4=9.18 um
+alone {'top10': 0.2, 'top10_tol1pct': 0.2, 'top50': 0.88, 'kendall': 0.54, 'same_critical_die': True, 'same_earliest_rail': False, 'mortal10_jaccard': 0.0, 'mortal10_missed': 47, 'mortal10_false': 0}
+uniform_signoff {'top10': 0.2, 'top10_tol1pct': 0.2, 'top50': 0.92, 'kendall': 0.222, 'same_critical_die': True, 'same_earliest_rail': False, 'mortal10_jaccard': 0.188, 'mortal10_missed': 0, 'mortal10_false': 203}
+uniform {'top10': 0.2, 'top10_tol1pct': 0.2, 'top50': 0.92, 'kendall': 0.221, 'same_critical_die': True, 'same_earliest_rail': False, 'mortal10_jaccard': 0.671, 'mortal10_missed': 0, 'mortal10_false': 23}
+sigmaT_const {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 0.9, 'kendall': 0.948, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 0.56, 'mortal10_missed': 0, 'mortal10_false': 37}
+no_joule {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 1.0, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+no_tm {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.998, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 1.0, 'mortal10_missed': 0, 'mortal10_false': 0}
+stackem {'top10': 1.0, 'top10_tol1pct': 1.0, 'top50': 1.0, 'kendall': 0.998, 'same_critical_die': True, 'same_earliest_rail': True, 'mortal10_jaccard': 0.979, 'mortal10_missed': 0, 'mortal10_false': 1}
+[saved] ~/stackem_work/outputs/quad4/e7/e7_ranking.json
+truth Top-10 boundary: rails #10 and #11 differ by 0.13 % in t_nuc
+
+=================== 2026-09-27 17:38:45  parameter tables + framework figure + figure index ===================
+| parameter | symbol | value | swept range |
+|---|---|---|---|
+| **Stack case** | | | |
+| dies (bottom to top) |  | D1 2 W / D2 4 W / D3 20 W | 10 -- 30 (top die) |
+| die size / thickness |  | 4 mm / 50 $\mu$m |  |
+| power blocks per die |  | 4$\times$4 |  |
+| hot blocks (power factor) |  | D1 block (3, 3) $\times$4; D3 block (1, 1) $\times$5 | position sweep (E3) |
+| vertical feed pitch / kind |  | 400 $\mu$m tsv / 400 $\mu$m tsv / 200 $\mu$m pad | 200 -- 800 (bottom die) |
+| hybrid-bond layer | $t_b$, $k_b$ | 5 $\mu$m, 40 W/mK | 5 -- 150 |
+| TIM thickness |  | 20 $\mu$m |  |
+| ambient / package resistance | $T_a$, $R_{conv}$ | 45 $^\circ$C, 0.5 K/W | 0.1 -- 1.0 |
+| layer order |  | logic die on top (heat-sink side) | logic top / bottom |
+| **Power grid (per die)** | | | |
+| strap pitch / thickness | $p$, $H$ | 100 $\mu$m / 1 $\mu$m |  |
+| strap width (die-level sign-off sizing) | $W$ | D1 1.35, D2 0.99, D3 15.34 $\mu$m | re-sized in E6 |
+| supply / current fraction | $V_{dd}$ | 0.8 V / 0.4 |  |
+| Cu resistivity | $\rho$ | 3 $\mu\Omega$cm |  |
+| **Electromigration / stress (Korhonen)** | | | |
+| activation energy | $E_a$ | 0.86 eV | 0.84 -- 1.1 |
+| diffusivity prefactor | $D_0$ | 7.5$\times$10$^{-8}$ m$^2$/s |  |
+| effective charge | $Z^*$ | 10 |  |
+| effective bulk modulus | $B$ | 100 GPa |  |
+| atomic volume | $\Omega$ | 1.18$\times$10$^{-29}$ m$^3$ |  |
+| heat of transport (TM) | $Q^*$ | 0.09 eV | 0 (no-TM variant) |
+| critical stress | $\sigma_{crit}$ | 500 MPa | 400 -- 600 |
+| residual stress | $\sigma_T(T)$ | $B\,\Delta\alpha\,(T_0 - T)$, $T_0$ = 250 $^\circ$C, $\Delta\alpha$ = 13.9 ppm/K | frozen (variant) |
+| **Wire self-heating (fin model)** | | | |
+| Cu / ILD conductivity | $k_{cu}$, $k_{ILD}$ | 400 / 1.4 W/mK |  |
+| rail / ILD thickness | $t_{cu}$, $t_{ILD}$ | 1 / 4 $\mu$m |  |
+| thermal length (two-sided / single) | $\Gamma$ | 6.9 / 33.8 $\mu$m |  |
+| **Sign-off benchmark and solver** | | | |
+| lifetime target / margin | $t_h$, $m$ | 10 yr $\times$ 2 | 1.5 -- 3 |
+| rule sign-off temperature | $T_{rule}$ | 105 $^\circ$C (uniform) |  |
+| strap width search range |  | 0.5 -- 40 $\mu$m |  |
+| output time grid | $M$ | 32 log-spaced points, 10$^{4}$ -- 10$^{9.5}$ s |  |
+| reference solver cells / segment |  | 60 |  |
+| HotSpot grid |  | 64$\times$64 per layer |  |
+
+wrote ~/stackem_work/outputs/base3/tables
+| parameter | symbol | value | swept range |
+|---|---|---|---|
+| **Stack case** | | | |
+| dies (bottom to top) |  | D1 3 W / D2 12 W / D3 6 W / D4 25 W | 10 -- 30 (top die) |
+| die size / thickness |  | 6 mm / 50 $\mu$m |  |
+| power blocks per die |  | 6$\times$6 |  |
+| hot blocks (power factor) |  | D2 block (4, 1) $\times$4; D4 block (1, 4) $\times$5 | position sweep (E3) |
+| vertical feed pitch / kind |  | 400 $\mu$m tsv / 300 $\mu$m tsv / 300 $\mu$m tsv / 200 $\mu$m pad | 200 -- 800 (bottom die) |
+| hybrid-bond layer | $t_b$, $k_b$ | 5 $\mu$m, 40 W/mK | 5 -- 150 |
+| TIM thickness |  | 20 $\mu$m |  |
+| ambient / package resistance | $T_a$, $R_{conv}$ | 45 $^\circ$C, 0.3 K/W | 0.1 -- 1.0 |
+| layer order |  | logic die on top (heat-sink side) | logic top / bottom |
+| **Power grid (per die)** | | | |
+| strap pitch / thickness | $p$, $H$ | 100 $\mu$m / 1 $\mu$m |  |
+| strap width (die-level sign-off sizing) | $W$ | D1 0.50, D2 3.52, D3 0.84, D4 9.18 $\mu$m | re-sized in E6 |
+| supply / current fraction | $V_{dd}$ | 0.8 V / 0.4 |  |
+| Cu resistivity | $\rho$ | 3 $\mu\Omega$cm |  |
+| **Electromigration / stress (Korhonen)** | | | |
+| activation energy | $E_a$ | 0.86 eV | 0.84 -- 1.1 |
+| diffusivity prefactor | $D_0$ | 7.5$\times$10$^{-8}$ m$^2$/s |  |
+| effective charge | $Z^*$ | 10 |  |
+| effective bulk modulus | $B$ | 100 GPa |  |
+| atomic volume | $\Omega$ | 1.18$\times$10$^{-29}$ m$^3$ |  |
+| heat of transport (TM) | $Q^*$ | 0.09 eV | 0 (no-TM variant) |
+| critical stress | $\sigma_{crit}$ | 500 MPa | 400 -- 600 |
+| residual stress | $\sigma_T(T)$ | $B\,\Delta\alpha\,(T_0 - T)$, $T_0$ = 250 $^\circ$C, $\Delta\alpha$ = 13.9 ppm/K | frozen (variant) |
+| **Wire self-heating (fin model)** | | | |
+| Cu / ILD conductivity | $k_{cu}$, $k_{ILD}$ | 400 / 1.4 W/mK |  |
+| rail / ILD thickness | $t_{cu}$, $t_{ILD}$ | 1 / 4 $\mu$m |  |
+| thermal length (two-sided / single) | $\Gamma$ | 6.9 / 33.8 $\mu$m |  |
+| **Sign-off benchmark and solver** | | | |
+| lifetime target / margin | $t_h$, $m$ | 10 yr $\times$ 2 | 1.5 -- 3 |
+| rule sign-off temperature | $T_{rule}$ | 105 $^\circ$C (uniform) |  |
+| strap width search range |  | 0.5 -- 40 $\mu$m |  |
+| output time grid | $M$ | 32 log-spaced points, 10$^{4}$ -- 10$^{9.5}$ s |  |
+| reference solver cells / segment |  | 60 |  |
+| HotSpot grid |  | 64$\times$64 per layer |  |
+
+wrote ~/stackem_work/outputs/quad4/tables
+wrote ~/stackem_work/outputs/base3/figs/framework
+wrote ~/stackem_work/outputs/base3/paper_figs 339 entries
+wrote ~/stackem_work/outputs/quad4/paper_figs 135 entries
+
+=================== 2026-09-27 17:38:47  comparison plain vs distilled ===================
+| quantity | plain (teacher) | distilled + tabulated (student) |
+|---|---|---|
+| **Configuration** | | |
+| kernel network | SKN, 343,811 params | student, 54,915 params (6x smaller) |
+| kernel look-up | direct | tabulated (192 pts / segment) |
+| output times M | 64 | 32 |
+| **E1 kernel accuracy vs FDM (held-out profiles, median rel-L2)** | | |
+| $s_G$ | 0.218 % | 0.831 % |
+| $s_M$ | 0.688 % | 2.590 % |
+| $a$ | 0.035 % | 0.107 % |
+| **E2 $t_{nuc}$ error vs FDM truth, full 3-D variant (median / p90)** | | |
+| D1 | 0.23 % / 0.41 % | 0.26 % / 0.61 % |
+| D2 | 0.19 % / 0.61 % | 0.14 % / 0.66 % |
+| D3 | 2.27 % / 2.39 % | 1.72 % / 2.34 % |
+| mortality agreement (min over dies) | 100.0 % | 100.0 % |
+| closure time, 246 rails (numpy, s) | 251.4 | 13.5 |
+| **E3 stack (truth earliest $t_{nuc}$ vs surrogate overlay)** | | |
+| truth earliest (yr) | 2.389 | 2.389 |
+| overlay earliest (yr) | 2.425 | 2.405 |
+| E7 surrogate: Top-50 hit / Kendall / mortal-set Jaccard | 1.00 / 0.99 / 1.00 | 1.00 / 0.99 / 1.00 |
+| **E5 differentiability and budgeting** | | |
+| autograd vs finite difference (max rel. dev., |s| > 0.01/W) | 1.47 % | 3.21 % |
+| earliest $t_{nuc}$ after power re-allocation (truth, yr) | 5.192 | 5.204 |
+| **E8 ev6 stack (surrogate vs truth)** | | |
+| t_nuc error median | 0.64 % | 1.43 % |
+| t_nuc error p90 | 1.72 % | 2.42 % |
+| **E4 wall-clock for 20 000 rails (s)** | | |
+| FDM truth, all cores | 27.3 | 28.4 |
+| surrogate, torch (the configured path) | 448.4 | 23.4 |
+| full SKN, direct look-up, torch (same machine) | 448.4 | 118.6 |
+wrote ~/stackem_work/outputs/base3/comparison_teacher_student
+
+student-engine flow finished: ~/stackem_work/outputs (all steps succeeded)

@@ -1,0 +1,58 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "M = 64 (plain) vs M = 32 (distilled)",
+   "xlabel": "number of rails",
+   "ylabel": "wall-clock time (s)",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "FDM truth (CPU, all cores) [plain run]",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "FDM truth (CPU, 1 core)",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "full SKN, direct look-up (torch) [plain run]",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "full SKN, tabulated look-up (torch)",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN, direct look-up (torch)",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN, tabulated look-up (torch)",
+     "x": "ax0_line5_x",
+     "y": "ax0_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN, tabulated look-up (numpy)",
+     "x": "ax0_line6_x",
+     "y": "ax0_line6_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

@@ -1,0 +1,212 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child48",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "offline, once per technology (no stack, no netlist involved)",
+     "xy": [
+      0.3,
+      4.88
+     ]
+    },
+    {
+     "text": "kernel data (reference FDM)",
+     "xy": [
+      1.5499999999999998,
+      4.550000000000001
+     ]
+    },
+    {
+     "text": "random segment profiles $(\\theta, r, \\rho_J, \\lambda)$\n96 $\\tau$ points per profile",
+     "xy": [
+      1.5499999999999998,
+      3.94
+     ]
+    },
+    {
+     "text": "SKN training",
+     "xy": [
+      4.55,
+      4.550000000000001
+     ]
+    },
+    {
+     "text": "4$\\times$128 SiLU + Fourier features\n$\\sqrt{\\tau}$-scaled targets, teacher-densified labels",
+     "xy": [
+      4.55,
+      3.94
+     ]
+    },
+    {
+     "text": "frozen segment kernels",
+     "xy": [
+      7.95,
+      4.550000000000001
+     ]
+    },
+    {
+     "text": "$s_G,\\ s_M,\\ a\\,(\\xi;\\ \\theta, r, \\rho_J, \\lambda;\\ \\tau)$\nreused by every stack case",
+     "xy": [
+      7.95,
+      3.94
+     ]
+    },
+    {
+     "text": "per stack case (seconds): stack-level EM sign-off",
+     "xy": [
+      0.3,
+      3.53
+     ]
+    },
+    {
+     "text": "stack case",
+     "xy": [
+      1.125,
+      3.1399999999999997
+     ]
+    },
+    {
+     "text": "dies, block powers,\nfeeds, package,\nrule-sized straps",
+     "xy": [
+      1.125,
+      2.3499999999999996
+     ]
+    },
+    {
+     "text": "3-D thermal field",
+     "xy": [
+      2.925,
+      3.1399999999999997
+     ]
+    },
+    {
+     "text": "HotSpot 7 3-D grid\n+ Joule fin ($\\Gamma$, $T_m$)\nstack and standalone",
+     "xy": [
+      2.925,
+      2.3499999999999996
+     ]
+    },
+    {
+     "text": "grid currents",
+     "xy": [
+      4.775,
+      3.1399999999999997
+     ]
+    },
+    {
+     "text": "DC power-grid solve\n$j$ on every rail\nsegments between feeds",
+     "xy": [
+      4.775,
+      2.3499999999999996
+     ]
+    },
+    {
+     "text": "Blech screen",
+     "xy": [
+      6.425,
+      3.1399999999999997
+     ]
+    },
+    {
+     "text": "Blech immortality\n$jL < (jL)_c$\nfeeds and rails",
+     "xy": [
+      6.425,
+      2.3499999999999996
+     ]
+    },
+    {
+     "text": "JCX  exact closure",
+     "xy": [
+      8.4,
+      3.1399999999999997
+     ]
+    },
+    {
+     "text": "Duhamel superposition of junction\nfluxes; tridiagonal per time step;\ntabulated kernels; batched; autograd",
+     "xy": [
+      8.4,
+      2.3499999999999996
+     ]
+    },
+    {
+     "text": "kernel look-up at the\nsegment end points",
+     "xy": [
+      8.280000000000001,
+      3.545
+     ]
+    },
+    {
+     "text": "outputs: $\\sigma(t)$ at every node, $t_{nuc}$ of every rail  $\\rightarrow$  the sign-off metric ladder",
+     "xy": [
+      0.3,
+      1.93
+     ]
+    },
+    {
+     "text": "stack-level sign-off",
+     "xy": [
+      1.85,
+      1.42
+     ]
+    },
+    {
+     "text": "mortal set, earliest $t_{nuc}$, stress margin,\nTop-$k$ ranking, cross-die alignment",
+     "xy": [
+      1.85,
+      0.7899999999999999
+     ]
+    },
+    {
+     "text": "targeted repair",
+     "xy": [
+      5.0,
+      1.42
+     ]
+    },
+    {
+     "text": "widen only the violating rails\n(7.9-22$\\times$ less metal than blanket)",
+     "xy": [
+      5.0,
+      0.7899999999999999
+     ]
+    },
+    {
+     "text": "sensitivities & budgeting",
+     "xy": [
+      8.1,
+      1.42
+     ]
+    },
+    {
+     "text": "$\\partial \\log t_{nuc}/\\partial P_{block}$ by autograd,\nprojected-gradient power re-allocation",
+     "xy": [
+      8.1,
+      0.7899999999999999
+     ]
+    },
+    {
+     "text": "physics results: reference FDM on every rail (truth);  SKN + JCX: the fast, differentiable surrogate",
+     "xy": [
+      9.75,
+      4.88
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": []
+}

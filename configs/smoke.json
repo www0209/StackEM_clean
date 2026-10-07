@@ -1,0 +1,10 @@
+{
+ "name": "smoke",
+ "_comment": "functional smoke test of the whole flow in minutes: the base3 stack on a coarse HotSpot grid (32x32) with a coarse reference mesh (40 cells per segment). Same engine settings as base3. The numbers of a smoke run have no physical value. This file may be merged after another config, e.g. --config configs/quad4.json,configs/smoke.json --out-name quad4 --base-case quad4.",
+ "stack": {
+  "grid": 32
+ },
+ "truth": {
+  "n_cells": 40
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "best_val_worst_rel_l2": 0.001816970994696021,
+  "best_epoch": 295,
+  "n_params": 343811,
+  "torch_numpy_max_diff": 1.9431114196777344e-05,
+  "train_rows": 14592000,
+  "val_rows": 768000,
+  "args": {
+    "data": "~/stackem_work/outputs_teacher/base3/kernels/kernels_train.npz",
+    "out": "~/stackem_work/outputs_teacher/base3/skn",
+    "epochs": 300,
+    "batch": 8192,
+    "lr": 0.001,
+    "lr_min": 1e-05,
+    "warmup": 5,
+    "weight_decay": 1e-06,
+    "w_pde": 0.0,
+    "pde_points": 1024,
+    "hidden": "256,256,256,256,256,256",
+    "fourier": 24,
+    "fourier_scale": 2.0,
+    "act": "silu",
+    "val_fraction": 0.05,
+    "patience": 40,
+    "seed": 0,
+    "device": "auto",
+    "init": null,
+    "max_rows": 0
+  },
+  "features": [
+    "xi",
+    "log10_tau",
+    "theta",
+    "r",
+    "rho_J",
+    "lam"
+  ],
+  "targets": [
+    "s_G_over_sqrt_tau",
+    "s_M_scaled_over_sqrt_tau",
+    "a_over_sqrt_tau"
+  ]
+}

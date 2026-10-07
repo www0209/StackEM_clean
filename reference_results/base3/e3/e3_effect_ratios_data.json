@@ -1,0 +1,192 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "earliest $t_{nuc}$: variant / resolved stack",
+   "ylabel": "",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child4",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child6",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax0_line5_x",
+     "y": "ax0_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "D1",
+     "x": "ax0_line6_x",
+     "y": "ax0_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2",
+     "x": "ax0_line7_x",
+     "y": "ax0_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3",
+     "x": "ax0_line8_x",
+     "y": "ax0_line8_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child15",
+     "x": "ax0_line9_x",
+     "y": "ax0_line9_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "8.6$\\times$",
+     "xy": [
+      6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "0.11$\\times$",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "1.7$\\times$",
+     "xy": [
+      6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "0.34$\\times$",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "$\\leftarrow$ pessimistic (false alarms)",
+     "xy": [
+      0.93,
+      1.01
+     ]
+    },
+    {
+     "text": "optimistic (misses failures) $\\rightarrow$",
+     "xy": [
+      1.07,
+      1.01
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "name": "die-level sign-off / stack_D1",
+   "value": 4.88611033852441
+  },
+  {
+   "name": "die-level sign-off / stack_D2",
+   "value": 8.561942605663138
+  },
+  {
+   "name": "die-level sign-off / stack_D3",
+   "value": 1.0262450755253785
+  },
+  {
+   "name": "rule sign-off (105$^\\circ$C) / stack_D1",
+   "value": 0.11374521463274387
+  },
+  {
+   "name": "rule sign-off (105$^\\circ$C) / stack_D2",
+   "value": 0.20166294155493575
+  },
+  {
+   "name": "rule sign-off (105$^\\circ$C) / stack_D3",
+   "value": 1.1987049319646945
+  },
+  {
+   "name": "uniform T / 3-D field_D1",
+   "value": 0.9621918491616513
+  },
+  {
+   "name": "uniform T / 3-D field_D2",
+   "value": 1.7170435941358717
+  },
+  {
+   "name": "uniform T / 3-D field_D3",
+   "value": 1.287443818800916
+  },
+  {
+   "name": "frozen $\\sigma_T$ / $\\sigma_T(T)$_D1",
+   "value": 0.75485038638088
+  },
+  {
+   "name": "frozen $\\sigma_T$ / $\\sigma_T(T)$_D2",
+   "value": 0.6255202485122331
+  },
+  {
+   "name": "frozen $\\sigma_T$ / $\\sigma_T(T)$_D3",
+   "value": 0.3416870332678912
+  },
+  {
+   "name": "no self-heating / with_D1",
+   "value": 1.0007745418592107
+  },
+  {
+   "name": "no self-heating / with_D2",
+   "value": 1.0098116617852535
+  },
+  {
+   "name": "no self-heating / with_D3",
+   "value": 0.999369842435434
+  },
+  {
+   "name": "no TM / with_D1",
+   "value": 0.9995881568918815
+  },
+  {
+   "name": "no TM / with_D2",
+   "value": 1.0016574920829686
+  },
+  {
+   "name": "no TM / with_D3",
+   "value": 1.109504634972855
+  }
+ ]
+}

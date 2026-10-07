@@ -1,0 +1,40 @@
+\begin{table}[t]
+\centering
+\caption{Plain vs distilled/tabulated path: same physics, same truth, same stack.}
+\label{tab:distill}
+\footnotesize
+\begin{tabular}{@{}lll@{}}
+\toprule
+quantity & plain & distilled + tabulated \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Configuration}} \\
+kernel network & SKN, 343,811 params & student, 54,915 params (6x smaller) \\
+kernel look-up & direct & tabulated (192 pts / segment) \\
+output times M & 64 & 32 \\
+\multicolumn{3}{@{}l}{\textit{E1 kernel accuracy vs FDM (held-out profiles, median rel-L2)}} \\
+$s_G$ & 0.218 % & 0.831 % \\
+$s_M$ & 0.688 % & 2.590 % \\
+$a$ & 0.035 % & 0.107 % \\
+\multicolumn{3}{@{}l}{\textit{E2 $t_{nuc}$ error vs FDM truth, full 3-D variant (median / p90)}} \\
+D1 & 0.23 % / 0.41 % & 0.26 % / 0.61 % \\
+D2 & 0.19 % / 0.61 % & 0.14 % / 0.66 % \\
+D3 & 2.27 % / 2.39 % & 1.72 % / 2.34 % \\
+mortality agreement (min over dies) & 100.0 % & 100.0 % \\
+closure time, 246 rails (numpy, s) & 251.4 & 13.5 \\
+\multicolumn{3}{@{}l}{\textit{E3 stack (truth earliest $t_{nuc}$ vs surrogate overlay)}} \\
+truth earliest (yr) & 2.389 & 2.389 \\
+overlay earliest (yr) & 2.425 & 2.405 \\
+E7 surrogate: Top-50 hit / Kendall / mortal-set Jaccard & 1.00 / 0.99 / 1.00 & 1.00 / 0.99 / 1.00 \\
+\multicolumn{3}{@{}l}{\textit{E5 differentiability and budgeting}} \\
+autograd vs finite difference (max rel. dev., |s| > 0.01/W) & 1.47 % & 3.21 % \\
+earliest $t_{nuc}$ after power re-allocation (truth, yr) & 5.192 & 5.204 \\
+\multicolumn{3}{@{}l}{\textit{E8 ev6 stack (surrogate vs truth)}} \\
+t_nuc error median & 0.64 % & 1.43 % \\
+t_nuc error p90 & 1.72 % & 2.42 % \\
+\multicolumn{3}{@{}l}{\textit{E4 wall-clock for 20 000 rails (s)}} \\
+FDM truth, all cores & 27.3 & 28.4 \\
+surrogate, torch (the configured path) & 448.4 & 23.4 \\
+full SKN, direct look-up, torch (same machine) & 448.4 & 118.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,47 @@
+\begin{table}[t]
+\centering
+\caption{Parameters of the stack case, model and benchmark (base3). The last column lists the ranges every conclusion was tested against (Sec.~VI-F).}
+\label{tab:params}
+\footnotesize
+\begin{tabular}{@{}llll@{}}
+\toprule
+parameter & symbol & value & swept range \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Stack case}} \\
+dies (bottom to top) &  & D1 2 W / D2 4 W / D3 20 W & 10 -- 30 (top die) \\
+die size / thickness &  & 4 mm / 50 $\mu$m &  \\
+power blocks per die &  & 4$\times$4 &  \\
+hot blocks (power factor) &  & D1 block (3, 3) $\times$4; D3 block (1, 1) $\times$5 & position sweep (E3) \\
+vertical feed pitch / kind &  & 400 $\mu$m tsv / 400 $\mu$m tsv / 200 $\mu$m pad & 200 -- 800 (bottom die) \\
+hybrid-bond layer & $t_b$, $k_b$ & 5 $\mu$m, 40 W/mK & 5 -- 150 \\
+TIM thickness &  & 20 $\mu$m &  \\
+ambient / package resistance & $T_a$, $R_{conv}$ & 45 $^\circ$C, 0.5 K/W & 0.1 -- 1.0 \\
+layer order &  & logic die on top (heat-sink side) & logic top / bottom \\
+\multicolumn{4}{@{}l}{\textit{Power grid (per die)}} \\
+strap pitch / thickness & $p$, $H$ & 100 $\mu$m / 1 $\mu$m &  \\
+strap width (die-level sign-off sizing) & $W$ & D1 1.35, D2 0.99, D3 15.34 $\mu$m & re-sized in E6 \\
+supply / current fraction & $V_{dd}$ & 0.8 V / 0.4 &  \\
+Cu resistivity & $\rho$ & 3 $\mu\Omega$cm &  \\
+\multicolumn{4}{@{}l}{\textit{Electromigration / stress (Korhonen)}} \\
+activation energy & $E_a$ & 0.86 eV & 0.84 -- 1.1 \\
+diffusivity prefactor & $D_0$ & 7.5$\times$10$^{-8}$ m$^2$/s &  \\
+effective charge & $Z^*$ & 10 &  \\
+effective bulk modulus & $B$ & 100 GPa &  \\
+atomic volume & $\Omega$ & 1.18$\times$10$^{-29}$ m$^3$ &  \\
+heat of transport (TM) & $Q^*$ & 0.09 eV & 0 (no-TM variant) \\
+critical stress & $\sigma_{crit}$ & 500 MPa & 400 -- 600 \\
+residual stress & $\sigma_T(T)$ & $B\,\Delta\alpha\,(T_0 - T)$, $T_0$ = 250 $^\circ$C, $\Delta\alpha$ = 13.9 ppm/K & frozen (variant) \\
+\multicolumn{4}{@{}l}{\textit{Wire self-heating (fin model)}} \\
+Cu / ILD conductivity & $k_{cu}$, $k_{ILD}$ & 400 / 1.4 W/mK &  \\
+rail / ILD thickness & $t_{cu}$, $t_{ILD}$ & 1 / 4 $\mu$m &  \\
+thermal length (two-sided / single) & $\Gamma$ & 6.9 / 33.8 $\mu$m &  \\
+\multicolumn{4}{@{}l}{\textit{Sign-off benchmark and solver}} \\
+lifetime target / margin & $t_h$, $m$ & 10 yr $\times$ 2 & 1.5 -- 3 \\
+rule sign-off temperature & $T_{rule}$ & 105 $^\circ$C (uniform) &  \\
+strap width search range &  & 0.5 -- 40 $\mu$m &  \\
+output time grid & $M$ & 32 log-spaced points, 10$^{4}$ -- 10$^{9.5}$ s &  \\
+reference solver cells / segment &  & 60 &  \\
+HotSpot grid &  & 64$\times$64 per layer &  \\
+\bottomrule
+\end{tabular}
+\end{table}

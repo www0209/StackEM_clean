@@ -1,0 +1,77 @@
+{
+  "student": {
+    "n_params": 54915,
+    "val_rel_l2": [
+      0.0035032457672059536,
+      0.005381342023611069,
+      0.001738104154355824
+    ],
+    "val_end_rel_l2": [
+      0.0015221784124150872,
+      0.0029966298025101423,
+      0.0010088500566780567
+    ],
+    "best_epoch": 149,
+    "hidden": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "n_fourier": 16
+  },
+  "teacher": {
+    "n_params": 343811,
+    "val_rel_l2": [
+      0.0010861919727176428,
+      0.001816970994696021,
+      0.0006392010254785419
+    ],
+    "val_end_rel_l2": [
+      0.0006011839141137898,
+      0.0013147364370524883,
+      0.00046492248657159507
+    ],
+    "path": "~/stackem_work/outputs/base3/skn/skn_best.npz"
+  },
+  "compression": 6.260784849312574,
+  "torch_numpy_max_diff": 1.0728836059570312e-05,
+  "rows": {
+    "fdm": 14592000,
+    "synthetic": 8000000,
+    "val": 768000
+  },
+  "args": {
+    "data": "~/stackem_work/outputs/base3/kernels/kernels_train.npz",
+    "teacher": "~/stackem_work/outputs/base3/skn/skn_best.npz",
+    "out": "~/stackem_work/outputs/base3/skn_distill",
+    "epochs": 150,
+    "batch": 16384,
+    "lr": 0.002,
+    "lr_min": 1e-05,
+    "warmup": 2,
+    "weight_decay": 1e-06,
+    "hidden": "128,128,128,128",
+    "fourier": 16,
+    "fourier_scale": 2.0,
+    "n_synthetic": 8000000,
+    "end_fraction": 0.7,
+    "val_fraction": 0.05,
+    "patience": 30,
+    "seed": 0,
+    "device": "auto"
+  },
+  "features": [
+    "xi",
+    "log10_tau",
+    "theta",
+    "r",
+    "rho_J",
+    "lam"
+  ],
+  "targets": [
+    "s_G_over_sqrt_tau",
+    "s_M_scaled_over_sqrt_tau",
+    "a_over_sqrt_tau"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "number of rails",
+   "ylabel": "wall-clock time (s)",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "FDM truth (CPU, 32 cores)",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "FDM truth (CPU, 1 core)",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "SKN + JCX, direct look-up (numpy, CPU)",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "SKN + JCX, direct look-up (torch, CUDA)",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": [
+  {
+   "name": "n_rails",
+   "key": "extra_n_rails"
+  },
+  {
+   "name": "FDM_truth_CPU_32_cores",
+   "key": "extra_FDM_truth_CPU_32_cores"
+  },
+  {
+   "name": "FDM_truth_CPU_1_core",
+   "key": "extra_FDM_truth_CPU_1_core"
+  },
+  {
+   "name": "SKN_plus_JCX_direct_look-up_numpy_CPU",
+   "key": "extra_SKN_plus_JCX_direct_look-up_numpy_CPU"
+  },
+  {
+   "name": "SKN_plus_JCX_direct_look-up_torch_CUDA",
+   "key": "extra_SKN_plus_JCX_direct_look-up_torch_CUDA"
+  }
+ ]
+}

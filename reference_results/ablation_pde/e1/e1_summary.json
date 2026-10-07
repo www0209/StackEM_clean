@@ -1,0 +1,97 @@
+{
+ "providers": [
+  "SKN"
+ ],
+ "main_provider": "SKN",
+ "val": {
+  "s_G": {
+   "rel_l2_median": 0.002510508832738327,
+   "rel_l2_p90": 0.0035668801341028527,
+   "rel_l2_max": 0.006000440199107269,
+   "end_max_rel_median": 0.005592484900396927
+  },
+  "s_M": {
+   "rel_l2_median": 0.019573114288070327,
+   "rel_l2_p90": 0.44349830104778254,
+   "rel_l2_max": 2.87504183326255,
+   "end_max_rel_median": 0.11365191361420693
+  },
+  "a": {
+   "rel_l2_median": 0.0016272808049664486,
+   "rel_l2_p90": 0.0019337659310169914,
+   "rel_l2_max": 0.002336635363239784,
+   "end_max_rel_median": 0.007931782800728003
+  }
+ },
+ "val_by_provider": {
+  "SKN": {
+   "s_G": {
+    "rel_l2_median": 0.002510508832738327,
+    "rel_l2_p90": 0.0035668801341028527,
+    "rel_l2_max": 0.006000440199107269,
+    "end_max_rel_median": 0.005592484900396927
+   },
+   "s_M": {
+    "rel_l2_median": 0.019573114288070327,
+    "rel_l2_p90": 0.44349830104778254,
+    "rel_l2_max": 2.87504183326255,
+    "end_max_rel_median": 0.11365191361420693
+   },
+   "a": {
+    "rel_l2_median": 0.0016272808049664486,
+    "rel_l2_p90": 0.0019337659310169914,
+    "rel_l2_max": 0.002336635363239784,
+    "end_max_rel_median": 0.007931782800728003
+   }
+  }
+ },
+ "ood": {
+  "s_G": {
+   "rel_l2_median": 0.0025602866291561084,
+   "rel_l2_p90": 0.003539645282175883,
+   "rel_l2_max": 0.004606273681363519,
+   "end_max_rel_median": 0.00611282560012923
+  },
+  "s_M": {
+   "rel_l2_median": 0.02860859713137273,
+   "rel_l2_p90": 0.5195988374990731,
+   "rel_l2_max": 2.1212118048882562,
+   "end_max_rel_median": 0.16260772653260266
+  },
+  "a": {
+   "rel_l2_median": 0.0017399534771727993,
+   "rel_l2_p90": 0.0019056235521898654,
+   "rel_l2_max": 0.002003020243438548,
+   "end_max_rel_median": 0.009716976097952874
+  }
+ },
+ "ood_by_provider": {
+  "SKN": {
+   "s_G": {
+    "rel_l2_median": 0.0025602866291561084,
+    "rel_l2_p90": 0.003539645282175883,
+    "rel_l2_max": 0.004606273681363519,
+    "end_max_rel_median": 0.00611282560012923
+   },
+   "s_M": {
+    "rel_l2_median": 0.02860859713137273,
+    "rel_l2_p90": 0.5195988374990731,
+    "rel_l2_max": 2.1212118048882562,
+    "end_max_rel_median": 0.16260772653260266
+   },
+   "a": {
+    "rel_l2_median": 0.0017399534771727993,
+    "rel_l2_p90": 0.0019056235521898654,
+    "rel_l2_max": 0.002003020243438548,
+    "end_max_rel_median": 0.009716976097952874
+   }
+  }
+ },
+ "_meta": {
+  "time": "2026-09-27 16:29:13",
+  "python": "3.11.16",
+  "machine": "x86_64",
+  "cmd": "~/stackem_work/StackEM_clean/stackem/experiments/e1_skn_eval.py --config configs/base3_teacher.json --root ~/stackem_work/outputs_teacher --hotspot ~/stackem_work/hotspot_bin/HotSpot --weights ~/stackem_work/outputs_teacher/base3/skn_pde/skn_best.npz --tag pde",
+  "config_name": "base3__pde"
+ }
+}

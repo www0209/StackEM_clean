@@ -1,0 +1,161 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "(a) vertical cut at y = 1.53 mm through the D3 hot spot\n(layer heights not to scale)",
+   "xlabel": "x along the cut (mm)",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child4",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax0_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 1,
+   "title": "(b) along the cut: in the stack (solid) vs standalone (dashed)",
+   "xlabel": "x along the cut (mm)",
+   "ylabel": "die temperature (K)",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D3 in stack",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3 standalone",
+     "x": "ax1_line1_x",
+     "y": "ax1_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2 in stack",
+     "x": "ax1_line2_x",
+     "y": "ax1_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2 standalone",
+     "x": "ax1_line3_x",
+     "y": "ax1_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "D1 in stack",
+     "x": "ax1_line4_x",
+     "y": "ax1_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "D1 standalone",
+     "x": "ax1_line5_x",
+     "y": "ax1_line5_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "+6 K",
+     "xy": [
+      3.66,
+      339.695
+     ]
+    },
+    {
+     "text": "+21 K",
+     "xy": [
+      3.14,
+      332.85
+     ]
+    },
+    {
+     "text": "+25 K",
+     "xy": [
+      2.62,
+      332.40999999999997
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "name": "x_mm",
+   "key": "extra_x_mm"
+  },
+  {
+   "name": "y_cut_mm",
+   "value": 1.53125
+  },
+  {
+   "name": "layer_names",
+   "key": "extra_layer_names"
+  },
+  {
+   "name": "slice_T",
+   "key": "extra_slice_T"
+  },
+  {
+   "name": "T_stack_D3",
+   "key": "extra_T_stack_D3"
+  },
+  {
+   "name": "T_alone_D3",
+   "key": "extra_T_alone_D3"
+  },
+  {
+   "name": "T_stack_D2",
+   "key": "extra_T_stack_D2"
+  },
+  {
+   "name": "T_alone_D2",
+   "key": "extra_T_alone_D2"
+  },
+  {
+   "name": "T_stack_D1",
+   "key": "extra_T_stack_D1"
+  },
+  {
+   "name": "T_alone_D1",
+   "key": "extra_T_alone_D1"
+  }
+ ]
+}

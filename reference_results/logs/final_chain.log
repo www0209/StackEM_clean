@@ -1,0 +1,16 @@
+[2026-09-27 12:37:24] 1/5 plain package
+   exit 0  (log: final_1_full.log)
+[2026-09-27 15:26:34] 2/5 plain extras
+   exit 0
+[2026-09-27 16:42:26] 3/5 distilled package
+   exit 0
+[2026-09-27 17:38:47] 4/5 distilled extras + IBM-PG: ~/stackem_work/ibmpg_bench/ibmpg1.spice ~/stackem_work/ibmpg_bench/ibmpg2.spice ~/stackem_work/ibmpg_bench/ibmpg3.spice
+   exit 0
+[2026-09-27 17:48:22] 5/5 paper timing figure
+wrote ~/stackem_work/outputs/base3/paper_figs/fig_e4_paper_timing.pdf/.png | engine series: distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)
+   exit 0
+[2026-09-27 17:48:23] done.  Summary lines:
+full flow finished: ~/stackem_work/outputs_teacher (all steps succeeded)
+extras finished: ~/stackem_work/outputs_teacher (all steps succeeded)
+student-engine flow finished: ~/stackem_work/outputs (all steps succeeded)
+student-engine extras finished: ~/stackem_work/outputs (all steps succeeded)

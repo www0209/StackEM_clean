@@ -1,0 +1,149 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "reference FDM",
+   "xlabel": "",
+   "ylabel": "$s_G/\\sqrt{\\tau}$ (EM response)\nlog$_{10}\\tau$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax0_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 1,
+   "title": "SKN",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax1_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 2,
+   "title": "SKN $-$ FDM",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax2_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 3,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "$s_M/\\sqrt{\\tau}$ (TM response)\nlog$_{10}\\tau$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax3_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 4,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax4_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 5,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax5_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 6,
+   "title": "",
+   "xlabel": "$\\xi = x/L$",
+   "ylabel": "$a/\\sqrt{\\tau}$ (unit-flux Green)\nlog$_{10}\\tau$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax6_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 7,
+   "title": "",
+   "xlabel": "$\\xi = x/L$",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax7_coll0_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 8,
+   "title": "",
+   "xlabel": "$\\xi = x/L$",
+   "ylabel": "",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child0",
+     "values": "ax8_coll0_values"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": []
+}

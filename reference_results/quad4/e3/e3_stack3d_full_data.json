@@ -1,0 +1,338 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "x (mm)",
+   "ylabel": "y (mm)",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "segments3d",
+     "label": "_child2",
+     "segments": "ax0_coll2_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child3",
+     "segments": "ax0_coll3_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child4",
+     "segments": "ax0_coll4_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child5",
+     "segments": "ax0_coll5_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child6",
+     "segments": "ax0_coll6_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child7",
+     "segments": "ax0_coll7_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child8",
+     "segments": "ax0_coll8_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child9",
+     "segments": "ax0_coll9_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child13",
+     "segments": "ax0_coll13_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child14",
+     "segments": "ax0_coll14_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child15",
+     "segments": "ax0_coll15_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child16",
+     "segments": "ax0_coll16_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child17",
+     "segments": "ax0_coll17_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child18",
+     "segments": "ax0_coll18_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child19",
+     "segments": "ax0_coll19_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child20",
+     "segments": "ax0_coll20_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child24",
+     "segments": "ax0_coll24_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child25",
+     "segments": "ax0_coll25_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child26",
+     "segments": "ax0_coll26_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child27",
+     "segments": "ax0_coll27_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child28",
+     "segments": "ax0_coll28_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child29",
+     "segments": "ax0_coll29_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child30",
+     "segments": "ax0_coll30_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child35",
+     "segments": "ax0_coll35_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child36",
+     "segments": "ax0_coll36_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child37",
+     "segments": "ax0_coll37_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child38",
+     "segments": "ax0_coll38_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child39",
+     "segments": "ax0_coll39_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child40",
+     "segments": "ax0_coll40_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child41",
+     "segments": "ax0_coll41_segments"
+    },
+    {
+     "kind": "segments3d",
+     "label": "_child42",
+     "segments": "ax0_coll42_segments"
+    }
+   ],
+   "zlabel": "",
+   "texts": [
+    {
+     "text": "  bond + TSV 5 \u00b5m",
+     "xy": [
+      0.0750476359620236,
+      -0.027053247454169416
+     ]
+    },
+    {
+     "text": "  bond + TSV 5 \u00b5m",
+     "xy": [
+      0.0750476359620236,
+      0.0003343115126583307
+     ]
+    },
+    {
+     "text": "  hybrid bond 5 \u00b5m",
+     "xy": [
+      0.0750476359620236,
+      0.027721870479486082
+     ]
+    },
+    {
+     "text": "  TIM + heat spreader / sink",
+     "xy": [
+      0.0750476359620236,
+      0.05100129560128967
+     ]
+    },
+    {
+     "text": "D1 (IO)  3 W\nearliest 9.7 yr, 3 rails < 10 yr",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "D2 (logic)  12 W\nearliest 5.6 yr, 4 rails < 10 yr",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "D3 (SRAM)  6 W\nearliest 4.0 yr, 40 rails < 10 yr",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    },
+    {
+     "text": "D4 (logic)  25 W\nearliest 15.0 yr, 0 rails < 10 yr",
+     "xy": [
+      -6.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 1,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "die temperature (K)",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "quadmesh",
+     "label": "_child1",
+     "values": "ax1_coll1_values"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 2,
+   "title": "",
+   "xlabel": "",
+   "ylabel": "rail nucleation time (years)",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax2_line0_x",
+     "y": "ax2_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax2_line1_x",
+     "y": "ax2_line1_y"
+    },
+    {
+     "kind": "quadmesh",
+     "label": "_child1",
+     "values": "ax2_coll1_values"
+    }
+   ],
+   "texts": [
+    {
+     "text": "10-yr\nhorizon",
+     "xy": [
+      -0.6,
+      10.0
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "name": "T_D1",
+   "key": "extra_T_D1"
+  },
+  {
+   "name": "T_D2",
+   "key": "extra_T_D2"
+  },
+  {
+   "name": "T_D3",
+   "key": "extra_T_D3"
+  },
+  {
+   "name": "T_D4",
+   "key": "extra_T_D4"
+  },
+  {
+   "name": "t_nuc_s_D1",
+   "key": "extra_t_nuc_s_D1"
+  },
+  {
+   "name": "t_nuc_s_D2",
+   "key": "extra_t_nuc_s_D2"
+  },
+  {
+   "name": "t_nuc_s_D3",
+   "key": "extra_t_nuc_s_D3"
+  },
+  {
+   "name": "t_nuc_s_D4",
+   "key": "extra_t_nuc_s_D4"
+  },
+  {
+   "name": "rail_xy_D1",
+   "key": "extra_rail_xy_D1"
+  },
+  {
+   "name": "rail_xy_D2",
+   "key": "extra_rail_xy_D2"
+  },
+  {
+   "name": "rail_xy_D3",
+   "key": "extra_rail_xy_D3"
+  },
+  {
+   "name": "rail_xy_D4",
+   "key": "extra_rail_xy_D4"
+  },
+  {
+   "name": "die_size_m",
+   "value": 0.006
+  },
+  {
+   "name": "hot_footprint_mm",
+   "key": "extra_hot_footprint_mm"
+  }
+ ]
+}

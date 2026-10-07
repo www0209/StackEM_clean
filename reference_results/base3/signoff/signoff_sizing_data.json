@@ -1,0 +1,170 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "sizing curves (stars: chosen width)",
+   "xlabel": "strap width $W$ ($\\mu$m)",
+   "ylabel": "earliest $t_{nuc}$, die standalone (yr)",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "D1 die-level sign-off",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "D1 rule (uniform T)",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2 die-level sign-off",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax0_line5_x",
+     "y": "ax0_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "D2 rule (uniform T)",
+     "x": "ax0_line6_x",
+     "y": "ax0_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax0_line7_x",
+     "y": "ax0_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3 die-level sign-off",
+     "x": "ax0_line8_x",
+     "y": "ax0_line8_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax0_line9_x",
+     "y": "ax0_line9_y"
+    },
+    {
+     "kind": "line",
+     "label": "D3 rule (uniform T)",
+     "x": "ax0_line10_x",
+     "y": "ax0_line10_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child11",
+     "x": "ax0_line11_x",
+     "y": "ax0_line11_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child12",
+     "x": "ax0_line12_x",
+     "y": "ax0_line12_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "target 20 yr",
+     "xy": [
+      0.02,
+      20.0
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 1,
+   "title": "resulting widths",
+   "xlabel": "",
+   "ylabel": "strap width $W$ ($\\mu$m)",
+   "xscale": "linear",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "bars",
+     "label": "die-level sign-off (standalone thermal)",
+     "x": "ax1_bars0_x",
+     "height": "ax1_bars0_height",
+     "width": "ax1_bars0_width"
+    },
+    {
+     "kind": "bars",
+     "label": "rule sign-off (uniform 105 $^\\circ$C)",
+     "x": "ax1_bars1_x",
+     "height": "ax1_bars1_height",
+     "width": "ax1_bars1_width"
+    }
+   ],
+   "texts": [
+    {
+     "text": "1.35",
+     "xy": [
+      -0.19,
+      1.3493941701284855
+     ]
+    },
+    {
+     "text": "6.63",
+     "xy": [
+      0.19,
+      6.629728427755397
+     ]
+    },
+    {
+     "text": "0.99",
+     "xy": [
+      0.81,
+      0.9915801284646629
+     ]
+    },
+    {
+     "text": "4.79",
+     "xy": [
+      1.19,
+      4.789065521550651
+     ]
+    },
+    {
+     "text": "15.34",
+     "xy": [
+      1.81,
+      15.337658249184217
+     ]
+    },
+    {
+     "text": "15.34",
+     "xy": [
+      2.19,
+      15.337658249184217
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": []
+}

@@ -1,0 +1,220 @@
+{
+ "note": "Numbers are copied from the training summaries of the final runs; see training_records.",
+ "kernel_dataset": {
+  "n_profiles": 120000,
+  "ranges": {
+   "T_bar": [
+    300.0,
+    450.0
+   ],
+   "dT": [
+    -12.0,
+    12.0
+   ],
+   "T_m": [
+    0.0,
+    40.0
+   ],
+   "p_zero_Tm": 0.3,
+   "log10_lam": [
+    -0.5,
+    2.1
+   ],
+   "log10_tau": [
+    -6.0,
+    1.0
+   ],
+   "n_cells": 200,
+   "n_tau_grid": 96,
+   "points_per_profile": 128,
+   "n_end_points": 32
+  },
+  "ood_ranges": {
+   "T_bar": [
+    450.0,
+    480.0
+   ],
+   "dT": [
+    -20.0,
+    20.0
+   ],
+   "T_m": [
+    40.0,
+    60.0
+   ],
+   "p_zero_Tm": 0.3,
+   "log10_lam": [
+    -0.5,
+    2.1
+   ],
+   "log10_tau": [
+    -6.0,
+    1.0
+   ],
+   "n_cells": 200,
+   "n_tau_grid": 96,
+   "points_per_profile": 128,
+   "n_end_points": 32
+  },
+  "description": "reference_results/base3/kernels/dataset_info.json",
+  "arrays": "release file stackem_kernels_dataset.tar"
+ },
+ "skn_teacher.npz": {
+  "role": "teacher",
+  "architecture": {
+   "hidden": [
+    256,
+    256,
+    256,
+    256,
+    256,
+    256
+   ],
+   "n_fourier": 24,
+   "fourier_scale": 2.0,
+   "activation": "silu"
+  },
+  "n_params": 343811,
+  "features": [
+   "xi",
+   "log10_tau",
+   "theta",
+   "r",
+   "rho_J",
+   "lam"
+  ],
+  "targets": [
+   "s_G_over_sqrt_tau",
+   "s_M_scaled_over_sqrt_tau",
+   "a_over_sqrt_tau"
+  ],
+  "training": {
+   "train_rows": 14592000,
+   "val_rows": 768000,
+   "epochs": 300,
+   "batch": 8192,
+   "lr": 0.001,
+   "lr_min": 1e-05,
+   "warmup": 5,
+   "weight_decay": 1e-06,
+   "w_pde": 0.0,
+   "seed": 0
+  },
+  "best_epoch": 295,
+  "best_val_worst_target_rel_l2": 0.001816970994696021,
+  "torch_numpy_max_diff": 1.9431114196777344e-05,
+  "training_records": "reference_results/base3/skn/ and reference_results/logs/kernels_and_teacher_training.log",
+  "sha256": "3d24ed0984e7da17ca4cdebd9832d2fa0693a1cb25a521138d5b95aaa85523e3",
+  "bytes": 1380970
+ },
+ "skn_student.npz": {
+  "role": "student, the network used by the main flow (distilled from skn_teacher.npz)",
+  "architecture": {
+   "hidden": [
+    128,
+    128,
+    128,
+    128
+   ],
+   "n_fourier": 16,
+   "fourier_scale": 2.0,
+   "activation": "silu"
+  },
+  "n_params": 54915,
+  "features": [
+   "xi",
+   "log10_tau",
+   "theta",
+   "r",
+   "rho_J",
+   "lam"
+  ],
+  "targets": [
+   "s_G_over_sqrt_tau",
+   "s_M_scaled_over_sqrt_tau",
+   "a_over_sqrt_tau"
+  ],
+  "training": {
+   "rows_fdm": 14592000,
+   "rows_teacher_labelled": 8000000,
+   "val_rows": 768000,
+   "epochs": 150,
+   "batch": 16384,
+   "lr": 0.002,
+   "lr_min": 1e-05,
+   "warmup": 2,
+   "weight_decay": 1e-06,
+   "end_fraction": 0.7,
+   "seed": 0
+  },
+  "best_epoch": 149,
+  "val_rel_l2_per_target": [
+   0.0035032457672059536,
+   0.005381342023611069,
+   0.001738104154355824
+  ],
+  "val_end_rel_l2_per_target": [
+   0.0015221784124150872,
+   0.0029966298025101423,
+   0.0010088500566780567
+  ],
+  "teacher_val_rel_l2_per_target": [
+   0.0010861919727176428,
+   0.001816970994696021,
+   0.0006392010254785419
+  ],
+  "compression_vs_teacher": 6.260784849312574,
+  "torch_numpy_max_diff": 1.0728836059570312e-05,
+  "training_records": "reference_results/base3/skn_distill/ and reference_results/logs/student_distillation.log",
+  "sha256": "fbd8f6251e342f80f2dd38753b717ba1fb20177b56763d3d9e3e8938278a299d",
+  "bytes": 224338
+ },
+ "skn_teacher_pde.npz": {
+  "role": "teacher trained with the PDE residual term (ablation only)",
+  "architecture": {
+   "hidden": [
+    256,
+    256,
+    256,
+    256,
+    256,
+    256
+   ],
+   "n_fourier": 24,
+   "fourier_scale": 2.0,
+   "activation": "silu"
+  },
+  "n_params": 343811,
+  "features": [
+   "xi",
+   "log10_tau",
+   "theta",
+   "r",
+   "rho_J",
+   "lam"
+  ],
+  "targets": [
+   "s_G_over_sqrt_tau",
+   "s_M_scaled_over_sqrt_tau",
+   "a_over_sqrt_tau"
+  ],
+  "training": {
+   "train_rows": 14592000,
+   "val_rows": 768000,
+   "epochs": 300,
+   "batch": 8192,
+   "lr": 0.001,
+   "lr_min": 1e-05,
+   "warmup": 5,
+   "weight_decay": 1e-06,
+   "w_pde": 0.05,
+   "seed": 0
+  },
+  "best_epoch": 299,
+  "best_val_worst_target_rel_l2": 0.0029432629235088825,
+  "torch_numpy_max_diff": 2.0444393157958984e-05,
+  "training_records": "reference_results/ablation_pde/skn_pde/ and reference_results/logs/pde_ablation_training.log",
+  "sha256": "73f495f3b952d90704492d0868e45985b19698ed358139bee098e79091054cca",
+  "bytes": 1380970
+ }
+}

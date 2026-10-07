@@ -1,0 +1,411 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "$s_G/\\sqrt{\\tau}$ at both ends",
+   "xlabel": "log$_{10}\\tau$",
+   "ylabel": "$s_G/\\sqrt{\\tau}$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "profile 1: $T$ 357/359 K, $\\lambda$ = 49.0",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "profile 2: $T$ 356/364 K, $\\lambda$ = 0.5",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax0_line5_x",
+     "y": "ax0_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child6",
+     "x": "ax0_line6_x",
+     "y": "ax0_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax0_line7_x",
+     "y": "ax0_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "profile 3: $T$ 305/299 K, $\\lambda$ = 14.7",
+     "x": "ax0_line8_x",
+     "y": "ax0_line8_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax0_line9_x",
+     "y": "ax0_line9_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child10",
+     "x": "ax0_line10_x",
+     "y": "ax0_line10_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child11",
+     "x": "ax0_line11_x",
+     "y": "ax0_line11_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 1,
+   "title": "$s_M/\\sqrt{\\tau}$ at both ends",
+   "xlabel": "log$_{10}\\tau$",
+   "ylabel": "$s_M/\\sqrt{\\tau}$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "profile 1: $T$ 357/359 K, $\\lambda$ = 49.0",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax1_line1_x",
+     "y": "ax1_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax1_line2_x",
+     "y": "ax1_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax1_line3_x",
+     "y": "ax1_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "profile 2: $T$ 356/364 K, $\\lambda$ = 0.5",
+     "x": "ax1_line4_x",
+     "y": "ax1_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax1_line5_x",
+     "y": "ax1_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child6",
+     "x": "ax1_line6_x",
+     "y": "ax1_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax1_line7_x",
+     "y": "ax1_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "profile 3: $T$ 305/299 K, $\\lambda$ = 14.7",
+     "x": "ax1_line8_x",
+     "y": "ax1_line8_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax1_line9_x",
+     "y": "ax1_line9_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child10",
+     "x": "ax1_line10_x",
+     "y": "ax1_line10_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child11",
+     "x": "ax1_line11_x",
+     "y": "ax1_line11_y"
+    }
+   ],
+   "texts": []
+  },
+  {
+   "axes": 2,
+   "title": "$a/\\sqrt{\\tau}$ at both ends",
+   "xlabel": "log$_{10}\\tau$",
+   "ylabel": "$a/\\sqrt{\\tau}$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "profile 1: $T$ 357/359 K, $\\lambda$ = 49.0",
+     "x": "ax2_line0_x",
+     "y": "ax2_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "x": "ax2_line1_x",
+     "y": "ax2_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "x": "ax2_line2_x",
+     "y": "ax2_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax2_line3_x",
+     "y": "ax2_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "profile 2: $T$ 356/364 K, $\\lambda$ = 0.5",
+     "x": "ax2_line4_x",
+     "y": "ax2_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax2_line5_x",
+     "y": "ax2_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child6",
+     "x": "ax2_line6_x",
+     "y": "ax2_line6_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child7",
+     "x": "ax2_line7_x",
+     "y": "ax2_line7_y"
+    },
+    {
+     "kind": "line",
+     "label": "profile 3: $T$ 305/299 K, $\\lambda$ = 14.7",
+     "x": "ax2_line8_x",
+     "y": "ax2_line8_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child9",
+     "x": "ax2_line9_x",
+     "y": "ax2_line9_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child10",
+     "x": "ax2_line10_x",
+     "y": "ax2_line10_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child11",
+     "x": "ax2_line11_x",
+     "y": "ax2_line11_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": [
+  {
+   "name": "profile1_s_G_xi0_ref",
+   "key": "extra_profile1_s_G_xi0_ref"
+  },
+  {
+   "name": "profile1_s_G_xi0_skn",
+   "key": "extra_profile1_s_G_xi0_skn"
+  },
+  {
+   "name": "profile1_s_G_xi1_ref",
+   "key": "extra_profile1_s_G_xi1_ref"
+  },
+  {
+   "name": "profile1_s_G_xi1_skn",
+   "key": "extra_profile1_s_G_xi1_skn"
+  },
+  {
+   "name": "profile1_s_M_xi0_ref",
+   "key": "extra_profile1_s_M_xi0_ref"
+  },
+  {
+   "name": "profile1_s_M_xi0_skn",
+   "key": "extra_profile1_s_M_xi0_skn"
+  },
+  {
+   "name": "profile1_s_M_xi1_ref",
+   "key": "extra_profile1_s_M_xi1_ref"
+  },
+  {
+   "name": "profile1_s_M_xi1_skn",
+   "key": "extra_profile1_s_M_xi1_skn"
+  },
+  {
+   "name": "profile1_a_xi0_ref",
+   "key": "extra_profile1_a_xi0_ref"
+  },
+  {
+   "name": "profile1_a_xi0_skn",
+   "key": "extra_profile1_a_xi0_skn"
+  },
+  {
+   "name": "profile1_a_xi1_ref",
+   "key": "extra_profile1_a_xi1_ref"
+  },
+  {
+   "name": "profile1_a_xi1_skn",
+   "key": "extra_profile1_a_xi1_skn"
+  },
+  {
+   "name": "profile2_s_G_xi0_ref",
+   "key": "extra_profile2_s_G_xi0_ref"
+  },
+  {
+   "name": "profile2_s_G_xi0_skn",
+   "key": "extra_profile2_s_G_xi0_skn"
+  },
+  {
+   "name": "profile2_s_G_xi1_ref",
+   "key": "extra_profile2_s_G_xi1_ref"
+  },
+  {
+   "name": "profile2_s_G_xi1_skn",
+   "key": "extra_profile2_s_G_xi1_skn"
+  },
+  {
+   "name": "profile2_s_M_xi0_ref",
+   "key": "extra_profile2_s_M_xi0_ref"
+  },
+  {
+   "name": "profile2_s_M_xi0_skn",
+   "key": "extra_profile2_s_M_xi0_skn"
+  },
+  {
+   "name": "profile2_s_M_xi1_ref",
+   "key": "extra_profile2_s_M_xi1_ref"
+  },
+  {
+   "name": "profile2_s_M_xi1_skn",
+   "key": "extra_profile2_s_M_xi1_skn"
+  },
+  {
+   "name": "profile2_a_xi0_ref",
+   "key": "extra_profile2_a_xi0_ref"
+  },
+  {
+   "name": "profile2_a_xi0_skn",
+   "key": "extra_profile2_a_xi0_skn"
+  },
+  {
+   "name": "profile2_a_xi1_ref",
+   "key": "extra_profile2_a_xi1_ref"
+  },
+  {
+   "name": "profile2_a_xi1_skn",
+   "key": "extra_profile2_a_xi1_skn"
+  },
+  {
+   "name": "profile3_s_G_xi0_ref",
+   "key": "extra_profile3_s_G_xi0_ref"
+  },
+  {
+   "name": "profile3_s_G_xi0_skn",
+   "key": "extra_profile3_s_G_xi0_skn"
+  },
+  {
+   "name": "profile3_s_G_xi1_ref",
+   "key": "extra_profile3_s_G_xi1_ref"
+  },
+  {
+   "name": "profile3_s_G_xi1_skn",
+   "key": "extra_profile3_s_G_xi1_skn"
+  },
+  {
+   "name": "profile3_s_M_xi0_ref",
+   "key": "extra_profile3_s_M_xi0_ref"
+  },
+  {
+   "name": "profile3_s_M_xi0_skn",
+   "key": "extra_profile3_s_M_xi0_skn"
+  },
+  {
+   "name": "profile3_s_M_xi1_ref",
+   "key": "extra_profile3_s_M_xi1_ref"
+  },
+  {
+   "name": "profile3_s_M_xi1_skn",
+   "key": "extra_profile3_s_M_xi1_skn"
+  },
+  {
+   "name": "profile3_a_xi0_ref",
+   "key": "extra_profile3_a_xi0_ref"
+  },
+  {
+   "name": "profile3_a_xi0_skn",
+   "key": "extra_profile3_a_xi0_skn"
+  },
+  {
+   "name": "profile3_a_xi1_ref",
+   "key": "extra_profile3_a_xi1_ref"
+  },
+  {
+   "name": "profile3_a_xi1_skn",
+   "key": "extra_profile3_a_xi1_skn"
+  },
+  {
+   "name": "profile1_log10tau",
+   "key": "extra_profile1_log10tau"
+  },
+  {
+   "name": "profile2_log10tau",
+   "key": "extra_profile2_log10tau"
+  },
+  {
+   "name": "profile3_log10tau",
+   "key": "extra_profile3_log10tau"
+  }
+ ]
+}

@@ -1,0 +1,263 @@
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 D1 W", "value": 1.35, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D1", "W_um"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 D2 W", "value": 0.99, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D2", "W_um"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 D3 W", "value": 15.34, "file": "reference_results/base3/signoff/signoff_sizing.json", "path": ["dies", "D3", "W_um"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 full earliest", "value": 2.39, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "full", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 full mortal10", "value": 26, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "full", "n_mortal_10yr"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 quad4 D1 W", "value": 0.5, "file": "reference_results/quad4/signoff/signoff_sizing.json", "path": ["dies", "D1", "W_um"], "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 quad4 D1 earliest", "value": 59.6, "file": "reference_results/quad4/signoff/signoff_sizing.json", "path": ["dies", "D1", "t_earliest_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 quad4 D1 saturated", "value": 1, "py": "int(J('reference_results/quad4/signoff/signoff_sizing.json')['dies']['D1']['saturated'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 dense3 D2 earliest", "value": 52.1, "file": "reference_results/dense3/signoff/signoff_sizing.json", "path": ["dies", "D2", "t_earliest_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 dense3 D1 earliest", "value": 23.0, "file": "reference_results/dense3/signoff/signoff_sizing.json", "path": ["dies", "D1", "t_earliest_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "1 dense3 D3 earliest", "value": 24.0, "file": "reference_results/dense3/signoff/signoff_sizing.json", "path": ["dies", "D3", "t_earliest_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "3 D1 j_max", "value": 0.63, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D1", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/07_设计选择与简化.md", "claim": "4 D1 IR", "value": 29.7, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D1", "ir_drop_max_mV"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "3 D2 j_max", "value": 0.62, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D2", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/07_设计选择与简化.md", "claim": "4 D2 IR", "value": 29.3, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D2", "ir_drop_max_mV"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "3 D3 j_max", "value": 0.12, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D3", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/07_设计选择与简化.md", "claim": "4 D3 IR", "value": 4.9, "file": "reference_results/base3/e2/e2_summary.json", "path": ["pg", "D3", "ir_drop_max_mV"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "3 cache j_max MA/cm2", "value": 0.047, "file": "reference_results/base3/e8/e8_summary.json", "path": ["pg", "cache1", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/07_设计选择与简化.md", "claim": "3 cache2 j_max", "value": 0.047, "file": "reference_results/base3/e8/e8_summary.json", "path": ["pg", "cache2", "j_max_A_per_cm2"], "scale": 1e-06}
+{"doc": "docs/07_设计选择与简化.md", "claim": "3 base3 no warnings", "value": 0, "py": "sum(len(v['warnings']) for v in J('reference_results/base3/e2/e2_summary.json')['pg'].values())"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "3 cache warning present", "value": 1, "py": "len(J('reference_results/base3/e8/e8_summary.json')['pg']['cache1']['warnings'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "6 linearity D1", "value": 0.066, "file": "reference_results/base3/e0/e0_validation.json", "path": ["hotspot_linearity_max_K", "D1"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "6 linearity D2", "value": 0.073, "file": "reference_results/base3/e0/e0_validation.json", "path": ["hotspot_linearity_max_K", "D2"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "6 linearity D3", "value": 0.071, "file": "reference_results/base3/e0/e0_validation.json", "path": ["hotspot_linearity_max_K", "D3"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "6 bond_k 5 required margin D1", "value": 5.22, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='bond_k' and r['value']==5.0][0]['required_margin_D1']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "6 bond_k 150 required margin D1", "value": 4.85, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='bond_k' and r['value']==150.0][0]['required_margin_D1']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "7 Gamma two-sided", "value": 6.92, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "Gamma_um"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "7 T_m two-sided", "value": 0.359, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "T_m_at_1e10_K"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "7 no_joule ratio D1", "value": 1.001, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_joule", "optimism_factor", "D1"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "7 no_joule ratio D2", "value": 1.01, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_joule", "optimism_factor", "D2"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "7 no_joule ratio D3", "value": 0.999, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_joule", "optimism_factor", "D3"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "8 slope", "value": -1.39, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "dsigmaT_dT_MPa_per_K"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "8 sigma_T 353", "value": 236.5, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "sigma_T_353K_MPa"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "8 sigmaT_const ratio D1", "value": 0.755, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "sigmaT_const", "optimism_factor", "D1"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "8 sigmaT_const ratio D2", "value": 0.626, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "sigmaT_const", "optimism_factor", "D2"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "8 sigmaT_const ratio D3", "value": 0.342, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "sigmaT_const", "optimism_factor", "D3"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "8 sigmaT_const mortal10", "value": 34, "file": "reference_results/base3/e3/e3_summary.json", "path": ["stack", "sigmaT_const", "n_mortal_10yr"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "8 false alarms", "value": 8, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "sigmaT_const", "mortal10_false"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "9 no_tm ratio D1", "value": 1.0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_tm", "optimism_factor", "D1"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "9 no_tm ratio D2", "value": 1.002, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_tm", "optimism_factor", "D2"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "9 no_tm ratio D3", "value": 1.11, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "no_tm", "optimism_factor", "D3"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "9 s_M median %", "value": 2.59, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "9 s_M p90 %", "value": 17.0, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_p90"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "10 kappa e-18", "value": 9.58, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "kappa_353K_m2_per_s"], "scale": 1e+18}
+{"doc": "docs/07_设计选择与简化.md", "claim": "10 blech", "value": 1294.8, "file": "reference_results/base3/e0/e0_validation.json", "path": ["constants", "blech_jL_crit_353K_A_per_cm"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "11 sigma_crit 400 required margin D1", "value": 4.5, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='sigma_crit_MPa' and r['value']==400][0]['required_margin_D1']", "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "11 sigma_crit 500 required margin D1", "value": 4.89, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='sigma_crit_MPa' and r['value']==500][0]['required_margin_D1']", "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "11 sigma_crit 600 required margin D1", "value": 4.44, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='sigma_crit_MPa' and r['value']==600][0]['required_margin_D1']", "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "12 rails", "value": 246, "py": "J('reference_results/base3/e3/e3_summary.json')['stack']['full']['n_rails']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "12 immortal total", "value": 76, "py": "sum(J('reference_results/base3/e3/e3_summary.json')['immortal_counts']['full'].values())"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "12 vertical rows", "value": 5, "py": "len(J('reference_results/base3/e3/e3_summary.json')['vertical_screen'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "12 vertical max ratio", "value": 0.017, "py": "max(r['ratio'] for r in J('reference_results/base3/e3/e3_summary.json')['vertical_screen'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "12 pad current mA all at cap", "value": 5, "py": "min(r['current_mA'] for r in J('reference_results/base3/e3/e3_summary.json')['vertical_screen'] if r['kind']=='pad')"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "13 comsol n", "value": 128, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_vs_reference", "n"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "13 comsol median %", "value": 0.08, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_vs_reference", "median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "13 comsol max %", "value": 0.53, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_vs_reference", "max"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "13 series err e-5", "value": 1.98, "file": "reference_results/base3/e0/e0_validation.json", "path": ["kernel_vs_series", "sG_max_abs_err"], "scale": 100000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "13 ibmpg1 rails in 240-cell tier", "value": 705, "file": "reference_results/logs/ibmpg_full.log", "regex": "\\[1237, (705), 0\\] rails"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "14 mass drift e-13", "value": 7.88, "file": "reference_results/base3/e0/e0_validation.json", "path": ["mass_drift_rel"], "scale": 10000000000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "15 truth earliest student engine", "value": 2.3893, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "stack_truth", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "15 truth earliest teacher engine", "value": 2.3893, "file": "reference_results/base3_teacher/e2/e2_summary.json", "path": ["full", "stack_truth", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "15 student M", "value": 32, "file": "reference_results/base3/e2/config_used.json", "path": ["times", "n"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "15 teacher M", "value": 64, "file": "reference_results/base3_teacher/e2/config_used.json", "path": ["times", "n"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "16 max principle gap", "value": 0.0, "file": "reference_results/base3/e0/e0_validation.json", "path": ["max_principle_gap_MPa"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "18 closure mid M=32 e-3", "value": 2.67, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 1, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "18 closure mid M=64 e-4", "value": 7.82, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 2, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "18 E2 D1 median %", "value": 0.26, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D1", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "18 E2 D2 median %", "value": 0.14, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D2", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "18 E2 D3 median %", "value": 1.72, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "metrics", "D3", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "21 profiles", "value": 120000, "file": "reference_results/base3/kernels/dataset_info.json", "path": ["n_profiles"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "21 ood s_G %", "value": 0.88, "file": "reference_results/base3/e1/e1_summary.json", "path": ["ood", "s_G", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "21 val s_G %", "value": 0.83, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val", "s_G", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "21 ood s_M %", "value": 2.66, "file": "reference_results/base3/e1/e1_summary.json", "path": ["ood", "s_M", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "21 val s_M %", "value": 2.59, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "21 ood a %", "value": 0.13, "file": "reference_results/base3/e1/e1_summary.json", "path": ["ood", "a", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "21 val a %", "value": 0.11, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val", "a", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher best e-3", "value": 1.82, "file": "reference_results/base3/skn/train_summary.json", "path": ["best_val_worst_rel_l2"], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde best e-3", "value": 2.94, "file": "reference_results/ablation_pde/skn_pde/train_summary.json", "path": ["best_val_worst_rel_l2"], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde weight", "value": 0.05, "file": "reference_results/ablation_pde/skn_pde/train_summary.json", "path": ["args", "w_pde"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher weight", "value": 0, "file": "reference_results/base3/skn/train_summary.json", "path": ["args", "w_pde"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher seconds", "value": 1345, "file": "reference_results/logs/kernels_and_teacher_training.log", "regex": "epoch  299 .*\\] (\\d+)s"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde seconds", "value": 11080, "file": "reference_results/logs/pde_ablation_training.log", "regex": "epoch  299 .*\\] (\\d+)s"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher E1 s_G", "value": 0.218, "file": "reference_results/base3_teacher/e1/e1_summary.json", "path": ["val", "s_G", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde E1 s_G", "value": 0.251, "file": "reference_results/ablation_pde/e1/e1_summary.json", "path": ["val", "s_G", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher E1 s_M", "value": 0.688, "file": "reference_results/base3_teacher/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde E1 s_M", "value": 1.957, "file": "reference_results/ablation_pde/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher E1 a", "value": 0.035, "file": "reference_results/base3_teacher/e1/e1_summary.json", "path": ["val", "a", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde E1 a", "value": 0.163, "file": "reference_results/ablation_pde/e1/e1_summary.json", "path": ["val", "a", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher s_M p90", "value": 4.6, "file": "reference_results/base3_teacher/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_p90"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde s_M p90", "value": 44.3, "file": "reference_results/ablation_pde/e1/e1_summary.json", "path": ["val", "s_M", "rel_l2_p90"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher E2 D1", "value": 0.23, "file": "reference_results/base3_teacher/e2/e2_summary.json", "path": ["full", "metrics", "D1", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde E2 D1", "value": 0.23, "file": "reference_results/ablation_pde/e2/e2_summary.json", "path": ["full", "metrics", "D1", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher E2 D2", "value": 0.19, "file": "reference_results/base3_teacher/e2/e2_summary.json", "path": ["full", "metrics", "D2", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde E2 D2", "value": 0.08, "file": "reference_results/ablation_pde/e2/e2_summary.json", "path": ["full", "metrics", "D2", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher E2 D3", "value": 2.27, "file": "reference_results/base3_teacher/e2/e2_summary.json", "path": ["full", "metrics", "D3", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde E2 D3", "value": 0.53, "file": "reference_results/ablation_pde/e2/e2_summary.json", "path": ["full", "metrics", "D3", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 teacher epochs", "value": 300, "file": "reference_results/base3/skn/train_summary.json", "path": ["args", "epochs"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 pde epochs", "value": 300, "file": "reference_results/ablation_pde/skn_pde/train_summary.json", "path": ["args", "epochs"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 student params", "value": 54915, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "n_params"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 teacher params", "value": 343811, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "n_params"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 student val 0", "value": 0.35, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_rel_l2", 0], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 teacher val 0", "value": 0.109, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_rel_l2", 0], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 student val 1", "value": 0.54, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_rel_l2", 1], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 teacher val 1", "value": 0.182, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_rel_l2", 1], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 student val 2", "value": 0.17, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_rel_l2", 2], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 teacher val 2", "value": 0.064, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["teacher", "val_rel_l2", 2], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E1 student s_G", "value": 0.83, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "s_G", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E1 teacher s_G", "value": 0.218, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "full SKN", "s_G", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E1 student s_M", "value": 2.59, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "s_M", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E1 teacher s_M", "value": 0.688, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "full SKN", "s_M", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E1 student a", "value": 0.11, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "a", "rel_l2_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E1 teacher a", "value": 0.035, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "full SKN", "a", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 student tab 20000 s", "value": 23.4, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)", 4]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 teacher tab 20000 s", "value": 63.2, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)", 4]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 teacher direct 20000 s", "value": 118.6, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "full SKN + JCX, direct look-up (torch, CUDA)", 4]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E4 M", "value": 32, "file": "reference_results/base3/e4/e4_timing.json", "path": ["M"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 E4 size", "value": 20000, "py": "J('reference_results/base3/e4/e4_timing.json')['sizes'][4]"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 speed ratio", "value": 2.7, "py": "J('reference_results/base3/e4/e4_timing.json')['timings']['full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)'][4]/J('reference_results/base3/e4/e4_timing.json')['timings']['distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)'][4]"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 best epoch", "value": 149, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "best_epoch"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 compression", "value": 6.26, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["compression"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 epochs", "value": 150, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "epochs"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 patience", "value": 30, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "patience"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "24 student seconds", "value": 331.6, "py": "float(T('reference_results/base3/skn_distill/train_log.csv').strip().splitlines()[-1].split(',')[-1])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "23 training speed ratio", "value": 8, "py": "11080/1345", "digits": 0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "25 fdm rows", "value": 14592000, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["rows", "fdm"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "25 synthetic", "value": 8000000, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["rows", "synthetic"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "25 end fraction", "value": 0.7, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["args", "end_fraction"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "25 end rel-L2 0", "value": 0.15, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_end_rel_l2", 0], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "25 end rel-L2 1", "value": 0.3, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_end_rel_l2", 1], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "25 end rel-L2 2", "value": 0.1, "file": "reference_results/base3/skn_distill/distill_summary.json", "path": ["student", "val_end_rel_l2", 2], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "27 ibmpg1 median %", "value": 0.35, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 start M=16", "value": 1.8, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 0, "rel_L2"], "scale": 100.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 mid M=16", "value": 9.88, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 0, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 start M=32", "value": 6.54, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 1, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 mid M=32", "value": 2.67, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 1, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 start M=64", "value": 2.21, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 2, "rel_L2"], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 mid M=64", "value": 7.82, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 2, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 start M=128", "value": 7.56, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "start", 3, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "29 mid M=128", "value": 2.81, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 3, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "30 t_nuc err M=32 %", "value": 0.082, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 1, "t_nuc_rel_err"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "30 t_nuc err M=64 %", "value": 0.082, "file": "reference_results/base3/e0/e0_validation.json", "path": ["closure_convergence", "mid", 2, "t_nuc_rel_err"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 tab K=48", "value": 8.92, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 0, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 tab K=96", "value": 2.3, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 1, "rel_L2"], "scale": 10000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 tab K=192", "value": 8.58, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 2, "rel_L2"], "scale": 100000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 tab K=384", "value": 3.86, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 3, "rel_L2"], "scale": 100000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 tab t_nuc 192 e-5", "value": 7.2, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 2, "t_nuc_rel_err"], "scale": 100000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 tab t_nuc 96 e-6", "value": 4.94, "file": "reference_results/base3/e0/e0_validation.json", "path": ["tabulation_error", "rows", 1, "t_nuc_rel_err"], "scale": 1000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 E1 direct s_G", "value": 0.832, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN", "s_G", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 E1 tab s_G", "value": 0.831, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "s_G", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 E1 direct s_M", "value": 2.591, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN", "s_M", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 E1 tab s_M", "value": 2.59, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "s_M", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 E1 direct a", "value": 0.108, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN", "a", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 E1 tab a", "value": 0.107, "file": "reference_results/base3/e1/e1_summary.json", "path": ["val_by_provider", "distilled SKN, tabulated (192 pts)", "a", "rel_l2_median"], "scale": 100, "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 student direct 20000 s", "value": 45.1, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "distilled SKN + JCX, direct look-up (torch, CUDA)", 4]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 evals per segment tab (6-seg rail)", "value": 1152, "py": "J('reference_results/base3/e0/e0_validation.json')['tabulation_error']['rows'][2]['kernel_evals']/6"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "31 points per segment direct (6-seg rail)", "value": 2176, "py": "J('reference_results/base3/e0/e0_validation.json')['tabulation_error']['rows'][2]['kernel_points']/6"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "34 D2 min margin M=32", "value": -0.53, "file": "reference_results/base3/e3/e3_summary.json", "path": ["min_margin_h", "full", "D2"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "34 D2 min margin M=64", "value": -0.531, "file": "reference_results/base3_teacher/e2/e2_summary.json", "path": ["full", "stack_truth", "dies", "D2", "min_margin_h"], "digits": 3}
+{"doc": "docs/07_设计选择与简化.md", "claim": "35 gap base3 %", "value": 1.47, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["top10_boundary_gap_rel"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "35 top10", "value": 1.0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "stackem", "top10"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "35 top50", "value": 1.0, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "stackem", "top50"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "35 kendall", "value": 0.991, "file": "reference_results/base3/e7/e7_ranking.json", "path": ["results", "stackem", "kendall"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "35 dense3 gap %", "value": 6.27, "file": "reference_results/dense3/e7/e7_ranking.json", "path": ["top10_boundary_gap_rel"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "35 dense3 top50", "value": 0.96, "file": "reference_results/dense3/e7/e7_ranking.json", "path": ["results", "stackem", "top50"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "36 sizes", "value": 5, "py": "len(J('reference_results/base3/e4/e4_timing.json')['sizes'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "36 total ibmpg rails", "value": 52457, "py": "sum(J('reference_results/ibmpg/ibmpg%d/ibmpg_summary.json'%n)['n_rails'] for n in range(1,7))"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "37 FDM 32 procs", "value": 28.4, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "FDM truth (CPU, 32 cores)", 4]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "37 FDM 1 proc", "value": 490.4, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "FDM truth (CPU, 1 core)", 4]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "37 workers", "value": 32, "file": "reference_results/base3/e4/e4_timing.json", "path": ["workers"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "37 numpy 1000", "value": 77.8, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU)", 2]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "37 FDM 1 proc 1000", "value": 24.7, "file": "reference_results/base3/e4/e4_timing.json", "path": ["timings", "FDM truth (CPU, 1 core)", 2]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "37 E2 closure s", "value": 13.5, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "seconds_closure"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "37 E2 truth s", "value": 4.5, "file": "reference_results/base3/e2/e2_summary.json", "path": ["full", "seconds_truth"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 rows", "value": 24, "py": "len(J('reference_results/base3/e6/e6_sweeps.json')['rows'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 feed 800 W D1", "value": 3.64, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='feed_pitch_bottom_um' and r['value']==800][0]['W_um_D1']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 margin 1.5 req D1", "value": 4.67, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='signoff_margin' and r['value']==1.5][0]['required_margin_D1']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 margin 3 req D1", "value": 5.29, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='signoff_margin' and r['value']==3.0][0]['required_margin_D1']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 r_convec 0.1 req D2", "value": 4.98, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='r_convec' and r['value']==0.1][0]['required_margin_D2']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 r_convec 0.5 req D2", "value": 8.56, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='r_convec' and r['value']==0.5][0]['required_margin_D2']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 r_convec 1.0 req D2", "value": 15.76, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='r_convec' and r['value']==1.0][0]['required_margin_D2']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 Ea 1.0 W D1", "value": 0.5, "py": "[r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='Ea_eV' and r['value']==1.0][0]['W_um_D1']"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "38 Ea 1.0 D1 alone immortal", "value": 1, "py": "int([r for r in J('reference_results/base3/e6/e6_sweeps.json')['rows'] if r['sweep']=='Ea_eV' and r['value']==1.0][0]['alone_D1_earliest_yr']=='inf')"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "39 sweep positions", "value": 5, "py": "len(J('reference_results/base3/e3/e3_summary.json')['hotspot_sweep'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "39 sweep min earliest", "value": 0.8, "py": "min(h['stack_earliest_yr'] for h in J('reference_results/base3/e3/e3_summary.json')['hotspot_sweep'])", "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "39 sweep max earliest", "value": 2.46, "py": "max(h['stack_earliest_yr'] for h in J('reference_results/base3/e3/e3_summary.json')['hotspot_sweep'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "39 D2 enrichment", "value": 1.23, "file": "reference_results/base3/e3/e3_summary.json", "path": ["cross_die_alignment", "D2", "crossing_enrichment_signoff"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 FD items", "value": 6, "py": "len(J('reference_results/base3/e5/e5_summary.json')['finite_difference_check'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 FD above", "value": 5, "py": "sum(1 for r in J('reference_results/base3/e5/e5_summary.json')['finite_difference_check'] if abs(r['autograd'])>0.01)"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 FD max %", "value": 3.21, "py": "100*max(abs(r['autograd']-r['finite_diff'])/abs(r['finite_diff']) for r in J('reference_results/base3/e5/e5_summary.json')['finite_difference_check'] if abs(r['autograd'])>0.01)"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 item 6 autograd", "value": -0.0012, "file": "reference_results/base3/e5/e5_summary.json", "path": ["finite_difference_check", 5, "autograd"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 item 6 fd", "value": 0.0007, "file": "reference_results/base3/e5/e5_summary.json", "path": ["finite_difference_check", 5, "finite_diff"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 base", "value": 2.389, "file": "reference_results/base3/e5/e5_summary.json", "path": ["verification", "base", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 optimized", "value": 5.204, "file": "reference_results/base3/e5/e5_summary.json", "path": ["verification", "optimized", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "40 iterations", "value": 25, "py": "len(J('reference_results/base3/e5/e5_summary.json')['trajectory'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 die x mm", "value": 12.4, "file": "reference_results/base3/e8/e8_summary.json", "path": ["die_size_m", 0], "scale": 1000.0, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 die y mm", "value": 12.76, "file": "reference_results/base3/e8/e8_summary.json", "path": ["die_size_m", 1], "scale": 1000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 current fraction", "value": 0.15, "file": "reference_results/base3/e8/e8_summary.json", "path": ["current_fraction"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 cores W", "value": 35.48, "file": "reference_results/base3/e8/e8_summary.json", "path": ["sizing", "cores", "W_um"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 cache W", "value": 0.5, "file": "reference_results/base3/e8/e8_summary.json", "path": ["sizing", "cache1", "W_um"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 caches saturated", "value": 2, "py": "sum(int(J('reference_results/base3/e8/e8_summary.json')['sizing'][c]['saturated']) for c in ('cache1','cache2'))"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 caches all immortal", "value": 250, "py": "min(J('reference_results/base3/e8/e8_summary.json')[v]['dies'][c]['n_immortal'] for v in ('full','others_off','uniform') for c in ('cache1','cache2'))"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 others_off earliest", "value": 21.05, "file": "reference_results/base3/e8/e8_summary.json", "path": ["others_off", "dies", "cores", "earliest_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 full earliest", "value": 18.91, "file": "reference_results/base3/e8/e8_summary.json", "path": ["full", "dies", "cores", "earliest_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 overlay n", "value": 12, "file": "reference_results/base3/e8/e8_summary.json", "path": ["stackem_overlay", "n_mortal"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 overlay median %", "value": 1.43, "file": "reference_results/base3/e8/e8_summary.json", "path": ["stackem_overlay", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "41 no mortal 10yr", "value": 0, "file": "reference_results/base3/e8/e8_summary.json", "path": ["full", "dies", "cores", "mortal_10yr"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "42 ibmpg1 unit um", "value": 1, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg1 W median", "value": 11.48, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg1 median %", "value": 0.35, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg1 top10", "value": 1.0, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["top10_hit"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg1 size_to_jmax", "value": 1000000, "file": "reference_results/ibmpg/ibmpg1/ibmpg_summary.json", "path": ["size_to_jmax"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "42 ibmpg2 unit um", "value": 1, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg2 W median", "value": 1.63, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg2 median %", "value": 0.55, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg2 top10", "value": 1.0, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["top10_hit"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg2 size_to_jmax", "value": 1000000, "file": "reference_results/ibmpg/ibmpg2/ibmpg_summary.json", "path": ["size_to_jmax"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "42 ibmpg3 unit um", "value": 0.001, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg3 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg3 median %", "value": 0.3, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg3 top10", "value": 1.0, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["top10_hit"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg3 size_to_jmax", "value": 1000000, "file": "reference_results/ibmpg/ibmpg3/ibmpg_summary.json", "path": ["size_to_jmax"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "42 ibmpg4 unit um", "value": 1, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg4 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg4 median %", "value": 1.38, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg4 top10", "value": 1.0, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["top10_hit"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg4 size_to_jmax", "value": 1000000, "file": "reference_results/ibmpg/ibmpg4/ibmpg_summary.json", "path": ["size_to_jmax"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "42 ibmpg5 unit um", "value": 1, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg5 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg5 median %", "value": 0.72, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg5 top10", "value": 1.0, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["top10_hit"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg5 size_to_jmax", "value": 1000000, "file": "reference_results/ibmpg/ibmpg5/ibmpg_summary.json", "path": ["size_to_jmax"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "42 ibmpg6 unit um", "value": 0.001, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["unit_m"], "scale": 1000000.0}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg6 W median", "value": 0.2, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["W_um_median"], "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg6 median %", "value": 1.04, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 ibmpg6 top10", "value": 1.0, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["top10_hit"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "43 ibmpg6 size_to_jmax", "value": 1000000, "file": "reference_results/ibmpg/ibmpg6/ibmpg_summary.json", "path": ["size_to_jmax"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 min mortality agreement %", "value": 99.7, "py": "100*min(J('reference_results/ibmpg/ibmpg%d/ibmpg_summary.json'%n)['mortality_agreement'] for n in range(1,7))"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "44 min agreement is ibmpg4", "value": 4, "py": "min(range(1,7),key=lambda n:J('reference_results/ibmpg/ibmpg%d/ibmpg_summary.json'%n)['mortality_agreement'])"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "45 rails", "value": 246, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["n_rails_timed"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "45 per rail s", "value": 1.354, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_seconds_per_rail", "mean"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "45 parallel", "value": 32, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["parallel_bound"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "45 20000 extrapolated", "value": 27086.7, "file": "reference_results/comsol/comsol_timing.csv", "regex": "^20000,([\\d.]+),"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "45 20000 /32", "value": 846.5, "file": "reference_results/comsol/comsol_timing.csv", "regex": "^20000,[\\d.]+,([\\d.]+)"}
+{"doc": "docs/07_设计选择与简化.md", "claim": "45 stackem vs comsol %", "value": 0.18, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["stackem_vs_comsol", "median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "45 comsol vs ref %", "value": 0.08, "file": "reference_results/comsol/comsol_rails_compare.json", "path": ["comsol_vs_reference", "median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 D1 %", "value": 0.24, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "metrics", "D1", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 D2 %", "value": 0.51, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "metrics", "D2", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 D3 %", "value": 0.34, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "metrics", "D3", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 D4 %", "value": 2.39, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "metrics", "D4", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 dense3 D1 %", "value": 1.57, "file": "reference_results/dense3/e2/e2_summary.json", "path": ["full", "metrics", "D1", "tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 dense3 D2 %", "value": 1.8, "file": "reference_results/dense3/e2/e2_summary.json", "path": ["full", "metrics", "D2", "tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 dense3 D3 %", "value": 4.02, "file": "reference_results/dense3/e2/e2_summary.json", "path": ["full", "metrics", "D3", "tnuc_rel_median"], "scale": 100, "digits": 2}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 closure earliest", "value": 3.948, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "stack_pred", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 truth earliest", "value": 3.951, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "stack_truth", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 dense3 closure earliest", "value": 4.343, "file": "reference_results/dense3/e2/e2_summary.json", "path": ["full", "stack_pred", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 dense3 truth earliest", "value": 4.331, "file": "reference_results/dense3/e2/e2_summary.json", "path": ["full", "stack_truth", "earliest_t_nuc_years"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 dense3 alone D1 n", "value": 4, "file": "reference_results/dense3/e2/e2_summary.json", "path": ["alone", "metrics", "D1", "n_mortal"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 dense3 alone D1 %", "value": 64.3, "file": "reference_results/dense3/e2/e2_summary.json", "path": ["alone", "metrics", "D1", "tnuc_rel_median"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 D1 agreement %", "value": 99.2, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "metrics", "D1", "mortality_agreement"], "scale": 100}
+{"doc": "docs/07_设计选择与简化.md", "claim": "46 quad4 D1 top10", "value": 0.9, "file": "reference_results/quad4/e2/e2_summary.json", "path": ["full", "metrics", "D1", "top10_hit"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "47 teacher engine 20000 s", "value": 448.4, "file": "reference_results/base3_teacher/e4/e4_timing.json", "path": ["timings", "SKN + JCX, direct look-up (torch, CUDA)", 4]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "47 teacher M", "value": 64, "file": "reference_results/base3_teacher/e4/e4_timing.json", "path": ["M"]}
+{"doc": "docs/07_设计选择与简化.md", "claim": "47 teacher single-core NaN beyond 1000", "value": 1, "py": "int(J('reference_results/base3_teacher/e4/e4_timing.json')['timings']['FDM truth (CPU, 1 core)'][3] is None)"}

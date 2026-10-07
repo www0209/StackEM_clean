@@ -1,0 +1,56 @@
+{
+ "sizes": [
+  82,
+  246,
+  1000,
+  5000,
+  20000
+ ],
+ "timings": {
+  "FDM truth (CPU, 32 cores)": [
+   0.2743406295776367,
+   0.6081821918487549,
+   1.4414498805999756,
+   6.846142530441284,
+   27.263692140579224
+  ],
+  "FDM truth (CPU, 1 core)": [
+   1.9092166423797607,
+   5.748297214508057,
+   23.38192653656006,
+   null,
+   null
+  ],
+  "SKN + JCX, direct look-up (numpy, CPU)": [
+   119.5914294719696,
+   364.77686190605164,
+   1461.1889696121216,
+   null,
+   null
+  ],
+  "SKN + JCX, direct look-up (torch, CUDA)": [
+   1.8884623050689697,
+   5.721687316894531,
+   23.70452094078064,
+   111.95386934280396,
+   448.3698356151581
+  ]
+ },
+ "device": "cuda",
+ "workers": 32,
+ "provider": "skn",
+ "closure_mode": "direct",
+ "n_tab": 192,
+ "M": 64,
+ "kernel_evals_by_engine": {
+  "SKN + JCX, direct look-up (numpy, CPU)": null,
+  "SKN + JCX, direct look-up (torch, CUDA)": null
+ },
+ "_meta": {
+  "time": "2026-09-27 13:43:22",
+  "python": "3.11.16",
+  "machine": "x86_64",
+  "cmd": "~/stackem_work/StackEM_clean/stackem/experiments/e4_scaling.py --config configs/base3_teacher.json --root ~/stackem_work/outputs_teacher --hotspot ~/stackem_work/hotspot_bin/HotSpot",
+  "config_name": "base3"
+ }
+}

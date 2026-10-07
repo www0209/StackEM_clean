@@ -1,0 +1,91 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "number of rails",
+   "ylabel": "wall-clock time (s)",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "FDM truth (CPU, 32 cores)",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "FDM truth (CPU, 1 core)",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN + JCX, tabulated look-up (192 pts/segment) (numpy, CPU)",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)",
+     "x": "ax0_line3_x",
+     "y": "ax0_line3_y"
+    },
+    {
+     "kind": "line",
+     "label": "distilled SKN + JCX, direct look-up (torch, CUDA)",
+     "x": "ax0_line4_x",
+     "y": "ax0_line4_y"
+    },
+    {
+     "kind": "line",
+     "label": "full SKN + JCX, direct look-up (torch, CUDA)",
+     "x": "ax0_line5_x",
+     "y": "ax0_line5_y"
+    },
+    {
+     "kind": "line",
+     "label": "full SKN + JCX, tabulated look-up (192 pts/segment) (torch, CUDA)",
+     "x": "ax0_line6_x",
+     "y": "ax0_line6_y"
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": [
+  {
+   "name": "n_rails",
+   "key": "extra_n_rails"
+  },
+  {
+   "name": "FDM_truth_CPU_32_cores",
+   "key": "extra_FDM_truth_CPU_32_cores"
+  },
+  {
+   "name": "FDM_truth_CPU_1_core",
+   "key": "extra_FDM_truth_CPU_1_core"
+  },
+  {
+   "name": "distilled_SKN_plus_JCX_tabulated_look-up_192_pts_segment_numpy_CPU",
+   "key": "extra_distilled_SKN_plus_JCX_tabulated_look-up_192_pts_segment_numpy_CPU"
+  },
+  {
+   "name": "distilled_SKN_plus_JCX_tabulated_look-up_192_pts_segment_torch_CUDA",
+   "key": "extra_distilled_SKN_plus_JCX_tabulated_look-up_192_pts_segment_torch_CUDA"
+  },
+  {
+   "name": "distilled_SKN_plus_JCX_direct_look-up_torch_CUDA",
+   "key": "extra_distilled_SKN_plus_JCX_direct_look-up_torch_CUDA"
+  },
+  {
+   "name": "full_SKN_plus_JCX_direct_look-up_torch_CUDA",
+   "key": "extra_full_SKN_plus_JCX_direct_look-up_torch_CUDA"
+  },
+  {
+   "name": "full_SKN_plus_JCX_tabulated_look-up_192_pts_segment_torch_CUDA",
+   "key": "extra_full_SKN_plus_JCX_tabulated_look-up_192_pts_segment_torch_CUDA"
+  }
+ ]
+}

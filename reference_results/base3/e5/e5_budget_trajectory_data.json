@@ -1,0 +1,56 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "",
+   "xlabel": "projected-gradient iteration",
+   "ylabel": "earliest $t_{nuc}$ (years)",
+   "xscale": "linear",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "earliest $t_{nuc}$ (hard minimum)",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "soft minimum (objective)",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    }
+   ],
+   "texts": [
+    {
+     "text": "2.40 yr",
+     "xy": [
+      6.0,
+      -9.0
+     ]
+    },
+    {
+     "text": "5.09 yr",
+     "xy": [
+      -4.0,
+      6.0
+     ]
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "name": "iteration",
+   "key": "extra_iteration"
+  },
+  {
+   "name": "hard_min_years",
+   "key": "extra_hard_min_years"
+  },
+  {
+   "name": "soft_min_years",
+   "key": "extra_soft_min_years"
+  }
+ ]
+}

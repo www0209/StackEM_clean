@@ -1,0 +1,259 @@
+{
+ "results": {
+  "alone": {
+   "top10": 0.2,
+   "top10_tol1pct": 0.2,
+   "top50": 0.88,
+   "kendall": 0.5404749663546374,
+   "same_critical_die": true,
+   "same_earliest_rail": false,
+   "mortal10_jaccard": 0.0,
+   "mortal10_missed": 47,
+   "mortal10_false": 0,
+   "optimism_factor": {
+    "D1": 6.148149607499453,
+    "D2": 3.65112640972433,
+    "D3": 5.158856780584077,
+    "D4": 1.403568713701743
+   },
+   "earliest_years": {
+    "D1": 59.627336691659366,
+    "D2": 20.58355172816655,
+    "D3": 20.384490338436997,
+    "D4": 21.100693612687326
+   }
+  },
+  "uniform_signoff": {
+   "top10": 0.2,
+   "top10_tol1pct": 0.2,
+   "top50": 0.92,
+   "kendall": 0.2215865595795866,
+   "same_critical_die": true,
+   "same_earliest_rail": false,
+   "mortal10_jaccard": 0.188,
+   "mortal10_missed": 0,
+   "mortal10_false": 203,
+   "optimism_factor": {
+    "D1": 0.09845558938653855,
+    "D2": 0.16056841769787192,
+    "D3": 0.10891168194614745,
+    "D4": 0.7063288956252161
+   },
+   "earliest_years": {
+    "D1": 0.9548636504170204,
+    "D2": 0.9052188176205989,
+    "D3": 0.43034905266798457,
+    "D4": 10.618667594169944
+   }
+  },
+  "uniform": {
+   "top10": 0.2,
+   "top10_tol1pct": 0.2,
+   "top50": 0.92,
+   "kendall": 0.22104061266648323,
+   "same_critical_die": true,
+   "same_earliest_rail": false,
+   "mortal10_jaccard": 0.6714285714285714,
+   "mortal10_missed": 0,
+   "mortal10_false": 23,
+   "optimism_factor": {
+    "D1": 0.8796233084278727,
+    "D2": 1.2675551125156048,
+    "D3": 0.9088642461191758,
+    "D4": 1.4133407784968717
+   },
+   "earliest_years": {
+    "D1": 8.530956226159915,
+    "D2": 7.145955329642187,
+    "D3": 3.5912480675359246,
+    "D4": 21.247602946866994
+   }
+  },
+  "sigmaT_const": {
+   "top10": 1.0,
+   "top10_tol1pct": 1.0,
+   "top50": 0.9,
+   "kendall": 0.9477551020408163,
+   "same_critical_die": true,
+   "same_earliest_rail": true,
+   "mortal10_jaccard": 0.5595238095238095,
+   "mortal10_missed": 0,
+   "mortal10_false": 37,
+   "optimism_factor": {
+    "D1": 0.7553067066816042,
+    "D2": 0.7468094150498455,
+    "D3": 0.7712163233181739,
+    "D4": 0.47315527985476913
+   },
+   "earliest_years": {
+    "D1": 7.325281618039485,
+    "D2": 4.210204879463739,
+    "D3": 3.0473518378512408,
+    "D4": 7.11322822600503
+   }
+  },
+  "no_joule": {
+   "top10": 1.0,
+   "top10_tol1pct": 1.0,
+   "top50": 1.0,
+   "kendall": 1.0,
+   "same_critical_die": true,
+   "same_earliest_rail": true,
+   "mortal10_jaccard": 1.0,
+   "mortal10_missed": 0,
+   "mortal10_false": 0,
+   "optimism_factor": {
+    "D1": 1.000586574061973,
+    "D2": 1.003115423724786,
+    "D3": 1.0008090511775813,
+    "D4": 0.9997728969431223
+   },
+   "earliest_years": {
+    "D1": 9.704108772495017,
+    "D2": 5.6551529299473895,
+    "D3": 3.954554914401005,
+    "D4": 15.030187959254059
+   }
+  },
+  "no_tm": {
+   "top10": 1.0,
+   "top10_tol1pct": 1.0,
+   "top50": 1.0,
+   "kendall": 0.9983673469387755,
+   "same_critical_die": true,
+   "same_earliest_rail": true,
+   "mortal10_jaccard": 1.0,
+   "mortal10_missed": 0,
+   "mortal10_false": 0,
+   "optimism_factor": {
+    "D1": 0.9997296619790722,
+    "D2": 1.000094003646886,
+    "D3": 0.999404841913876,
+    "D4": 1.0202022265630395
+   },
+   "earliest_years": {
+    "D1": 9.695798079271164,
+    "D2": 5.638119403992129,
+    "D3": 3.9490063808040117,
+    "D4": 15.337314372670306
+   }
+  },
+  "stackem": {
+   "top10": 1.0,
+   "top10_tol1pct": 1.0,
+   "top50": 1.0,
+   "kendall": 0.9983673469387755,
+   "same_critical_die": true,
+   "same_earliest_rail": true,
+   "mortal10_jaccard": 0.9791666666666666,
+   "mortal10_missed": 0,
+   "mortal10_false": 1,
+   "optimism_factor": {
+    "D1": 0.995838185866112,
+    "D2": 1.0034371498665289,
+    "D3": 0.9992279131109177,
+    "D4": 1.029352467923339
+   },
+   "earliest_years": {
+    "D1": 9.658056909776525,
+    "D2": 5.6569666898498765,
+    "D3": 3.9483072717517764,
+    "D4": 15.474875460731752
+   }
+  }
+ },
+ "n_rails": 488,
+ "n_mortal10_full": 47,
+ "top10_boundary_gap_rel": 0.001291145595829415,
+ "e3_dir": "~/stackem_work/outputs/quad4/e3",
+ "full_summary": {
+  "variant": "full",
+  "earliest_t_nuc_years": 3.9513580635066794,
+  "critical_die": "D3",
+  "n_rails": 488,
+  "n_mortal_10yr": 47,
+  "n_mortal_100yr": 289,
+  "dies": {
+   "D1": {
+    "die": "D1",
+    "n_rails": 122,
+    "n_immortal": 0,
+    "mortal_within": {
+     "1yr": 0,
+     "10yr": 3,
+     "100yr": 113
+    },
+    "earliest_t_nuc_s": 306058856.81204563,
+    "earliest_rail": "H2",
+    "T_min": 343.1,
+    "T_max": 353.09,
+    "T_mean": 344.90254638671877,
+    "ir_drop_max_mV": 19.37661428329629,
+    "j_max_A_per_cm2": 412428.7515693159,
+    "min_margin_h": -0.015296470865364897
+   },
+   "D2": {
+    "die": "D2",
+    "n_rails": 122,
+    "n_immortal": 2,
+    "mortal_within": {
+     "1yr": 0,
+     "10yr": 4,
+     "100yr": 48
+    },
+    "earliest_t_nuc_s": 177908792.8280831,
+    "earliest_rail": "H16",
+    "T_min": 343.04,
+    "T_max": 353.19,
+    "T_mean": 344.85037597656253,
+    "ir_drop_max_mV": 12.550027352733139,
+    "j_max_A_per_cm2": 330963.23808520235,
+    "min_margin_h": -0.1378517183203687
+   },
+   "D3": {
+    "die": "D3",
+    "n_rails": 122,
+    "n_immortal": 0,
+    "mortal_within": {
+     "1yr": 0,
+     "10yr": 40,
+     "100yr": 120
+    },
+    "earliest_t_nuc_s": 124695377.22491838,
+    "earliest_rail": "H58",
+    "T_min": 342.77,
+    "T_max": 353.25,
+    "T_mean": 344.5901513671875,
+    "ir_drop_max_mV": 16.62692063762117,
+    "j_max_A_per_cm2": 335986.91436380614,
+    "min_margin_h": -0.25017084028373704
+   },
+   "D4": {
+    "die": "D4",
+    "n_rails": 122,
+    "n_immortal": 102,
+    "mortal_within": {
+     "1yr": 0,
+     "10yr": 0,
+     "100yr": 8
+    },
+    "earliest_t_nuc_s": 474424402.7750835,
+    "earliest_rail": "H45",
+    "T_min": 342.39,
+    "T_max": 353.35,
+    "T_mean": 344.2255883789062,
+    "ir_drop_max_mV": 5.084562171425944,
+    "j_max_A_per_cm2": 127115.39679104064,
+    "min_margin_h": 0.03131370921004606
+   }
+  },
+  "seconds": 13.704110622406006
+ },
+ "_meta": {
+  "time": "2026-09-27 17:38:45",
+  "python": "3.11.16",
+  "machine": "x86_64",
+  "cmd": "~/stackem_work/StackEM_clean/stackem/experiments/e7_ranking.py --config configs/quad4.json --root ~/stackem_work/outputs --hotspot ~/stackem_work/hotspot_bin/HotSpot --weights ~/stackem_work/outputs/base3/skn_distill/skn_student.npz",
+  "config_name": "quad4"
+ }
+}

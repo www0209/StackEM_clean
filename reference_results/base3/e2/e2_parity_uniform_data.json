@@ -1,0 +1,121 @@
+{
+ "axes": [
+  {
+   "axes": 0,
+   "title": "uniform",
+   "xlabel": "",
+   "ylabel": "StackEM $t_{nuc}$ (years)",
+   "xscale": "log",
+   "yscale": "log",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "x": "ax0_line0_x",
+     "y": "ax0_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax0_line1_x",
+     "y": "ax0_line1_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child6",
+     "x": "ax0_line2_x",
+     "y": "ax0_line2_y"
+    },
+    {
+     "kind": "scatter",
+     "label": "D1",
+     "xy": "ax0_scatter1_xy",
+     "values": null
+    },
+    {
+     "kind": "scatter",
+     "label": "D2",
+     "xy": "ax0_scatter2_xy",
+     "values": null
+    },
+    {
+     "kind": "scatter",
+     "label": "D3",
+     "xy": "ax0_scatter3_xy",
+     "values": null
+    }
+   ],
+   "texts": [
+    {
+     "text": "10-yr horizon",
+     "xy": [
+      9.3,
+      90.0
+     ]
+    },
+    {
+     "text": "n = 128\nmedian |err| = 0.35 %\np90 |err| = 0.79 %",
+     "xy": [
+      0.98,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "axes": 1,
+   "title": "",
+   "xlabel": "reference (finite-volume) $t_{nuc}$ (years)",
+   "ylabel": "error (%)",
+   "xscale": "log",
+   "yscale": "linear",
+   "series": [
+    {
+     "kind": "line",
+     "label": "_child3",
+     "x": "ax1_line0_x",
+     "y": "ax1_line0_y"
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "x": "ax1_line1_x",
+     "y": "ax1_line1_y"
+    },
+    {
+     "kind": "scatter",
+     "label": "_child0",
+     "xy": "ax1_scatter0_xy",
+     "values": null
+    },
+    {
+     "kind": "scatter",
+     "label": "_child1",
+     "xy": "ax1_scatter1_xy",
+     "values": null
+    },
+    {
+     "kind": "scatter",
+     "label": "_child2",
+     "xy": "ax1_scatter2_xy",
+     "values": null
+    }
+   ],
+   "texts": []
+  }
+ ],
+ "extra": [
+  {
+   "name": "t_truth_years",
+   "key": "extra_t_truth_years"
+  },
+  {
+   "name": "t_pred_years",
+   "key": "extra_t_pred_years"
+  },
+  {
+   "name": "labels",
+   "key": "extra_labels"
+  }
+ ]
+}
